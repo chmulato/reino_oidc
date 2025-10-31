@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte II - Reino da Identidade Federada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Reino da Identidade Federada</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="personagens.html">Personagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia_p1.html">Parte I</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="historia_p2.html">Parte II</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia_p3.html">Parte III</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conclusao.html">Conclusão</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="text-center">Parte II — A Era da Confiança e o Mago OIDC</h1>
+                <p class="lead text-center">Onde a identidade ganha forma</p>
+                <div class="mt-5">
+                    <p>Com o avanço da diplomacia entre cidades, começaram a surgir alianças. Aplicativos precisavam não apenas de acesso, mas também de saber quem estava do outro lado. Como emitir notas, enviar mensagens ou personalizar experiências se não se sabe quem é o usuário?</p>
+                    <p>É nesse ponto que aparece Lord OIDC, o Mago da Identidade. Ele caminha com seu pergaminho luminoso e diz:</p>
+                    <blockquote class="blockquote">
+                        <p>“Autorização sem autenticação é um reino sem rosto. Deixem-me assinar a verdade sobre cada viajante.”</p>
+                    </blockquote>
+                    <p>Lord OIDC trabalha lado a lado com Lady OAuth, criando uma extensão sobre suas regras — o OpenID Connect.</p>
+                    <p>Ele conjura o ID Token, um documento digital assinado com selos mágicos (as chaves públicas JWKS), contendo:</p>
+                    <ul>
+                        <li><strong>iss</strong> — quem emitiu o documento;</li>
+                        <li><strong>sub</strong> — o identificador único do usuário;</li>
+                        <li><strong>aud</strong> — quem deve confiar nele;</li>
+                        <li><strong>exp</strong> — quando expira;</li>
+                        <li>e informações como nome, e-mail, domínio.</li>
+                    </ul>
+                    <p>Agora o reino pode autenticar usuários com segurança, sem precisar guardar senhas locais.</p>
+                    <p>E para proteger o caminho até esse token, surge a fada Pixie PKCE, guardiã dos códigos temporários. Ela garante que nenhum ladrão de código possa interceptar os segredos no caminho entre o Cliente e o Servidor de Autorização.</p>
+                    <p>Cada vez que o emissário Alex Client inicia um pedido de autorização, Pixie o acompanha, criando:</p>
+                    <ul>
+                        <li>um <strong>code_verifier</strong> (segredo que fica com o cliente) e</li>
+                        <li>um <strong>code_challenge</strong> (hash público que vai para o servidor).</li>
+                    </ul>
+                    <p>No fim, apenas quem conhece o verifier pode trocar o código por tokens. Segurança reforçada, confiança consolidada.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
