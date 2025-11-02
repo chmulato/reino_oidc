@@ -796,93 +796,21 @@ except ValueError as e:
                                 </div>
                             </div>
                         </div>
+                        
+                        <div class="alert alert-info mt-4">
+                            <h6><strong>📚 Precisa de definições de termos técnicos?</strong></h6>
+                            <p class="mb-2">Para explicações detalhadas de todos os conceitos OAuth 2.1 e OIDC, visite nosso:</p>
+                            <div class="text-center">
+                                <a href="glossario.html" class="btn btn-primary">
+                                    📖 Glossário Ilustrado Completo
+                                </a>
+                            </div>
+                            <p class="mb-0 mt-2 small text-muted">
+                                <em>Dicionário com explicações para leigos e técnicos, usando as metáforas dos personagens do Reino OIDC.</em>
+                            </p>
+                        </div>
                     </div>
 
-                    <!-- Glossário Expandido -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwelve">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-                                📚 12. Glossário Expandido
-                            </button>
-                        </h2>
-                        <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#oidcAccordion">
-                            <div class="accordion-body">
-                                <div class="table-responsive">
-                                    <table class="table table-striped table-sm">
-                                        <thead>
-                                            <tr>
-                                                <th>Termo</th>
-                                                <th>Descrição</th>
-                                                <th>Exemplo/Contexto</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><strong>PKCE</strong></td>
-                                                <td>Proof Key for Code Exchange - Proteção adicional para fluxos públicos</td>
-                                                <td>SPAs, mobile apps</td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>JWK</strong></td>
-                                                <td>JSON Web Key - Formato para representar chaves criptográficas</td>
-                                                <td>Endpoint /jwks.json</td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>JWKS</strong></td>
-                                                <td>JSON Web Key Set - Conjunto de JWKs</td>
-                                                <td>Validação de assinaturas</td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>Discovery</strong></td>
-                                                <td>Endpoint que expõe metadados do provedor OIDC</td>
-                                                <td>/.well-known/openid-configuration</td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>Nonce</strong></td>
-                                                <td>Number used once - Previne ataques de replay</td>
-                                                <td>Incluído no ID token</td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>State</strong></td>
-                                                <td>Parâmetro para manter estado e prevenir CSRF</td>
-                                                <td>Valor aleatório único</td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>Sub</strong></td>
-                                                <td>Subject - Identificador único e imutável do usuário</td>
-                                                <td>Claims 'sub' nos tokens</td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>Aud</strong></td>
-                                                <td>Audience - Para quem o token é destinado</td>
-                                                <td>Client ID no ID token</td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>Iss</strong></td>
-                                                <td>Issuer - Quem emitiu o token</td>
-                                                <td>URL do Authorization Server</td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>Session Management</strong></td>
-                                                <td>Controle de sessões de usuário entre client e IdP</td>
-                                                <td>Single logout, check session</td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>Back-channel</strong></td>
-                                                <td>Comunicação direta servidor-a-servidor</td>
-                                                <td>Troca de authorization code</td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>Front-channel</strong></td>
-                                                <td>Comunicação através do browser do usuário</td>
-                                                <td>Redirecionamentos</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                                </div>
-                    </div>
                 </div>
 
             </div>
