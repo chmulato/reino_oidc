@@ -46,3 +46,21 @@ h1, h2, h3, h4, h5, h6 {
 .font-weight-bold {
     font-weight: bold;
 }
+
+/* Quadros de código estilo escola */
+.code-school-box {
+    background-color: #f8fff8 !important;
+    border-color: #198754 !important;
+    border-width: 2px !important;
+}
+
+.code-school-pre {
+    background-color: transparent !important;
+    border: none !important;
+    margin: 0 !important;
+}
+
+.code-school-header {
+    color: #198754 !important;
+    font-weight: bold !important;
+}

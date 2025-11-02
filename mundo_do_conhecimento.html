@@ -709,7 +709,12 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <h6><strong>JavaScript - SPA com PKCE</strong></h6>
-                                        <pre><code class="small">// Configuração
+                                        <div class="border border-success border-2 rounded p-3 bg-light code-school-box">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="text-success me-2">📝</i>
+                                                <small class="code-school-header">Exemplo Prático - Escola do Reino OIDC</small>
+                                            </div>
+                                            <pre class="code-school-pre"><code class="small">// Configuração
 const config = {
   authority: 'https://your-idp.com',
   client_id: 'your-spa-client-id',
@@ -744,12 +749,18 @@ async function login() {
   
   window.location.href = `${config.authority}/authorize?${params}`;
 }</code></pre>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row mt-3">
                                     <div class="col-12">
                                         <h6><strong>Python - Validação de ID Token</strong></h6>
-                                        <pre><code class="small">import jwt
+                                        <div class="border border-success border-2 rounded p-3 bg-light code-school-box">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="text-success me-2">🐍</i>
+                                                <small class="code-school-header">Exemplo Prático - Biblioteca do Reino OIDC</small>
+                                            </div>
+                                            <pre class="code-school-pre"><code class="small">import jwt
 import requests
 from jwt.algorithms import RSAAlgorithm
 
@@ -792,6 +803,7 @@ try:
     user_email = claims.get('email')
 except ValueError as e:
     print(f"Erro na validação: {e}")</code></pre>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
