@@ -1,5 +1,5 @@
 # Reino OIDC - Reino da Identidade Federada
-# Visualize a história completa em: [https://chmulato.github.io/reino_oidc/](https://chmulato.github.io/reino_oidc/)
+## 🌐 Visualize a história completa em: [https://chmulato.github.io/reino_oidc/](https://chmulato.github.io/reino_oidc/)
 
 Este projeto é um material **aberto e lúdico** para aprendizado sobre **OAuth 2.1** e **OpenID Connect (OIDC)**, utilizando metáforas, narrativa épica e personagens cativantes para facilitar a compreensão dos conceitos de autenticação e autorização modernos.
 
@@ -9,7 +9,8 @@ O objetivo é tornar o entendimento de protocolos de identidade federada mais ac
 
 - **Personagens únicos** que representam conceitos técnicos
 - **Histórias envolventes** que explicam fluxos complexos 
-- **Exemplos práticos** com código funcional
+- **Exemplos práticos** com código funcional estilo escola
+- **Glossário ilustrado** para leigos e especialistas
 - **Troubleshooting gamificado** para problemas comuns
 - **Conteúdo interativo** para diferentes níveis de conhecimento
 
@@ -31,17 +32,18 @@ Todo o conteúdo pode ser utilizado livremente para fins educacionais.
 - **[Mundo do Conhecimento](mundo_do_conhecimento.html)** - Guia técnico completo com:
   - Mini-histórias para cada tópico usando os personagens
   - Conceitos desde básicos até avançados
-  - Exemplos de código funcional em JavaScript e Python
+  - Exemplos de código estilo escola (quadros verdes educativos)
   - Troubleshooting com cenários do Reino
   - Ferramentas e recursos recomendados
   - Boas práticas de segurança
 
-- **[Glossário Ilustrado](glossario.html)** - Dicionário completo com:
-  - Explicações para leigos e técnicos
-  - Metáforas usando personagens do Reino
-  - Definições precisas e exemplos de código
-  - Índice alfabético para consulta rápida
-  - Termos OAuth 2.1, OIDC, JWT e segurança
+- **[Glossário Ilustrado](glossario.html)** - Dicionário educacional com:
+  - **16+ termos técnicos** explicados em detalhes
+  - **Duas abordagens** para cada conceito: leigos e técnicos
+  - **Metáforas consistentes** usando personagens do Reino
+  - **Índice alfabético** para consulta rápida
+  - **Exemplos de código** e definições precisas
+  - **Interface accordion** para navegação organizada
 
 ### 🎭 Personagens Principais
 
@@ -69,14 +71,23 @@ Todo o conteúdo pode ser utilizado livremente para fins educacionais.
 2. Conheça os **[personagens](personagens.html)** - cada um representa um conceito técnico
 3. Acompanhe a **narrativa sequencial** (Parte I → II → III)
 4. Aprofunde-se no **[Mundo do Conhecimento](mundo_do_conhecimento.html)** para detalhes técnicos
-5. Use as **mini-histórias** para lembrar de conceitos específicos
+5. Consulte o **[Glossário Ilustrado](glossario.html)** para definições específicas
+6. Use as **mini-histórias** para lembrar de conceitos específicos
 
 ### Para Educadores
 
 - Use os **personagens como metáforas** em suas aulas
 - Aproveite as **histórias por seções** para explicar conceitos graduais
-- Utilize os **exemplos de código** como material prático
-- Adapte o **conteúdo lúdico** para diferentes audiências
+- Utilize os **exemplos de código em quadros verdes** como material prático
+- Explore o **glossário duplo** (leigos + técnicos) para diferentes audiências
+- Adapte o **conteúdo lúdico** para workshops e treinamentos
+
+### Para Profissionais
+
+- Consulte as **definições técnicas** no glossário para implementações
+- Use os **exemplos de código** como base para projetos reais
+- Revise as **boas práticas OAuth 2.1** para atualizações de segurança
+- Aproveite o **troubleshooting gamificado** para resolver problemas
 
 ## 🌐 Como Publicar
 
@@ -108,9 +119,57 @@ npx serve .
 - **Estudantes** de segurança digital e protocolos web
 - **Arquitetos de software** que precisam implementar OIDC
 - **Educadores** que buscam material didático criativo
+- **Profissionais de TI** migrando para OAuth 2.1
 - **Qualquer pessoa** curiosa sobre como funcionam os logins modernos
 
+## 🛠️ Recursos Técnicos
+
+### Características Educacionais
+
+- **Narrativa gamificada** com personagens representando conceitos técnicos
+- **Progressão gradual** do básico ao avançado
+- **Exemplos visuais** com quadros estilo escola para códigos
+- **Glossário duplo** (explicações para leigos + definições técnicas)
+- **Interface responsiva** compatível com mobile e desktop
+
+### Tecnologias Utilizadas
+
+- **HTML5/CSS3** com design responsivo
+- **Bootstrap 5.3.3** para componentes visuais
+- **Accordion interfaces** para organização do conteúdo
+- **CSS customizado** com tema medieval/fantasia
+- **GitHub Pages** para hospedagem gratuita
+
+### Cobertura de Conteúdo
+
+- **OAuth 2.1** com foco em segurança e boas práticas
+- **OpenID Connect** para autenticação e identidade
+- **JWT (JSON Web Tokens)** estrutura e validação
+- **PKCE** implementação obrigatória
+- **Refresh Token Rotation** ciclos seguros de renovação
+- **Exemplos de código** JavaScript e Python funcionais
+
 ## 🆕 Novidades da Versão Atual
+
+### ✨ Grandes Atualizações 2025
+
+#### 📚 Glossário Ilustrado Dedicado
+- **Arquivo separado** (`glossario.html`) para melhor organização
+- **16+ termos técnicos** com explanações duplas (leigos + técnicos)
+- **Metáforas consistentes** usando todos os personagens do Reino
+- **Navegação integrada** em todas as páginas do site
+- **Índice alfabético** para consulta rápida
+
+#### 🎨 Visual Educativo Aprimorado
+- **Quadros verdes estilo escola** para exemplos de código
+- **Cabeçalhos temáticos** com ícones para cada linguagem
+- **Copyright padronizado** em todas as páginas
+- **Estilos CSS organizados** para melhor manutenção
+
+#### 🔄 OAuth 2.1 - Conteúdo Especializado
+- **Seção dedicada** explicando diferenças do OAuth 2.0
+- **Guia de migração** com práticas recomendadas
+- **Foco em segurança** e simplificação do protocolo
 
 ### Rex Token - O Renovador Eterno
 
@@ -122,10 +181,10 @@ npx serve .
 ### Mundo do Conhecimento Enriquecido
 
 - **Mini-histórias** para cada tópico técnico
-- **12 seções** cobrindo desde conceitos básicos até troubleshooting
-- **Exemplos de código** funcionais e testados
+- **11 seções** cobrindo desde conceitos básicos até exemplos práticos
+- **Códigos em quadros educativos** estilo escola
 - **Cenários de implementação** do mundo real
-- **Glossário expandido** com contextos dos personagens
+- **Referência direta** ao glossário dedicado
 
 ## 🤝 Contribuição
 
@@ -148,12 +207,25 @@ Contribuições são muito bem-vindas! Você pode:
 
 ## 📋 Roadmap
 
+### ✅ Concluído
+- [x] **Glossário ilustrado dedicado** com 16+ termos técnicos
+- [x] **OAuth 2.1 seção especializada** com guia de migração
+- [x] **Quadros de código estilo escola** para melhor visualização
+- [x] **Rex Token personagem** integrado à narrativa completa
+- [x] **Copyright padronizado** em todas as páginas
+- [x] **Navegação integrada** com glossário em todo o site
+
+### 🔄 Em Andamento
+- [ ] **Versão em inglês** completa do conteúdo
+- [ ] **Melhorias de acessibilidade** (WCAG compliance)
+
+### 🚀 Próximas Funcionalidades
 - [ ] **Personagens adicionais** (SAML, Session Management)
 - [ ] **Histórias interativas** com escolhas do usuário
-- [ ] **Versão em inglês** completa
 - [ ] **Vídeos animados** dos personagens
 - [ ] **Quiz interativo** para testar conhecimentos
 - [ ] **Simulador de fluxos** OIDC visual
+- [ ] **Dark mode** para melhor experiência noturna
 
 ## 📜 Licença
 
