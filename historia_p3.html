@@ -10,7 +10,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Reino da Identidade Federada</a>
+            <a class="navbar-brand" href="index.html">Reino da Identidade Federada</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -33,6 +33,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="conclusao.html">Conclusão</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mundo_do_conhecimento.html">Mundo do Conhecimento</a>
                     </li>
                 </ul>
             </div>
@@ -57,15 +60,17 @@
                         <li>Se o login for bem-sucedido, devolve um authorization code temporário.</li>
                         <li>Pixie PKCE entra em ação.</li>
                         <li>Alex envia o code_verifier original ao servidor para provar que é ele mesmo.</li>
-                        <li>O servidor devolve dois tokens:
+                        <li>O servidor devolve três tokens:
                             <ul>
-                                <li>Access Token → autorização;</li>
-                                <li>ID Token → autenticação.</li>
+                                <li><strong>Access Token</strong> → autorização para recursos;</li>
+                                <li><strong>ID Token</strong> → autenticação e identidade;</li>
+                                <li><strong>Refresh Token</strong> → renovação futura (quando necessário).</li>
                             </ul>
                         </li>
                         <li>Ace Token, o cavaleiro das permissões, leva o Access Token até Seraph Resource, o guardião das APIs.</li>
                         <li>Seraph verifica assinaturas e escopos antes de abrir as portas dos dados.</li>
-                        <li>IDA Token, a mensageira da verdade, confirma a identidade do usuário.</li>
+                        <li>IDA Token, a mensageira da verdade, confirma a identidade do usuário na aplicação.</li>
+                        <li>Rex Token, o renovador eterno, permanece guardado em segurança, pronto para agir quando Ace expirar.</li>
                         <li>Devia usa os claims para montar o perfil do usuário na aplicação.</li>
                     </ol>
 
@@ -76,19 +81,38 @@
                         <li><strong>PKCE</strong> = reforço criptográfico que impede roubo de códigos.</li>
                         <li><strong>Access Token</strong> = chave de acesso temporária a recursos.</li>
                         <li><strong>ID Token</strong> = identidade assinada digitalmente.</li>
+                        <li><strong>Refresh Token</strong> = renovador silencioso que evita re-autenticações.</li>
                         <li><strong>Resource Server</strong> = API que valida tokens e protege dados.</li>
                         <li><strong>Scopes e Claims</strong> = definem o que pode ser acessado e quais dados são revelados.</li>
                     </ul>
 
+                    <h4 class="mt-4">O Ciclo da Renovação — A Dança de Rex Token</h4>
+                    <p>Devia aprende que um dos aspectos mais elegantes do sistema é como Rex Token trabalha nos bastidores. Diferente de Ace e IDA, que são ativos e visíveis, Rex vive na quietude, esperando sua hora.</p>
+                    
+                    <div class="alert alert-info">
+                        <h6><strong>🔄 Como funciona o ciclo de renovação:</strong></h6>
+                        <ol class="mb-0">
+                            <li><strong>Ace Token expira</strong> — Vida útil curta (15-60 minutos)</li>
+                            <li><strong>Alex Client percebe</strong> — HTTP 401 ou verificação proativa</li>
+                            <li><strong>Rex Token desperta</strong> — Sai do cofre seguro</li>
+                            <li><strong>Troca silenciosa</strong> — Novo Ace + novo Rex (rotação)</li>
+                            <li><strong>Rex original se destrói</strong> — Segurança máxima</li>
+                            <li><strong>Usuário nem percebe</strong> — Experiência fluida</li>
+                        </ol>
+                    </div>
+
+                    <p>Rex ensina uma lição importante: <em>"A melhor segurança é aquela que o usuário não percebe, mas que sempre está vigilante."</em></p>
+
                     <p>Devia percebe que, juntos, esses conceitos formam a Nova Ordem da Confiança Digital — onde identidade, permissão e segurança coexistem em harmonia.</p>
 
                     <h4 class="mt-4">Epílogo — O Conselho da Confiança</h4>
-                    <p>No grande salão de Federápolis, Lady OAuth e Lord OIDC entregam a Devia o “Livro dos Tokens”. Pixie sorri ao ver as linhas de código que agora ela compreende de verdade.</p>
+                    <p>No grande salão de Federápolis, Lady OAuth e Lord OIDC entregam a Devia o "Livro dos Tokens". Pixie sorri ao ver as linhas de código que agora ela compreende de verdade. Rex Token, sempre discreto, observa silenciosamente das sombras — sua presença é sentida, mesmo quando não é vista.</p>
                     <blockquote class="blockquote">
-                        <p>“A tecnologia muda, Devia,” — diz Lady OAuth, “mas os princípios permanecem: confiança, verificação e limite.”</p>
-                        <p>“E nunca esqueça,” — completa Lord OIDC — “autenticar é provar quem é; autorizar é permitir o que pode fazer.”</p>
+                        <p>"A tecnologia muda, Devia," — diz Lady OAuth, "mas os princípios permanecem: confiança, verificação e limite."</p>
+                        <p>"E nunca esqueça," — completa Lord OIDC — "autenticar é provar quem é; autorizar é permitir o que pode fazer."</p>
+                        <p>"E lembre-se," — sussurra Rex das sombras — "a melhor experiência é aquela onde a segurança é invisível, mas a confiança é eterna."</p>
                     </blockquote>
-                    <p>Devia volta à sua oficina digital, pronta para construir sistemas que respeitam o usuário, protegem dados e unem mundos através da confiança.</p>
+                    <p>Devia volta à sua oficina digital, pronta para construir sistemas que respeitam o usuário, protegem dados e unem mundos através da confiança. Ela agora compreende que cada token tem seu propósito: Ace para o presente, IDA para a identidade, e Rex para o futuro.</p>
 
                     <h4 class="mt-4">Moral da história</h4>
                     <blockquote class="blockquote">
