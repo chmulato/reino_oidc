@@ -36,6 +36,13 @@ Todo o conteúdo pode ser utilizado livremente para fins educacionais.
   - Ferramentas e recursos recomendados
   - Boas práticas de segurança
 
+- **[Glossário Ilustrado](glossario.html)** - Dicionário completo com:
+  - Explicações para leigos e técnicos
+  - Metáforas usando personagens do Reino
+  - Definições precisas e exemplos de código
+  - Índice alfabético para consulta rápida
+  - Termos OAuth 2.1, OIDC, JWT e segurança
+
 ### 🎭 Personagens Principais
 
 - **Lady OAuth** - A Guardiã das Portas (Autorização)
