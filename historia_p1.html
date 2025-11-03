@@ -8,34 +8,34 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Reino da Identidade Federada</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🏰 Reino OIDC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Início</a>
+                        <a class="nav-link" href="index.html">🏠 Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="personagens.html">Personagens</a>
+                        <a class="nav-link" href="personagens.html">👥 Personagens</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            📖 História
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item active" href="historia_p1.html">Parte I - A Era Sombria</a></li>
+                            <li><a class="dropdown-item" href="historia_p2.html">Parte II - A Chegada do OIDC</a></li>
+                            <li><a class="dropdown-item" href="historia_p3.html">Parte III - A Nova Era</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="conclusao.html">Conclusão</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="historia_p1.html">Parte I</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="historia_p2.html">Parte II</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="historia_p3.html">Parte III</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="conclusao.html">Conclusão</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="mundo_do_conhecimento.html">Mundo do Conhecimento</a>
+                        <a class="nav-link" href="mundo_do_conhecimento.html">🌟 Conhecimento</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="caminho_feliz.html">✨ Caminho Feliz</a>
@@ -70,6 +70,27 @@
                     </ul>
                     <p>Lady OAuth ensinou o reino a delegar acessos limitados e revogáveis. Surgiram tokens, escopos e permissões. O caos diminuiu — mas algo ainda faltava: ninguém sabia quem realmente usava o token.</p>
                     <p>Assim, a autorização estava resolvida, mas a identidade continuava nebulosa.</p>
+                </div>
+
+                <!-- Navegação entre partes -->
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <nav aria-label="Navegação da História">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <!-- Espaço para botão anterior (não existe na Parte I) -->
+                                </div>
+                                <div class="text-center">
+                                    <small class="text-muted">Parte I de III</small>
+                                </div>
+                                <div>
+                                    <a href="historia_p2.html" class="btn btn-primary">
+                                        Próximo: Parte II <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
