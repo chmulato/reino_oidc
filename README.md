@@ -20,16 +20,16 @@ Todo o conteúdo pode ser utilizado livremente para fins educacionais.
 
 ### 📖 Narrativa Principal
 
-- **[Página Inicial](index.html)** - Portal de entrada para o Reino
-- **[Personagens](personagens.html)** - Conheça os habitantes do Reino da Identidade Federada
-- **[História Parte I](historia_p1.html)** - A Era das Senhas e a Chegada de Lady OAuth
-- **[História Parte II](historia_p2.html)** - A Era da Confiança e o Mago OIDC  
-- **[História Parte III](historia_p3.html)** - A Nova Ordem Digital e a Aprendiz Devia
-- **[Conclusão](conclusao.html)** - As lições aprendidas e o futuro do Reino
+- **[Página Inicial](https://chmulato.github.io/reino_oidc/index.html)** - Portal de entrada para o Reino
+- **[Personagens](https://chmulato.github.io/reino_oidc/personagens.html)** - Conheça os habitantes do Reino da Identidade Federada
+- **[História Parte I](https://chmulato.github.io/reino_oidc/historia_p1.html)** - A Era das Senhas e a Chegada de Lady OAuth
+- **[História Parte II](https://chmulato.github.io/reino_oidc/historia_p2.html)** - A Era da Confiança e o Mago OIDC  
+- **[História Parte III](https://chmulato.github.io/reino_oidc/historia_p3.html)** - A Nova Ordem Digital e a Aprendiz Devia
+- **[Conclusão](https://chmulato.github.io/reino_oidc/conclusao.html)** - As lições aprendidas e o futuro do Reino
 
 ### 🌟 Conteúdo Educativo Avançado
 
-- **[Mundo do Conhecimento](mundo_do_conhecimento.html)** - Guia técnico completo com:
+- **[Mundo do Conhecimento](https://chmulato.github.io/reino_oidc/mundo_do_conhecimento.html)** - Guia técnico completo com:
   - Mini-histórias para cada tópico usando os personagens
   - Conceitos desde básicos até avançados
   - Exemplos de código estilo escola (quadros verdes educativos)
@@ -37,7 +37,7 @@ Todo o conteúdo pode ser utilizado livremente para fins educacionais.
   - Ferramentas e recursos recomendados
   - Boas práticas de segurança
 
-- **[Caminho Feliz OIDC](caminho_feliz.html)** - Tutorial interativo do fluxo ideal com:
+- **[Caminho Feliz OIDC](https://chmulato.github.io/reino_oidc/caminho_feliz.html)** - Tutorial interativo do fluxo ideal com:
   - **Passo a passo detalhado** do Authorization Code Flow
   - **Explicações duplas** (para leigos e técnicos) em cada etapa
   - **Exemplos de código** em quadros educativos verdes
@@ -45,7 +45,7 @@ Todo o conteúdo pode ser utilizado livremente para fins educacionais.
   - **Dicas de segurança** (PKCE, State, HTTPS, Validações)
   - **Interface accordion** para navegação organizada
 
-- **[Glossário Ilustrado](glossario.html)** - Dicionário educacional com:
+- **[Glossário Ilustrado](https://chmulato.github.io/reino_oidc/glossario.html)** - Dicionário educacional com:
   - **16+ termos técnicos** explicados em detalhes
   - **Duas abordagens** para cada conceito: leigos e técnicos
   - **Metáforas consistentes** usando personagens do Reino
@@ -67,22 +67,22 @@ Todo o conteúdo pode ser utilizado livremente para fins educacionais.
 
 ### 📁 Arquivos de Apoio
 
-- **[Documentação em Markdown](md/)** - Versões texto das histórias e documentação técnica
-- **[Assets](assets/)** - Estilos CSS customizados
-- **[Imagens](img/)** - Ilustrações dos personagens e cenários
+- **[Documentação em Markdown](https://chmulato.github.io/reino_oidc/md/)** - Versões texto das histórias e documentação técnica
+- **[Assets](https://chmulato.github.io/reino_oidc/assets/)** - Estilos CSS customizados
+- **[Imagens](https://chmulato.github.io/reino_oidc/img/)** - Ilustrações dos personagens e cenários
 
 ### 📋 Documentação Técnica (Markdown)
 
 A pasta `md/` contém documentação técnica detalhada em formato Markdown para desenvolvedores e implementadores:
 
 #### 📖 Narrativa e Conceitos
-- **[A História](md/a_historia.md)** - Narrativa completa do Reino OIDC em formato texto
-- **[Os Personagens](md/os_personagens.md)** - Descrição detalhada de todos os personagens e seus papéis técnicos
-- **[Conclusão](md/conclusao.md)** - Síntese final e próximos passos do projeto
+- **[A História](https://chmulato.github.io/reino_oidc/md/a_historia.md)** - Narrativa completa do Reino OIDC em formato texto
+- **[Os Personagens](https://chmulato.github.io/reino_oidc/md/os_personagens.md)** - Descrição detalhada de todos os personagens e seus papéis técnicos
+- **[Conclusão](https://chmulato.github.io/reino_oidc/md/conclusao.md)** - Síntese final e próximos passos do projeto
 
 #### 🔧 Implementação e Validação
-- **[Roteiro Perfeito OIDC](md/roteiro_perfeito_oidc.md)** - Guia passo a passo para validação do caminho feliz
-- **[Checklist](md/checklist.md)** - Lista de verificação para implementação OIDC
+- **[Roteiro Perfeito OIDC](https://chmulato.github.io/reino_oidc/md/roteiro_perfeito_oidc.md)** - Guia passo a passo para validação do caminho feliz
+- **[Checklist](https://chmulato.github.io/reino_oidc/md/checklist.md)** - Lista de verificação para implementação OIDC
 
 > 💡 **Dica**: Os arquivos Markdown são ideais para consulta técnica rápida, integração em documentação de projetos e uso em wikis internas.
 
@@ -90,12 +90,12 @@ A pasta `md/` contém documentação técnica detalhada em formato Markdown para
 
 ### Para Estudantes/Desenvolvedores
 
-1. Comece pela **[página inicial](index.html)** para entender o contexto
-2. Conheça os **[personagens](personagens.html)** - cada um representa um conceito técnico
+1. Comece pela **[página inicial](https://chmulato.github.io/reino_oidc/index.html)** para entender o contexto
+2. Conheça os **[personagens](https://chmulato.github.io/reino_oidc/personagens.html)** - cada um representa um conceito técnico
 3. Acompanhe a **narrativa sequencial** (Parte I → II → III)
-4. Aprofunde-se no **[Mundo do Conhecimento](mundo_do_conhecimento.html)** para detalhes técnicos
-5. **NOVO!** Pratique com o **[Caminho Feliz](caminho_feliz.html)** - fluxo ideal passo a passo
-6. Consulte o **[Glossário Ilustrado](glossario.html)** para definições específicas
+4. Aprofunde-se no **[Mundo do Conhecimento](https://chmulato.github.io/reino_oidc/mundo_do_conhecimento.html)** para detalhes técnicos
+5. **NOVO!** Pratique com o **[Caminho Feliz](https://chmulato.github.io/reino_oidc/caminho_feliz.html)** - fluxo ideal passo a passo
+6. Consulte o **[Glossário Ilustrado](https://chmulato.github.io/reino_oidc/glossario.html)** para definições específicas
 7. Use as **mini-histórias** para lembrar de conceitos específicos
 
 ### Para Educadores
@@ -261,7 +261,7 @@ Contribuições são muito bem-vindas! Você pode:
 
 ## 📜 Licença
 
-Este projeto está sob a **Licença MIT**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está sob a **Licença MIT**. Veja o arquivo [LICENSE](https://chmulato.github.io/reino_oidc/LICENSE) para mais detalhes.
 
 ---
 
