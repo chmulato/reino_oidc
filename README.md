@@ -67,7 +67,7 @@ Todo o conteúdo pode ser utilizado livremente para fins educacionais.
 
 ### 📁 Arquivos de Apoio
 
-- **[Documentação em Markdown](https://chmulato.github.io/reino_oidc/md/)** - Versões texto das histórias e documentação técnica
+- **[Documentação em Markdown](md/)** - Versões texto das histórias e documentação técnica
 - **[Assets](https://chmulato.github.io/reino_oidc/assets/)** - Estilos CSS customizados
 - **[Imagens](https://chmulato.github.io/reino_oidc/img/)** - Ilustrações dos personagens e cenários
 
@@ -76,13 +76,13 @@ Todo o conteúdo pode ser utilizado livremente para fins educacionais.
 A pasta `md/` contém documentação técnica detalhada em formato Markdown para desenvolvedores e implementadores:
 
 #### 📖 Narrativa e Conceitos
-- **[A História](https://chmulato.github.io/reino_oidc/md/a_historia.md)** - Narrativa completa do Reino OIDC em formato texto
-- **[Os Personagens](https://chmulato.github.io/reino_oidc/md/os_personagens.md)** - Descrição detalhada de todos os personagens e seus papéis técnicos
-- **[Conclusão](https://chmulato.github.io/reino_oidc/md/conclusao.md)** - Síntese final e próximos passos do projeto
+- **[A História](md/a_historia.md)** - Narrativa completa do Reino OIDC em formato texto
+- **[Os Personagens](md/os_personagens.md)** - Descrição detalhada de todos os personagens e seus papéis técnicos
+- **[Conclusão](md/conclusao.md)** - Síntese final e próximos passos do projeto
 
 #### 🔧 Implementação e Validação
-- **[Roteiro Perfeito OIDC](https://chmulato.github.io/reino_oidc/md/roteiro_perfeito_oidc.md)** - Guia passo a passo para validação do caminho feliz
-- **[Checklist](https://chmulato.github.io/reino_oidc/md/checklist.md)** - Lista de verificação para implementação OIDC
+- **[Roteiro Perfeito OIDC](md/roteiro_perfeito_oidc.md)** - Guia passo a passo para validação do caminho feliz
+- **[Checklist](md/checklist.md)** - Lista de verificação para implementação OIDC
 
 > 💡 **Dica**: Os arquivos Markdown são ideais para consulta técnica rápida, integração em documentação de projetos e uso em wikis internas.
 
@@ -261,7 +261,7 @@ Contribuições são muito bem-vindas! Você pode:
 
 ## 📜 Licença
 
-Este projeto está sob a **Licença MIT**. Veja o arquivo [LICENSE](https://chmulato.github.io/reino_oidc/LICENSE) para mais detalhes.
+Este projeto está sob a **Licença MIT**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
