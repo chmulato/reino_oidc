@@ -37,6 +37,14 @@ Todo o conteúdo pode ser utilizado livremente para fins educacionais.
   - Ferramentas e recursos recomendados
   - Boas práticas de segurança
 
+- **[Caminho Feliz OIDC](caminho_feliz.html)** - Tutorial interativo do fluxo ideal com:
+  - **Passo a passo detalhado** do Authorization Code Flow
+  - **Explicações duplas** (para leigos e técnicos) em cada etapa
+  - **Exemplos de código** em quadros educativos verdes
+  - **Cronometria real** do processo (2-5 segundos)
+  - **Dicas de segurança** (PKCE, State, HTTPS, Validações)
+  - **Interface accordion** para navegação organizada
+
 - **[Glossário Ilustrado](glossario.html)** - Dicionário educacional com:
   - **16+ termos técnicos** explicados em detalhes
   - **Duas abordagens** para cada conceito: leigos e técnicos
@@ -59,9 +67,24 @@ Todo o conteúdo pode ser utilizado livremente para fins educacionais.
 
 ### 📁 Arquivos de Apoio
 
-- **[Documentação em Markdown](md/)** - Versões texto das histórias
+- **[Documentação em Markdown](md/)** - Versões texto das histórias e documentação técnica
 - **[Assets](assets/)** - Estilos CSS customizados
 - **[Imagens](img/)** - Ilustrações dos personagens e cenários
+
+### 📋 Documentação Técnica (Markdown)
+
+A pasta `md/` contém documentação técnica detalhada em formato Markdown para desenvolvedores e implementadores:
+
+#### 📖 Narrativa e Conceitos
+- **[A História](md/a_historia.md)** - Narrativa completa do Reino OIDC em formato texto
+- **[Os Personagens](md/os_personagens.md)** - Descrição detalhada de todos os personagens e seus papéis técnicos
+- **[Conclusão](md/conclusao.md)** - Síntese final e próximos passos do projeto
+
+#### 🔧 Implementação e Validação
+- **[Roteiro Perfeito OIDC](md/roteiro_perfeito_oidc.md)** - Guia passo a passo para validação do caminho feliz
+- **[Checklist](md/checklist.md)** - Lista de verificação para implementação OIDC
+
+> 💡 **Dica**: Os arquivos Markdown são ideais para consulta técnica rápida, integração em documentação de projetos e uso em wikis internas.
 
 ## 🚀 Como Usar
 
@@ -71,8 +94,9 @@ Todo o conteúdo pode ser utilizado livremente para fins educacionais.
 2. Conheça os **[personagens](personagens.html)** - cada um representa um conceito técnico
 3. Acompanhe a **narrativa sequencial** (Parte I → II → III)
 4. Aprofunde-se no **[Mundo do Conhecimento](mundo_do_conhecimento.html)** para detalhes técnicos
-5. Consulte o **[Glossário Ilustrado](glossario.html)** para definições específicas
-6. Use as **mini-histórias** para lembrar de conceitos específicos
+5. **NOVO!** Pratique com o **[Caminho Feliz](caminho_feliz.html)** - fluxo ideal passo a passo
+6. Consulte o **[Glossário Ilustrado](glossario.html)** para definições específicas
+7. Use as **mini-histórias** para lembrar de conceitos específicos
 
 ### Para Educadores
 
@@ -152,6 +176,14 @@ npx serve .
 ## 🆕 Novidades da Versão Atual
 
 ### ✨ Grandes Atualizações 2025
+
+#### 🎯 Caminho Feliz Interativo - NOVO!
+- **Tutorial passo a passo** do Authorization Code Flow ideal
+- **Interface accordion** com navegação intuitiva
+- **Explicações duplas** (leigos + técnicos) para cada etapa
+- **Códigos em quadros educativos** para visualização clara
+- **Cronometria real** do processo de autenticação (2-5 segundos)
+- **Dicas de segurança** integradas (PKCE, State, HTTPS)
 
 #### 📚 Glossário Ilustrado Dedicado
 - **Arquivo separado** (`glossario.html`) para melhor organização
