@@ -68,8 +68,6 @@ Todo o conteúdo pode ser utilizado livremente para fins educacionais.
 ### 📁 Arquivos de Apoio
 
 - **[Documentação em Markdown](md/)** - Versões texto das histórias e documentação técnica
-- **[Assets](https://chmulato.github.io/reino_oidc/assets/)** - Estilos CSS customizados
-- **[Imagens](https://chmulato.github.io/reino_oidc/img/)** - Ilustrações dos personagens e cenários
 
 ### 📋 Documentação Técnica (Markdown)
 
