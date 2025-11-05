@@ -27,6 +27,10 @@ Todo o conteúdo pode ser utilizado livremente para fins educacionais.
 - **[História Parte III](https://chmulato.github.io/reino_oidc/historia_p3.html)** - A Nova Ordem Digital e a Aprendiz Devia
 - **[Conclusão](https://chmulato.github.io/reino_oidc/conclusao.html)** - As lições aprendidas e o futuro do Reino
 
+### 🗺️ Mapas e Diagramas Técnicos
+
+- **[Mapas Técnicos](https://chmulato.github.io/reino_oidc/mapas.html)** - Página dedicada com diagramas de arquitetura (Mermaid/PNG) que ilustram fluxos OAuth/OIDC e topologias de implantação
+
 ### 🌟 Conteúdo Educativo Avançado
 
 - **[Academia do Reino OIDC](https://chmulato.github.io/reino_oidc/aprendiz.html)** - Sistema de aprendizagem interativo com:
@@ -77,6 +81,18 @@ Todo o conteúdo pode ser utilizado livremente para fins educacionais.
 ### 📁 Arquivos de Apoio
 
 - **[Documentação em Markdown](md/)** - Versões texto das histórias e documentação técnica
+
+### 🖼️ Impressões e Prompts de Imagem
+
+- **`img/`** - Contém prompts detalhados para geração das ilustrações do projeto (usadas para criar `assets/images/*.png`). Arquivos notáveis:
+  - `prompt-historia-reino-oidc.md` — prompt geral da história
+  - `prompt_todos_os_personagens.txt` — prompt para retrato de todos os personagens
+  - `prompt_historia_parte_i.txt` — prompt da Parte I
+  - `prompt_historia_parte_ii.txt` — prompt da Parte II
+  - `prompt_historia_parte_iii.txt` — prompt da Parte III
+  - `prompt_conclusao.txt` — prompt para a imagem de conclusão
+
+> Observação: os arquivos em `img/` são prompts prontos para uso em geradores de imagem IA (Stable Diffusion, Midjourney, DALL·E, etc.). Os PNGs gerados foram colocados em `assets/images/`.
 
 ### 📋 Documentação Técnica (Markdown)
 
@@ -148,6 +164,19 @@ npx serve .
 
 # Acesse: http://localhost:8000
 ```
+
+### Gerar/Regenerar Imagens a partir dos Prompts
+
+1. Edite ou revise o prompt desejado em `img/`.
+2. Use a sua ferramenta de geração (por exemplo, Stable Diffusion, Midjourney, DALL·E).
+3. Gere imagens em resolução mínima 1920x1080 (ideal 4K) e salve em `assets/images/` com nomes coerentes, por exemplo:
+  - `assets/images/imagem_parte_i.png`
+  - `assets/images/imagem_parte_ii.png`
+  - `assets/images/imagem_parte_iii.png`
+  - `assets/images/imagem_conclusao.png`
+4. Atualize o prompt em `img/` quando quiser novas variações visuais.
+
+> Dica rápida: mantenha versões das imagens se quiser voltar a uma variante específica (ex.: `imagem_parte_i_v1.png`).
 
 ## 🎯 Público-Alvo
 
@@ -281,6 +310,9 @@ Contribuições são muito bem-vindas! Você pode:
 - [x] **Copyright padronizado** em todas as páginas
 - [x] **Navegação integrada** com glossário em todo o site
 - [x] **Estrutura de assets organizada** (CSS e JS em pastas dedicadas)
+ - [x] **Mapas técnicos (mapas.html)** adicionados com diagramas de arquitetura
+ - [x] **Prompts de imagem** adicionados em `img/` e imagens finais colocadas em `assets/images/`
+ - [x] **Menus uniformizados**: todas as páginas (história I/II/III, conclusão) têm o mesmo menu incluindo links para Glossário e Mapas
 
 ### 🔄 Em Andamento
 - [ ] **Versão em inglês** completa do conteúdo
