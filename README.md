@@ -29,6 +29,15 @@ Todo o conteúdo pode ser utilizado livremente para fins educacionais.
 
 ### 🌟 Conteúdo Educativo Avançado
 
+- **[Academia do Reino OIDC](https://chmulato.github.io/reino_oidc/aprendiz.html)** - Sistema de aprendizagem interativo com:
+  - **3 caminhos de dificuldade**: Iniciante, Aventureiro e Mestre
+  - **60 perguntas flashcards** (20 por caminho) com randomização
+  - **Sistema de progressão gamificado** com badges e certificações
+  - **Armazenamento local** do progresso do usuário
+  - **Explicações duplas** (para leigos e técnicos) em cada pergunta
+  - **Premiações específicas** por caminho completado
+  - **Navegação inteligente** entre os níveis de dificuldade
+
 - **[Mundo do Conhecimento](https://chmulato.github.io/reino_oidc/mundo_do_conhecimento.html)** - Guia técnico completo com:
   - Mini-histórias para cada tópico usando os personagens
   - Conceitos desde básicos até avançados
@@ -91,10 +100,15 @@ A pasta `md/` contém documentação técnica detalhada em formato Markdown para
 1. Comece pela **[página inicial](https://chmulato.github.io/reino_oidc/index.html)** para entender o contexto
 2. Conheça os **[personagens](https://chmulato.github.io/reino_oidc/personagens.html)** - cada um representa um conceito técnico
 3. Acompanhe a **narrativa sequencial** (Parte I → II → III)
-4. Aprofunde-se no **[Mundo do Conhecimento](https://chmulato.github.io/reino_oidc/mundo_do_conhecimento.html)** para detalhes técnicos
-5. **NOVO!** Pratique com o **[Caminho Feliz](https://chmulato.github.io/reino_oidc/caminho_feliz.html)** - fluxo ideal passo a passo
-6. Consulte o **[Glossário Ilustrado](https://chmulato.github.io/reino_oidc/glossario.html)** para definições específicas
-7. Use as **mini-histórias** para lembrar de conceitos específicos
+4. **NOVO!** Pratique com a **[Academia do Reino OIDC](https://chmulato.github.io/reino_oidc/aprendiz.html)**:
+   - Comece pelo **Caminho Iniciante** (20 perguntas básicas)
+   - Avance para o **Caminho Aventureiro** (conceitos intermediários)
+   - Domine o **Caminho Mestre** (conhecimento avançado)
+   - Ganhe badges e certificações conforme progride
+5. Aprofunde-se no **[Mundo do Conhecimento](https://chmulato.github.io/reino_oidc/mundo_do_conhecimento.html)** para detalhes técnicos
+6. **Pratique com o **[Caminho Feliz](https://chmulato.github.io/reino_oidc/caminho_feliz.html)** - fluxo ideal passo a passo
+7. Consulte o **[Glossário Ilustrado](https://chmulato.github.io/reino_oidc/glossario.html)** para definições específicas
+8. Use as **mini-histórias** para lembrar de conceitos específicos
 
 ### Para Educadores
 
@@ -158,8 +172,11 @@ npx serve .
 
 - **HTML5/CSS3** com design responsivo
 - **Bootstrap 5.3.3** para componentes visuais
+- **JavaScript ES6+** para sistema de aprendizagem interativo
+- **LocalStorage API** para persistência de progresso do usuário
 - **Accordion interfaces** para organização do conteúdo
 - **CSS customizado** com tema medieval/fantasia
+- **Algoritmo Fisher-Yates** para randomização de perguntas
 - **GitHub Pages** para hospedagem gratuita
 
 ### Cobertura de Conteúdo
@@ -175,7 +192,20 @@ npx serve .
 
 ### ✨ Grandes Atualizações 2025
 
-#### 🎯 Caminho Feliz Interativo - NOVO!
+#### � Academia do Reino OIDC - NOVO Sistema de Aprendizagem!
+- **Sistema interativo de flashcards** com 60 perguntas organizadas em 3 níveis
+- **Caminho Iniciante** (20 perguntas): Fundamentos com Lady OAuth, Lord OIDC e Alex Client
+- **Caminho Aventureiro** (20 perguntas): Conceitos intermediários com PKCE e tokens
+- **Caminho Mestre** (20 perguntas): Conhecimento avançado em fluxos e segurança
+- **Randomização completa** das perguntas a cada sessão para melhor aprendizado
+- **Sistema de progressão gamificado** com badges e certificações por nível
+- **Armazenamento local** do progresso do usuário entre sessões
+- **Explicações duplas** (para leigos e técnicos) em cada flashcard
+- **Premiações específicas** por caminho completado com sugestão de próximo nível
+- **Congratulações finais** ao dominar todos os 3 caminhos
+- **Interface responsiva** com navegação intuitiva entre níveis
+
+#### 🎯 Caminho Feliz Interativo
 - **Tutorial passo a passo** do Authorization Code Flow ideal
 - **Interface accordion** com navegação intuitiva
 - **Explicações duplas** (leigos + técnicos) para cada etapa
@@ -238,24 +268,36 @@ Contribuições são muito bem-vindas! Você pode:
 ## 📋 Roadmap
 
 ### ✅ Concluído
+- [x] **Academia do Reino OIDC** - Sistema completo de aprendizagem interativo
+- [x] **60 perguntas flashcards** organizadas em 3 níveis de dificuldade
+- [x] **Sistema de progressão gamificado** com badges e certificações
+- [x] **Randomização de perguntas** usando algoritmo Fisher-Yates
+- [x] **Armazenamento local** de progresso entre sessões
+- [x] **Premiações específicas** por caminho completado
 - [x] **Glossário ilustrado dedicado** com 16+ termos técnicos
 - [x] **OAuth 2.1 seção especializada** com guia de migração
 - [x] **Quadros de código estilo escola** para melhor visualização
 - [x] **Rex Token personagem** integrado à narrativa completa
 - [x] **Copyright padronizado** em todas as páginas
 - [x] **Navegação integrada** com glossário em todo o site
+- [x] **Estrutura de assets organizada** (CSS e JS em pastas dedicadas)
 
 ### 🔄 Em Andamento
 - [ ] **Versão em inglês** completa do conteúdo
 - [ ] **Melhorias de acessibilidade** (WCAG compliance)
 
 ### 🚀 Próximas Funcionalidades
+- [ ] **Relatórios de progresso** detalhados por usuário
+- [ ] **Modo competitivo** entre usuários
+- [ ] **Novas categorias de perguntas** (JWT, SAML, Session Management)
+- [ ] **Sistema de conquistas** mais elaborado
+- [ ] **Exportação de certificados** em PDF
 - [ ] **Personagens adicionais** (SAML, Session Management)
 - [ ] **Histórias interativas** com escolhas do usuário
 - [ ] **Vídeos animados** dos personagens
-- [ ] **Quiz interativo** para testar conhecimentos
 - [ ] **Simulador de fluxos** OIDC visual
 - [ ] **Dark mode** para melhor experiência noturna
+- [ ] **APIs REST** para integração com outros sistemas
 
 ## 📜 Licença
 

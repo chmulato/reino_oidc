@@ -1,0 +1,156 @@
+# Prompt para Geração da Imagem da Parte II - A Era da Confiança e Lord OIDC
+
+## Conceito Central
+Crie uma ilustração épica que represente a Era da Confiança, onde Lord OIDC emerge como o Mago da Identidade, trabalhando harmoniosamente com Lady OAuth para criar um reino unificado de autenticação e autorização, com a introdução de novos personagens mágicos.
+
+## Cenário Principal
+**Reino de Federápolis em Harmonia** - Vista majestosa de um reino em plena transformação digital mágica
+
+### **Ambiente: A Era da Confiança**
+- **Cidades Conectadas**: As três cidades (Bancária, Comércio, Educação) agora ligadas por pontes de luz
+- **Torres Mágicas**: Estruturas cristalinas irradiando energia de conectividade
+- **Atmosfera Luminosa**: Céu claro com auroras digitais, simbolizando cooperação
+- **Arquitetura Evoluída**: Mistura de medieval e futurista, mais refinada que na Parte I
+
+### **Alianças e Cooperação**
+- **Pontes de Luz**: Conectando todas as cidades com feixes luminosos
+- **Tokens Flutuantes**: Pergaminhos assinados flutuando harmoniosamente entre as cidades
+- **Códigos Criptográficos**: Runas brilhantes no ar formando padrões organizados
+- **Fluxos de Dados**: Rios de informação digital fluindo suavemente
+
+## Personagens Principais
+
+### **Lord OIDC - O Protagonista Central**
+- **Posicionamento**: Centro da composição, ligeiramente elevado em plataforma mágica
+- **Aparência Detalhada**:
+  - **Vestes Roxas e Douradas**: Manto majestoso com símbolos de identidade
+  - **Pergaminho Luminoso**: Brilhando intensamente em suas mãos (ID Token)
+  - **Barba Sábia**: Longa e prateada, emanando sabedoria
+  - **Cajado de Cristal**: Com orbe contendo chaves públicas JWKS
+  - **Coroa de Autoridade**: Símbolos de autenticação flutuando acima da cabeça
+
+### **Lady OAuth - A Parceira Estabelecida**
+- **Posicionamento**: À esquerda de Lord OIDC, em posição de colaboração
+- **Aparência**: Manto azul real, chave dourada, expressão de aprovação
+- **Interação**: Estendendo a mão para Lord OIDC, simbolizando parceria
+
+### **Novos Personagens Emergindo**
+
+#### **Rex Token - O Renovador Eterno**
+- **Posicionamento**: Nas sombras, semi-oculto atrás de Lord OIDC
+- **Aparência**: 
+  - Figura misteriosa com capuz sombrio
+  - Amuleto infinito (∞) brilhando no peito
+  - Ondas temporais visíveis ao redor (ciclos de renovação)
+  - Expressão serena e vigilante
+
+#### **Pixie PKCE - A Fada Protetora**
+- **Posicionamento**: Flutuando próximo a Alex Client
+- **Aparência**:
+  - Pequena fada luminosa com asas cristalinas
+  - Cristais de proteção orbitando ao redor
+  - Fios de luz conectando chaves criptográficas
+  - Partículas douradas de code_challenge/code_verifier
+
+#### **Alex Client - O Mensageiro Evoluído**
+- **Posicionamento**: Primeiro plano, direita
+- **Aparência**: Vestes mais nobres, carregando pergaminhos oficiais
+- **Acompanhado**: Por Pixie PKCE, mostrando a evolução da segurança
+
+## Elementos Mágicos e Técnicos
+
+### **ID Token - O Pergaminho Luminoso**
+- **Visualização**: Pergaminho brilhante nas mãos de Lord OIDC
+- **Conteúdo Visível**: Claims flutuando como texto holográfico
+  - `iss` (emissor)
+  - `sub` (identificador único)
+  - `aud` (audiência)
+  - `exp` (expiração)
+- **Assinatura Digital**: Selo mágico pulsando com energia JWKS
+
+### **Sistema PKCE em Ação**
+- **Code Verifier**: Cristal secreto nas mãos de Alex Client
+- **Code Challenge**: Hash luminoso sendo enviado para Lord OIDC
+- **Proteção Visual**: Barreira energética protegendo a comunicação
+
+### **Cooperação OAuth + OIDC**
+- **Fluxos Interconectados**: Energia fluindo entre Lady OAuth e Lord OIDC
+- **Tokens Complementares**: Access Tokens (Ace) e ID Tokens (IDA) dançando juntos
+- **Arquitetura Unificada**: Estruturas se harmonizando visualmente
+
+## Transformação Visual
+
+### **Evolução da Parte I**
+- **Lado Esquerdo**: Remanescentes organizados do caos anterior
+- **Centro**: Colaboração perfeita entre OAuth e OIDC
+- **Lado Direito**: Futuro promissor com tecnologias avançadas
+
+### **Elementos de Continuidade**
+- **Lady OAuth**: Presente mas não mais sozinha
+- **Arquitetura**: Evolução natural das estruturas da Parte I
+- **Cidadãos**: Agora confiantes e organizados
+
+## Paleta de Cores
+
+### **Cores Dominantes**
+- **Roxo Mágico**: (#6b46c1) - Lord OIDC e magia de identidade
+- **Azul Real**: (#1e3a8a) - Lady OAuth e continuidade
+- **Dourado Luminoso**: (#f59e0b) - Tokens e assinaturas digitais
+- **Prata Cristalina**: (#e5e7eb) - Tecnologia e códigos PKCE
+
+### **Elementos Complementares**
+- **Verde Esmeralda**: (#059669) - Segurança e confiança
+- **Rosa Aurora**: (#ec4899) - Magia digital e conectividade
+- **Branco Puro**: (#ffffff) - Clareza e transparência
+
+## Simbolismo Técnico OpenID Connect
+
+### **Autenticação + Autorização**
+- **Duas Torres**: Uma para OAuth (autorização), outra para OIDC (identidade)
+- **Ponte Unificadora**: Conectando as duas torres (mesmo protocolo)
+- **Claims Estruturados**: Informações organizadas visualmente
+
+### **Segurança Avançada**
+- **PKCE**: Proteção visual contra interceptação
+- **JWT**: Assinaturas digitais como selos mágicos
+- **Refresh Tokens**: Ciclos de renovação temporais
+
+## Detalhes Específicos
+
+### **Texto na Imagem (Opcional)**
+- **Título**: "Era da Confiança" (elegante, parte superior)
+- **Frase de Lord OIDC**: "Autorização sem autenticação é um reino sem rosto"
+
+### **Elementos Narrativos**
+- **Progressão Temporal**: Setas sutis mostrando evolução
+- **Colaboração**: Gestos de parceria entre personagens
+- **Inovação**: Novos elementos mágicos emergindo
+
+## Estilo Artístico
+- **Gênero**: Fantasy épico com elementos cyberpunk refinados
+- **Mood**: Majestoso, colaborativo, inovador, confiante
+- **Lighting**: Múltiplas fontes - roxo mágico, azul real, dourado
+- **Perspectiva**: Vista elevada mostrando toda a colaboração
+
+## Especificações Técnicas
+
+### **Formato**
+- **Proporção**: 16:9 landscape para header da Parte II
+- **Resolução**: Mínimo 1920x1080, ideal 2560x1440
+- **Uso**: Cabeçalho da história, material educacional
+
+### **Keywords para IA Art Generation**
+`Lord OIDC magical wizard, OpenID Connect identity mage, purple robes golden staff, luminous ID token scroll, Lady OAuth collaboration, Rex Token shadow guardian, Pixie PKCE fairy protection, medieval digital kingdom cooperation, authentication authorization unity, fantasy cyberpunk harmony, JWT magical seals, PKCE crystal security`
+
+## Descrição Narrativa Completa
+A imagem representa o momento transformador da Parte II: Lord OIDC, o majestoso Mago da Identidade, emerge no centro do reino com seu pergaminho luminoso (ID Token), trabalhando em perfeita harmonia com Lady OAuth. As cidades antes separadas agora estão conectadas por pontes de luz, simbolizando a colaboração entre autenticação e autorização.
+
+Rex Token observa das sombras como guardião eterno da renovação, enquanto Pixie PKCE protege magicamente as comunicações de Alex Client. O reino evoluiu do caos para a ordem, e agora da ordem para a excelência técnica e mágica.
+
+A cena mostra a essência do OpenID Connect: não substituir o OAuth, mas complementá-lo com identidade, criando um ecossistema completo e seguro onde tanto "quem você é" quanto "o que você pode fazer" são claramente definidos e protegidos.
+
+## Variações Possíveis
+1. **Versão Colaborativa**: Foco na parceria OAuth + OIDC
+2. **Versão Técnica**: Mais elementos de JWT e PKCE visíveis
+3. **Versão Mágica**: Ênfase nos elementos fantásticos e transformação
+4. **Versão Arquitetural**: Destaque para as estruturas conectadas do reino

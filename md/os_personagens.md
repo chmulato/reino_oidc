@@ -1,6 +1,6 @@
 🧩 O Reino da Identidade Federada
 Uma aventura pedagógica sobre confiança, tokens e autenticação moderna
-![Personagens](img/personagens.png)
+![Personagens](../assets/images/personagens.png)
 [Legenda: Os personagens principais da aventura]
 
 🏰 Contexto da história

@@ -1,0 +1,112 @@
+# Prompt para Geração de Imagem com Todos os Personagens do Reino OIDC
+
+## Conceito Geral
+Crie uma ilustração épica que reúna os 9 personagens do Reino OIDC em uma cena harmoniosa e técnica, representando a colaboração perfeita entre todos os protocolos de autenticação e autorização. A imagem deve ser educacional, inspiradora e tecnicamente precisa.
+
+## Composição da Cena
+**Cenário**: Grande salão real futurístico com elementos medievais e cyberpunk, representando a ponte entre tradição e inovação tecnológica.
+
+### Arranjo dos Personagens (Formação em Semicírculo)
+
+#### **Centro da Composição - Os Líderes**
+1. **Lady OAuth** (Centro-Esquerda)
+   - Posição: Sentada em trono elegante de cristal azul
+   - Aparência: Mulher majestosa com manto azul real fluindo, chave dourada brilhante na mão
+   - Expressão: Serena e autoritária
+   - Elementos: Portas mágicas flutuando ao redor
+
+2. **Lord OIDC** (Centro-Direita) 
+   - Posição: Em pé ao lado de Lady OAuth, ligeiramente elevado
+   - Aparência: Mago sábio com vestes roxas e douradas, pergaminho luminoso nas mãos
+   - Elementos: Runas de identidade brilhando no ar
+   - Expressão: Sábio e confiante
+
+#### **Flancos - Os Mensageiros e Guardiões**
+3. **Alex Client** (Esquerda)
+   - Posição: Em pé, portando envelope com selo "Client ID"
+   - Aparência: Mensageiro elegante com vestes de viajante tecnológico
+   - Elementos: Códigos de autorização flutuando como pergaminhos
+
+4. **Pixie PKCE** (Ao lado de Alex)
+   - Posição: Flutuando próximo a Alex Client
+   - Aparência: Fada pequena e brilhante com cristais de proteção
+   - Elementos: Fios de luz conectando chaves criptográficas
+   - Efeito: Partículas de segurança douradas
+
+5. **Seraph Resource** (Direita)
+   - Posição: Guardião imponente ao lado direito
+   - Aparência: Guerreiro celestial com armadura digital cristalina
+   - Elementos: Muralha holográfica de APIs ao fundo
+   - Símbolo: Sensores JWT brilhando no peito
+
+#### **Primeiro Plano - Os Tokens**
+6. **IDA Token** (Frente-Esquerda)
+   - Posição: Messengeira elegante em movimento
+   - Aparência: Figura feminina etérea com medalhão luminoso
+   - Elementos: Informações de identidade flutuando como hologramas
+   - Efeito: Assinatura digital brilhante
+
+7. **Ace Token** (Frente-Centro)
+   - Posição: Cavaleiro em posição de guarda
+   - Aparência: Guerreiro com escudo "Bearer" e armadura de permissões
+   - Elementos: Símbolos de autorização gravitando ao redor
+   - Efeito: Aura de poder temporário
+
+8. **Rex Token** (Nas sombras, Semi-oculto)
+   - Posição: Figura misteriosa nas bordas da cena
+   - Aparência: Guardião sombrio com amuleto infinito (∞) brilhante
+   - Elementos: Ciclos de renovação visíveis como ondas temporais
+   - Efeito: Semi-transparente, evocando mistério e longevidade
+
+#### **Integração Moderna**
+9. **Devia** (Frente-Direita)
+   - Posição: Sentada com laptop aberto, conectando todos
+   - Aparência: Desenvolvedora jovem com hoodie moderno e elementos mágicos
+   - Elementos: Código flutuando da tela, logotipo "Cara Core Informática"
+   - Conexão: Linhas de dados conectando todos os personagens
+
+## Detalhes Visuais Específicos
+
+### **Paleta de Cores**
+- **Primárias**: Azul real (OAuth), Roxo mágico (OIDC), Dourado (Tokens)
+- **Secundárias**: Cristalino/Branco (Segurança), Verde-digital (Códigos)
+- **Acentos**: Rosa-neon (Modernidade), Prata (Tecnologia)
+
+### **Elementos de Conexão**
+- **Fluxos de Dados**: Linhas de luz conectando todos os personagens
+- **Hologramas**: Informações técnicas flutuando (scopes, claims, etc.)
+- **Atmosfera**: Mista medieval-futurística com partículas mágicas digitais
+
+### **Símbolos Identificadores**
+- Cada personagem deve ter seu símbolo claramente visível
+- Chaves, tokens, códigos e certificados como elementos decorativos
+- Arquitetura híbrida: torres medievais com painéis digitais
+
+## Estilo Artístico
+- **Gênero**: Fantasy art digital com elementos cyberpunk
+- **Mood**: Épico, colaborativo, tecnológico, educacional
+- **Lighting**: Iluminação dramática com múltiplas fontes (mágica + digital)
+- **Perspectiva**: Ligeiramente elevada para mostrar toda a formação
+
+## Especificações Técnicas
+
+### **Formato**
+- **Proporção**: 16:9 landscape ou 4:3 para versatilidade
+- **Resolução**: Mínimo 2048x1536, ideal 4096x3072
+- **Uso**: Header de site, material educacional, apresentações
+
+### **Texto Integrado**
+- Título opcional: "Reino OIDC - Unidos pela Identidade Federada"
+- Nomes dos personagens podem aparecer como legendas discretas
+
+### **Keywords para IA**
+`epic group portrait, fantasy digital art, OAuth OIDC characters assembled, royal technological court, medieval cyberpunk fusion, identity federation kingdom, nine protocol characters, educational illustration, detailed character design, collaborative harmony, authentication authorization unity`
+
+## Descrição Narrativa
+A cena representa o momento de harmonia perfeita no Reino OIDC, onde todos os protocolos trabalham em conjunto. Lady OAuth e Lord OIDC lideram com sabedoria, os mensageiros (Alex e Pixie) facilitam comunicações seguras, os tokens (IDA, Ace, Rex) fluem em perfeita sincronização, Seraph protege os recursos com vigilância constante, e Devia, a desenvolvedora moderna, orquestra tudo através da tecnologia. É o retrato da identidade federada funcionando em perfeita harmonia técnica e mágica.
+
+## Variações Opcionais
+1. **Versão Formal**: Todos em posições mais estáticas e cerimoniais
+2. **Versão Dinâmica**: Personagens em movimento, mostrando o fluxo de trabalho
+3. **Versão Técnica**: Mais elementos de código e diagramas visíveis
+4. **Versão Mágica**: Ênfase nos elementos fantásticos e efeitos luminosos

@@ -1,0 +1,72 @@
+# Prompt para Geração da Imagem da História do Reino OIDC
+
+## Conceito Geral
+Crie uma ilustração épica e técnica que represente a evolução da história do Reino OIDC em três atos distintos, mostrando a transformação digital de um reino medieval fantástico para um mundo moderno de identidade federada.
+
+## Composição Tríplice (Layout Horizontal)
+
+### **PARTE I - A Era das Senhas e Lady OAuth (Lado Esquerdo)**
+- **Cenário**: Reino medieval caótico, múltiplas muralhas e portões
+- **Personagem Principal**: Lady OAuth - mulher elegante com manto azul real e chave dourada brilhante
+- **Ambiente**: 
+  - Cidades muradas separadas (Bancária, Comércio, Educação)
+  - Cidadãos perdidos com múltiplas chaves nas mãos
+  - Senhas flutuando no ar como pergaminhos confusos
+  - Portões pesados e trancados
+- **Paleta de Cores**: Tons escuros, cinzas, com destaque azul para Lady OAuth
+- **Simbolismo**: Caos organizacional, múltiplas senhas, início da autorização
+
+### **PARTE II - A Era da Confiança e Lord OIDC (Centro)**
+- **Cenário**: Reino em harmonia, pontes conectando cidades
+- **Personagens Principais**: 
+  - Lord OIDC - mago sábio com pergaminho luminoso e vestes roxas
+  - Lady OAuth ao seu lado em cooperação
+  - Pixie PKCE - pequena fada mágica com cristais de proteção
+  - Rex Token - guardião silencioso nas sombras
+- **Ambiente**:
+  - Torres mágicas com luzes conectadas
+  - Tokens flutuando como pergaminhos assinados e iluminados
+  - Códigos criptográficos como runas brilhantes no ar
+  - Pontes de luz conectando as cidades
+- **Paleta de Cores**: Roxos mágicos, dourados, azuis luminosos
+- **Simbolismo**: Colaboração, autenticação, tokens mágicos, segurança
+
+### **PARTE III - A Nova Era Digital e Devia (Lado Direito)**
+- **Cenário**: Reino futurístico com arquitetura híbrida medieval-moderna
+- **Personagem Principal**: Devia - jovem desenvolvedora com laptop, vestimenta moderna mas com elementos fantásticos
+- **Personagens de Apoio**: Todos os personagens trabalhando em harmonia
+  - Alex Client como mensageiro digital
+  - Ace Token como cavaleiro cibernético
+  - IDA Token como mensageira holográfica
+  - Seraph Resource como guardião de servidores cristalinos
+- **Ambiente**:
+  - APIs como torres de cristal conectadas
+  - Fluxos de dados como rios de luz
+  - Aplicações mobile e web flutuando como portais mágicos
+  - Códigos de programação como encantamentos no ar
+- **Paleta de Cores**: Cibernéticos (azul-verde-rosa neon) mesclando com elementos dourados
+- **Simbolismo**: Integração completa, tecnologia moderna, harmonia digital
+
+## Estilo Visual
+- **Arte**: Ilustração digital épica, estilo fantasy art com elementos cyberpunk
+- **Qualidade**: Alta resolução, detalhes ricos, lighting dramático
+- **Perspectiva**: Vista panorâmica que permita ver os três momentos claramente
+- **Transição**: Gradual transformação visual da esquerda para direita, mostrando evolução temporal
+
+## Elementos de Continuidade
+- **Linha do Horizonte**: Unificada, mostrando a evolução do mesmo reino
+- **Personagens**: Lady OAuth e Lord OIDC aparecem em todas as partes, evoluindo
+- **Arquitetura**: Transformação gradual de medieval para moderno
+- **Luzes Conectivas**: Fios de luz/energia conectando as três eras
+
+## Detalhes Técnicos para IA
+- **Formato**: Landscape 16:9 ou 3:1 para destacar a narrativa tríplice
+- **Resolução**: Mínimo 1920x1080, ideal 3840x1080 para banner
+- **Estilo**: "Epic fantasy digital art, cinematic lighting, detailed character design, medieval to cyberpunk transformation, OAuth OIDC kingdom evolution"
+- **Mood**: Épico, inspirador, técnico, educacional
+
+## Keywords para IA Art Generation
+`epic fantasy kingdom, three-act visual story, medieval to cyberpunk evolution, OAuth authentication realm, digital identity kingdom, cinematic landscape, detailed character design, magical technology integration, educational illustration, technical fantasy art, identity federation kingdom, progressive timeline art`
+
+## Descrição Final
+A imagem deve contar visualmente a história completa do Reino OIDC: o caos inicial das senhas múltiplas, a chegada da ordem através dos protocolos OAuth e OIDC, e finalmente a implementação moderna por desenvolvedores como Devia. Cada seção deve ser distintiva mas harmoniosamente conectada, mostrando a evolução natural da autenticação e autorização digitais através de uma metáfora visual rica e envolvente.
