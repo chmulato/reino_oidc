@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 2: Desenvolvimento de Jogos Básicos - Python Training</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🐍 Python Training</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Módulos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="modulo_01.html">Módulo 1 - Fundamentos</a></li>
+                            <li><a class="dropdown-item active" href="modulo_02.html">Módulo 2 - Jogos Básicos</a></li>
+                            <li><a class="dropdown-item" href="modulo_03.html">Módulo 3 - Projetos Interativos</a></li>
+                            <li><a class="dropdown-item" href="modulo_04.html">Módulo 4 - IA e Automação</a></li>
+                            <li><a class="dropdown-item" href="modulo_05.html">Módulo 5 - Segurança Digital</a></li>
+                            <li><a class="dropdown-item" href="modulo_06.html">Módulo 6 - Finalização</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mundo_do_conhecimento.html">Testes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conclusao.html">Certificado</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="text-center mb-4">
+                    <span class="badge badge-modulo">Módulo 2</span>
+                    <span class="badge badge-duracao">8 horas</span>
+                    <span class="badge badge-nivel">Intermediário</span>
+                </div>
+
+                <h1 class="text-center">Desenvolvimento de Jogos Básicos</h1>
+                <p class="lead text-center">Entre no mundo dos jogos 2D com Pygame e crie seu primeiro jogo completo</p>
+
+                <img src="assets/img/imagem_modulo_02.png" alt="Desenvolvimento de Jogos Básicos" class="img-modulo">
+
+                <div id="progress-indicator" class="alert alert-info text-center">
+                    Progresso: 0/10 (0%)
+                </div>
+
+                <div class="content-section">
+                    <h2>Objetivos do Módulo</h2>
+                    <p>Agora que você domina os fundamentos da programação, é hora de criar algo visual e interativo! Neste módulo, você vai aprender a desenvolver jogos 2D usando a biblioteca Pygame, uma das ferramentas mais populares para criação de jogos em Python.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h4>O que você vai aprender:</h4>
+                            <ul>
+                                <li>Biblioteca Pygame</li>
+                                <li>Sistema de coordenadas 2D</li>
+                                <li>Renderização de gráficos</li>
+                                <li>Captura de eventos (teclado/mouse)</li>
+                                <li>Detecção de colisões</li>
+                                <li>Sistema de pontuação</li>
+                                <li>Game loop</li>
+                                <li>Sprites e animações</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>O que você vai criar:</h4>
+                            <ul>
+                                <li>Janela de jogo básica</li>
+                                <li>Objetos móveis na tela</li>
+                                <li>Sistema de controles</li>
+                                <li>Jogo Pong completo</li>
+                                <li>Jogo Snake (cobra)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>2.1 Primeiros Passos com Pygame</h2>
+                    
+                    <h3>O que é Pygame?</h3>
+                    <p>Pygame é uma biblioteca Python criada para facilitar o desenvolvimento de jogos. Ela fornece funções para desenhar gráficos, tocar sons, detectar colisões e muito mais. É perfeita para iniciantes aprenderem desenvolvimento de jogos!</p>
+
+                    <div class="alert-info-custom">
+                        <h4>💡 Instalando o Pygame</h4>
+                        <p>Abra o terminal ou prompt de comando e digite:</p>
+                        <pre><code>pip install pygame</code></pre>
+                        <p>Para verificar se instalou corretamente:</p>
+                        <pre><code>python -c "import pygame; print(pygame.ver)"</code></pre>
+                    </div>
+
+                    <h3>Criando Sua Primeira Janela</h3>
+                    
+                    <div class="bg-light p-3 rounded">
+                        <h5>Para Leigos:</h5>
+                        <p>Vamos criar uma janela vazia que fica aberta até você clicar no X. É como abrir um caderno em branco onde vamos desenhar nosso jogo.</p>
+                        <pre><code>import pygame
+
+# Inicializar o Pygame
+pygame.init()
+
+# Criar janela (largura x altura)
+largura = 800
+altura = 600
+tela = pygame.display.set_mode((largura, altura))
+pygame.display.set_caption("Meu Primeiro Jogo")
+
+# Cores (RGB - Red, Green, Blue)
+PRETO = (0, 0, 0)
+BRANCO = (255, 255, 255)
+
+# Loop principal do jogo
+rodando = True
+while rodando:
+    # Verificar eventos
+    for evento in pygame.event.get():
+        if evento.type == pygame.QUIT:
+            rodando = False
+    
+    # Pintar fundo de preto
+    tela.fill(PRETO)
+    
+    # Atualizar tela
+    pygame.display.flip()
+
+# Encerrar Pygame
+pygame.quit()</code></pre>
+                    </div>
+
+                    <div class="bg-light p-3 rounded mt-3">
+                        <h5>Para Técnicos:</h5>
+                        <p>O Pygame utiliza SDL (Simple DirectMedia Layer) como backend para renderização. O game loop segue o padrão clássico: processar eventos, atualizar estado, renderizar frame. A função <code>display.flip()</code> realiza double buffering para evitar flickering.</p>
+                        <pre><code>import pygame
+import sys
+
+# Inicialização e configuração
+pygame.init()
+clock = pygame.time.Clock()
+FPS = 60
+
+# Display
+SCREEN_WIDTH, SCREEN_HEIGHT = 800, 600
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+pygame.display.set_caption("Game Template")
+
+# Game loop otimizado
+running = True
+while running:
+    # Event handling
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+        elif event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_ESCAPE:
+                running = False
+    
+    # Update logic
+    # (adicione lógica do jogo aqui)
+    
+    # Render
+    screen.fill((0, 0, 0))
+    # (adicione renderização aqui)
+    pygame.display.flip()
+    
+    # Manter 60 FPS
+    clock.tick(FPS)
+
+pygame.quit()
+sys.exit()</code></pre>
+                    </div>
+
+                    <h3>Sistema de Coordenadas</h3>
+                    <p>Em Pygame, a origem (0, 0) fica no canto superior esquerdo da tela:</p>
+                    <ul>
+                        <li><strong>X aumenta</strong> da esquerda para direita</li>
+                        <li><strong>Y aumenta</strong> de cima para baixo</li>
+                    </ul>
+
+                    <h3>Desenhando Formas Básicas</h3>
+                    <pre><code>import pygame
+
+pygame.init()
+tela = pygame.display.set_mode((800, 600))
+
+# Cores
+VERMELHO = (255, 0, 0)
+VERDE = (0, 255, 0)
+AZUL = (0, 0, 255)
+AMARELO = (255, 255, 0)
+
+rodando = True
+while rodando:
+    for evento in pygame.event.get():
+        if evento.type == pygame.QUIT:
+            rodando = False
+    
+    tela.fill((0, 0, 0))
+    
+    # Retângulo: pygame.draw.rect(tela, cor, (x, y, largura, altura))
+    pygame.draw.rect(tela, VERMELHO, (50, 50, 100, 80))
+    
+    # Círculo: pygame.draw.circle(tela, cor, (x_centro, y_centro), raio)
+    pygame.draw.circle(tela, VERDE, (400, 300), 50)
+    
+    # Linha: pygame.draw.line(tela, cor, (x1, y1), (x2, y2), espessura)
+    pygame.draw.line(tela, AZUL, (600, 100), (700, 200), 5)
+    
+    # Polígono (triângulo)
+    pontos = [(300, 100), (250, 200), (350, 200)]
+    pygame.draw.polygon(tela, AMARELO, pontos)
+    
+    pygame.display.flip()
+
+pygame.quit()</code></pre>
+                </div>
+
+                <div class="content-section">
+                    <h2>2.2 Desenvolvimento de Jogo 2D Simples</h2>
+                    
+                    <h3>Capturando Eventos de Teclado</h3>
+                    <p>Vamos fazer um quadrado que se move com as setas do teclado:</p>
+                    
+                    <pre><code>import pygame
+
+pygame.init()
+tela = pygame.display.set_mode((800, 600))
+clock = pygame.time.Clock()
+
+# Posição do jogador
+jogador_x = 400
+jogador_y = 300
+velocidade = 5
+
+rodando = True
+while rodando:
+    for evento in pygame.event.get():
+        if evento.type == pygame.QUIT:
+            rodando = False
+    
+    # Capturar teclas pressionadas
+    teclas = pygame.key.get_pressed()
+    
+    if teclas[pygame.K_LEFT] or teclas[pygame.K_a]:
+        jogador_x -= velocidade
+    if teclas[pygame.K_RIGHT] or teclas[pygame.K_d]:
+        jogador_x += velocidade
+    if teclas[pygame.K_UP] or teclas[pygame.K_w]:
+        jogador_y -= velocidade
+    if teclas[pygame.K_DOWN] or teclas[pygame.K_s]:
+        jogador_y += velocidade
+    
+    # Limitar à tela
+    jogador_x = max(0, min(jogador_x, 750))
+    jogador_y = max(0, min(jogador_y, 550))
+    
+    tela.fill((0, 0, 0))
+    pygame.draw.rect(tela, (0, 255, 0), (jogador_x, jogador_y, 50, 50))
+    pygame.display.flip()
+    clock.tick(60)
+
+pygame.quit()</code></pre>
+
+                    <h3>Detecção de Colisões</h3>
+                    <p>Colisões são essenciais em jogos. Vamos usar retângulos (Rect) do Pygame:</p>
+                    
+                    <pre><code>import pygame
+
+pygame.init()
+tela = pygame.display.set_mode((800, 600))
+clock = pygame.time.Clock()
+
+# Objetos como retângulos
+jogador = pygame.Rect(100, 250, 50, 50)
+obstáculo = pygame.Rect(400, 250, 50, 50)
+moeda = pygame.Rect(600, 250, 30, 30)
+
+pontos = 0
+velocidade = 5
+
+rodando = True
+while rodando:
+    for evento in pygame.event.get():
+        if evento.type == pygame.QUIT:
+            rodando = False
+    
+    teclas = pygame.key.get_pressed()
+    if teclas[pygame.K_LEFT]:
+        jogador.x -= velocidade
+    if teclas[pygame.K_RIGHT]:
+        jogador.x += velocidade
+    if teclas[pygame.K_UP]:
+        jogador.y -= velocidade
+    if teclas[pygame.K_DOWN]:
+        jogador.y += velocidade
+    
+    # Detectar colisão com obstáculo
+    if jogador.colliderect(obstáculo):
+        print("Colidiu com obstáculo!")
+        jogador.x = 100
+        jogador.y = 250
+    
+    # Detectar colisão com moeda
+    if jogador.colliderect(moeda):
+        pontos += 10
+        moeda.x = 600  # Reposicionar moeda
+        print(f"Pontos: {pontos}")
+    
+    tela.fill((0, 0, 0))
+    pygame.draw.rect(tela, (0, 255, 0), jogador)      # Verde - Jogador
+    pygame.draw.rect(tela, (255, 0, 0), obstáculo)    # Vermelho - Obstáculo
+    pygame.draw.rect(tela, (255, 255, 0), moeda)      # Amarelo - Moeda
+    pygame.display.flip()
+    clock.tick(60)
+
+pygame.quit()</code></pre>
+
+                    <h3>Projeto: Jogo Pong Completo</h3>
+                    <p>Vamos criar o clássico jogo Pong!</p>
+                    
+                    <pre><code>import pygame
+import random
+
+pygame.init()
+
+# Constantes
+LARGURA = 800
+ALTURA = 600
+BRANCO = (255, 255, 255)
+PRETO = (0, 0, 0)
+
+tela = pygame.display.set_mode((LARGURA, ALTURA))
+pygame.display.set_caption("PONG")
+clock = pygame.time.Clock()
+fonte = pygame.font.Font(None, 74)
+fonte_pequena = pygame.font.Font(None, 36)
+
+# Raquetes
+raquete1 = pygame.Rect(50, ALTURA // 2 - 60, 15, 120)
+raquete2 = pygame.Rect(LARGURA - 65, ALTURA // 2 - 60, 15, 120)
+
+# Bola
+bola = pygame.Rect(LARGURA // 2 - 15, ALTURA // 2 - 15, 20, 20)
+bola_dx = 5 * random.choice([1, -1])
+bola_dy = 5 * random.choice([1, -1])
+
+# Placar
+pontos1 = 0
+pontos2 = 0
+
+def resetar_bola():
+    global bola_dx, bola_dy
+    bola.center = (LARGURA // 2, ALTURA // 2)
+    bola_dx = 5 * random.choice([1, -1])
+    bola_dy = 5 * random.choice([1, -1])
+
+rodando = True
+while rodando:
+    for evento in pygame.event.get():
+        if evento.type == pygame.QUIT:
+            rodando = False
+    
+    # Controles
+    teclas = pygame.key.get_pressed()
+    if teclas[pygame.K_w] and raquete1.top > 0:
+        raquete1.y -= 7
+    if teclas[pygame.K_s] and raquete1.bottom < ALTURA:
+        raquete1.y += 7
+    if teclas[pygame.K_UP] and raquete2.top > 0:
+        raquete2.y -= 7
+    if teclas[pygame.K_DOWN] and raquete2.bottom < ALTURA:
+        raquete2.y += 7
+    
+    # Movimento da bola
+    bola.x += bola_dx
+    bola.y += bola_dy
+    
+    # Colisão com topo e base
+    if bola.top <= 0 or bola.bottom >= ALTURA:
+        bola_dy *= -1
+    
+    # Colisão com raquetes
+    if bola.colliderect(raquete1) or bola.colliderect(raquete2):
+        bola_dx *= -1
+    
+    # Pontuação
+    if bola.left <= 0:
+        pontos2 += 1
+        resetar_bola()
+    if bola.right >= LARGURA:
+        pontos1 += 1
+        resetar_bola()
+    
+    # Desenhar
+    tela.fill(PRETO)
+    pygame.draw.rect(tela, BRANCO, raquete1)
+    pygame.draw.rect(tela, BRANCO, raquete2)
+    pygame.draw.ellipse(tela, BRANCO, bola)
+    pygame.draw.aaline(tela, BRANCO, (LARGURA // 2, 0), (LARGURA // 2, ALTURA))
+    
+    # Placar
+    texto1 = fonte.render(str(pontos1), True, BRANCO)
+    texto2 = fonte.render(str(pontos2), True, BRANCO)
+    tela.blit(texto1, (LARGURA // 4, 50))
+    tela.blit(texto2, (3 * LARGURA // 4, 50))
+    
+    pygame.display.flip()
+    clock.tick(60)
+
+pygame.quit()</code></pre>
+
+                    <div class="alert-success-custom">
+                        <h4>🎮 Desafio: Melhorias para o Pong</h4>
+                        <ul>
+                            <li>Adicione um menu inicial</li>
+                            <li>Implemente sons (bip ao colidir)</li>
+                            <li>Aumente a velocidade gradualmente</li>
+                            <li>Adicione power-ups</li>
+                            <li>Crie um modo single-player (IA)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="checklist">
+                    <h4>📋 Checklist de Progresso do Módulo 2</h4>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-2-1">
+                        <label for="check-2-1">Pygame instalado e configurado</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-2-2">
+                        <label for="check-2-2">Primeira janela de jogo criada</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-2-3">
+                        <label for="check-2-3">Sistema de coordenadas compreendido</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-2-4">
+                        <label for="check-2-4">Formas básicas desenhadas na tela</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-2-5">
+                        <label for="check-2-5">Eventos de teclado capturados</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-2-6">
+                        <label for="check-2-6">Eventos de mouse implementados</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-2-7">
+                        <label for="check-2-7">Sistema de detecção de colisões criado</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-2-8">
+                        <label for="check-2-8">Sistema de pontuação adicionado</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-2-9">
+                        <label for="check-2-9">Jogo Pong ou Snake concluído</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-2-10">
+                        <label for="check-2-10">Game loop dominado</label>
+                    </div>
+                </div>
+
+                <div class="module-navigation">
+                    <a href="modulo_01.html" class="btn btn-secondary">⬅️ Módulo 1</a>
+                    <a href="modulo_03.html" class="btn btn-primary">Módulo 3 ➡️</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Python Training - Módulo 2: Desenvolvimento de Jogos Básicos</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

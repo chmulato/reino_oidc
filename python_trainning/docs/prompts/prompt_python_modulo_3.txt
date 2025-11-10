@@ -1,0 +1,38 @@
+Prompt para Imagem do Módulo 3: Projetos Interativos
+
+Estilo: Ilustração digital colorida e criativa, mesclando mundo real com mundo virtual do Minecraft
+Formato: Paisagem 16:9 (1920x1080px ou similar)
+Tema: Minecraft Programming e Animação com Python
+
+Descrição da cena:
+Uma divisão criativa da imagem em duas metades conectadas:
+
+Lado Esquerdo - Minecraft:
+- Tela exibindo o Minecraft Education Edition com estruturas sendo construídas automaticamente
+- Blocos coloridos do Minecraft (terra, pedra, madeira, diamante) flutuando e se organizando
+- Código Python visível em uma janela lateral gerando comandos de construção
+- Steve ou Alex (personagens do Minecraft) observando a construção automática
+- Estruturas complexas sendo erguidas magicamente (castelo, pirâmide, casa)
+- Trail de partículas do Minecraft conectando código a blocos
+
+Lado Direito - Animação e Gráficos:
+- Interface do Pillow/MoviePy com timeline de animação
+- Sequência de frames mostrando a criação de um GIF
+- Personagem de jogo em diferentes poses de animação
+- Efeitos visuais: movimento blur, partículas, transformações
+- Paleta de cores sendo aplicada
+- Ferramenta de desenho digital com camadas
+
+Centro - Conexão:
+- Jovem desenvolvedor ao centro, um braço controlando Minecraft, outro controlando animações
+- Linhas de código Python fluindo entre ambos os lados
+- Logo do Python conectando os dois mundos
+
+Paleta de cores: Verde Minecraft, marrom terra, azul céu, cores vibrantes de animação (magenta, ciano, amarelo), tons pastéis para suavizar
+Iluminação: Luz ambiente do Minecraft (blocky, volumétrica), luz de interface de software de animação (suave, profissional)
+Atmosfera: Criativa, mágica, possibilidades infinitas, fusão entre jogos e arte digital
+Elementos visuais: Estética blocky do Minecraft, interface moderna de software, elementos de motion graphics
+
+Texto (opcional): "Módulo 3: Projetos Interativos - Minecraft & Animação" em fonte amigável e moderna
+
+Inspiração visual: Arte promocional do Minecraft Education, interface de software de animação profissional (Adobe style), connecting worlds concept art.

@@ -64,3 +64,20 @@ h1, h2, h3, h4, h5, h6 {
     color: #198754 !important;
     font-weight: bold !important;
 }
+
+/* Convite Python Training */
+.python-training-invite {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 15px;
+}
+
+.python-training-invite ul {
+    font-size: 1.1rem;
+}
+
+.python-training-btn {
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 50px;
+}

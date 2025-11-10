@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<!--
+    Python Training - Módulo 1: Fundamentos da Programação
+    Copyright © 2025 Cara Core Informática (www.caracore.com.br)
+    Todos os direitos reservados. Material proprietário.
+    Consulte LICENSE_PT.md para termos de uso.
+-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 1: Fundamentos da Programação - Python Training</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🐍 Python Training</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Módulos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item active" href="modulo_01.html">Módulo 1 - Fundamentos</a></li>
+                            <li><a class="dropdown-item" href="modulo_02.html">Módulo 2 - Jogos Básicos</a></li>
+                            <li><a class="dropdown-item" href="modulo_03.html">Módulo 3 - Projetos Interativos</a></li>
+                            <li><a class="dropdown-item" href="modulo_04.html">Módulo 4 - IA e Automação</a></li>
+                            <li><a class="dropdown-item" href="modulo_05.html">Módulo 5 - Segurança Digital</a></li>
+                            <li><a class="dropdown-item" href="modulo_06.html">Módulo 6 - Finalização</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mundo_do_conhecimento.html">Testes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conclusao.html">Certificado</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="text-center mb-4">
+                    <span class="badge badge-modulo">Módulo 1</span>
+                    <span class="badge badge-duracao">8 horas</span>
+                    <span class="badge badge-nivel">Iniciante</span>
+                </div>
+
+                <h1 class="text-center">Fundamentos da Programação</h1>
+                <p class="lead text-center">Aprenda os conceitos básicos de programação e dê seus primeiros passos com Python</p>
+
+                <img src="assets/img/imagem_modulo_01.png" alt="Fundamentos da Programação" class="img-modulo">
+
+                <div id="progress-indicator" class="alert alert-info text-center">
+                    Progresso: 0/10 (0%)
+                </div>
+
+                <div class="content-section">
+                    <h2>Objetivos do Módulo</h2>
+                    <p>Neste primeiro módulo, você vai dar os primeiros passos no universo da programação. Vamos começar entendendo como os programas funcionam e, em seguida, mergulhar na sintaxe e nas estruturas fundamentais da linguagem Python.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h4>O que você vai aprender:</h4>
+                            <ul>
+                                <li>Conceitos básicos de programação</li>
+                                <li>Variáveis e tipos de dados</li>
+                                <li>Comandos e estruturas</li>
+                                <li>Lógica de programação</li>
+                                <li>Sintaxe básica do Python</li>
+                                <li>Estruturas de controle (if/else)</li>
+                                <li>Loops (for e while)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>O que você vai criar:</h4>
+                            <ul>
+                                <li>Seu primeiro programa Python</li>
+                                <li>Algoritmos básicos</li>
+                                <li>Fluxogramas de decisão</li>
+                                <li>Uma calculadora simples funcional</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>1.1 Introdução à Programação</h2>
+                    
+                    <h3>O que é Programação?</h3>
+                    <p>Programação é a arte de dar instruções para um computador executar tarefas específicas. Imagine que você está ensinando alguém a fazer um bolo: você precisa explicar cada passo de forma clara e na ordem correta. Da mesma forma, quando programamos, escrevemos instruções que o computador entenderá e executará.</p>
+
+                    <div class="alert-info-custom">
+                        <h4>💡 Analogia do dia a dia</h4>
+                        <p>Pense em uma receita de culinária. Ela tem:</p>
+                        <ul>
+                            <li><strong>Ingredientes</strong> (como variáveis em programação)</li>
+                            <li><strong>Passos sequenciais</strong> (como linhas de código)</li>
+                            <li><strong>Decisões</strong> ("se a massa estiver muito líquida, adicione mais farinha")</li>
+                            <li><strong>Repetições</strong> ("mexa até dissolver completamente")</li>
+                        </ul>
+                    </div>
+
+                    <h3>Conceitos Fundamentais</h3>
+                    
+                    <h4>Variáveis</h4>
+                    <p>Variáveis são como caixas onde guardamos informações. Você pode colocar diferentes tipos de coisas nessas caixas: números, textos, listas de itens, etc.</p>
+                    
+                    <div class="bg-light p-3 rounded">
+                        <h5>Para Leigos:</h5>
+                        <p>Imagine que você tem uma caixa etiquetada "idade". Dentro dela, você coloca o número 15. Sempre que precisar saber a idade, você olha dentro dessa caixa. Em Python, fazemos assim:</p>
+                        <pre><code>idade = 15
+nome = "Maria"
+altura = 1.65</code></pre>
+                    </div>
+
+                    <div class="bg-light p-3 rounded mt-3">
+                        <h5>Para Técnicos:</h5>
+                        <p>Em Python, variáveis são referências dinamicamente tipadas que apontam para objetos na memória. O interpretador Python gerencia automaticamente a alocação e liberação de memória (garbage collection). A atribuição usa o operador = e não requer declaração de tipo:</p>
+                        <pre><code># Python é dinamicamente tipado
+x = 10          # int
+x = "texto"     # agora é str - reatribuição válida
+x = [1, 2, 3]   # agora é list
+
+# Múltiplas atribuições
+a, b, c = 1, 2, 3
+x = y = z = 0</code></pre>
+                    </div>
+
+                    <h4>Tipos de Dados</h4>
+                    <p>Python trabalha com vários tipos de dados. Os principais são:</p>
+                    <ul>
+                        <li><strong>int</strong> - números inteiros (10, -5, 1000)</li>
+                        <li><strong>float</strong> - números decimais (3.14, -0.5, 2.0)</li>
+                        <li><strong>str</strong> - texto entre aspas ("Olá", 'Python')</li>
+                        <li><strong>bool</strong> - valores verdadeiro/falso (True, False)</li>
+                        <li><strong>list</strong> - listas de itens ([1, 2, 3, 4])</li>
+                    </ul>
+
+                    <h4>Operadores</h4>
+                    <p>Operadores são símbolos que realizam operações com valores:</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Aritméticos:</h5>
+                            <ul>
+                                <li>+ (adição)</li>
+                                <li>- (subtração)</li>
+                                <li>* (multiplicação)</li>
+                                <li>/ (divisão)</li>
+                                <li>** (potência)</li>
+                                <li>% (resto da divisão)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Comparação:</h5>
+                            <ul>
+                                <li>== (igual a)</li>
+                                <li>!= (diferente de)</li>
+                                <li>> (maior que)</li>
+                                <li>< (menor que)</li>
+                                <li>>= (maior ou igual)</li>
+                                <li><= (menor ou igual)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>1.2 Introdução ao Python</h2>
+                    
+                    <h3>Por que Python?</h3>
+                    <p>Python é uma das linguagens de programação mais populares do mundo. Foi criada por Guido van Rossum em 1991 com o objetivo de ser fácil de ler e escrever. Hoje é usada por empresas como Google, Netflix, Instagram e NASA.</p>
+
+                    <div class="alert-success-custom">
+                        <h4>✨ Vantagens do Python</h4>
+                        <ul>
+                            <li><strong>Fácil de aprender:</strong> Sintaxe clara e legível</li>
+                            <li><strong>Versátil:</strong> Serve para web, jogos, IA, análise de dados</li>
+                            <li><strong>Grande comunidade:</strong> Milhões de desenvolvedores no mundo todo</li>
+                            <li><strong>Muitas bibliotecas:</strong> Ferramentas prontas para tudo</li>
+                            <li><strong>Gratuito:</strong> Software livre e open source</li>
+                        </ul>
+                    </div>
+
+                    <h3>Seu Primeiro Programa</h3>
+                    <p>A tradição da programação é começar com um programa "Hello World". Vamos fazer isso em Python:</p>
+                    
+                    <pre><code>print("Hello World!")
+print("Meu primeiro programa em Python!")</code></pre>
+
+                    <p>A função <code>print()</code> exibe mensagens na tela. Simples assim!</p>
+
+                    <h3>Estruturas de Controle: if/else</h3>
+                    <p>Estruturas de controle permitem que o programa tome decisões. É como quando você decide: "SE está chovendo, ENTÃO levo guarda-chuva, SENÃO não levo".</p>
+
+                    <pre><code>idade = 16
+
+if idade >= 18:
+    print("Você é maior de idade")
+else:
+    print("Você é menor de idade")
+
+# Você pode ter múltiplas condições com elif:
+nota = 85
+
+if nota >= 90:
+    print("Conceito A - Excelente!")
+elif nota >= 70:
+    print("Conceito B - Bom!")
+elif nota >= 50:
+    print("Conceito C - Regular")
+else:
+    print("Conceito D - Reprovado")</code></pre>
+
+                    <h3>Loops: Repetindo Ações</h3>
+                    
+                    <h4>Loop for</h4>
+                    <p>O loop <code>for</code> repete uma ação um número específico de vezes:</p>
+                    <pre><code># Contando de 1 a 5
+for numero in range(1, 6):
+    print(numero)
+
+# Percorrendo uma lista
+frutas = ["maçã", "banana", "laranja"]
+for fruta in frutas:
+    print(f"Eu gosto de {fruta}")</code></pre>
+
+                    <h4>Loop while</h4>
+                    <p>O loop <code>while</code> repete ENQUANTO uma condição for verdadeira:</p>
+                    <pre><code>contador = 0
+while contador < 5:
+    print(f"Contador: {contador}")
+    contador += 1  # contador = contador + 1</code></pre>
+
+                    <div class="alert-warning-custom">
+                        <h4>⚠️ Cuidado com loops infinitos!</h4>
+                        <p>Se a condição do while nunca se tornar falsa, o loop vai rodar para sempre. Sempre garanta que há uma forma de sair do loop.</p>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>Projeto: Calculadora Simples</h2>
+                    <p>Vamos colocar tudo em prática criando uma calculadora básica!</p>
+
+                    <h3>Versão para Iniciantes:</h3>
+                    <pre><code>print("=== CALCULADORA SIMPLES ===")
+print("Escolha a operação:")
+print("1. Soma")
+print("2. Subtração")
+print("3. Multiplicação")
+print("4. Divisão")
+
+opcao = int(input("Digite sua opção (1-4): "))
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+
+if opcao == 1:
+    resultado = num1 + num2
+    print(f"{num1} + {num2} = {resultado}")
+elif opcao == 2:
+    resultado = num1 - num2
+    print(f"{num1} - {num2} = {resultado}")
+elif opcao == 3:
+    resultado = num1 * num2
+    print(f"{num1} x {num2} = {resultado}")
+elif opcao == 4:
+    if num2 != 0:
+        resultado = num1 / num2
+        print(f"{num1} ÷ {num2} = {resultado}")
+    else:
+        print("Erro: Não é possível dividir por zero!")
+else:
+    print("Opção inválida!")</code></pre>
+
+                    <h3>Versão Avançada (com funções e loop):</h3>
+                    <pre><code>def calculadora():
+    while True:
+        print("\n=== CALCULADORA AVANÇADA ===")
+        print("1. Soma")
+        print("2. Subtração")
+        print("3. Multiplicação")
+        print("4. Divisão")
+        print("5. Potência")
+        print("0. Sair")
+        
+        try:
+            opcao = int(input("\nEscolha uma opção: "))
+            
+            if opcao == 0:
+                print("Até logo!")
+                break
+            
+            if opcao < 1 or opcao > 5:
+                print("Opção inválida!")
+                continue
+            
+            num1 = float(input("Primeiro número: "))
+            num2 = float(input("Segundo número: "))
+            
+            if opcao == 1:
+                print(f"Resultado: {num1 + num2}")
+            elif opcao == 2:
+                print(f"Resultado: {num1 - num2}")
+            elif opcao == 3:
+                print(f"Resultado: {num1 * num2}")
+            elif opcao == 4:
+                if num2 != 0:
+                    print(f"Resultado: {num1 / num2}")
+                else:
+                    print("Erro: divisão por zero!")
+            elif opcao == 5:
+                print(f"Resultado: {num1 ** num2}")
+        
+        except ValueError:
+            print("Erro: Digite apenas números!")
+
+# Executar a calculadora
+calculadora()</code></pre>
+                </div>
+
+                <div class="checklist">
+                    <h4>📋 Checklist de Progresso do Módulo 1</h4>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-1-1">
+                        <label for="check-1-1">Conceitos de variáveis compreendidos</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-1-2">
+                        <label for="check-1-2">Tipos de dados básicos dominados</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-1-3">
+                        <label for="check-1-3">Operadores aritméticos praticados</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-1-4">
+                        <label for="check-1-4">Estruturas if/else implementadas</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-1-5">
+                        <label for="check-1-5">Loops for praticados</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-1-6">
+                        <label for="check-1-6">Loops while compreendidos</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-1-7">
+                        <label for="check-1-7">Python instalado e configurado</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-1-8">
+                        <label for="check-1-8">Primeiro programa executado com sucesso</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-1-9">
+                        <label for="check-1-9">Calculadora simples criada</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-1-10">
+                        <label for="check-1-10">Exercícios de lógica de programação completados</label>
+                    </div>
+                </div>
+
+                <div class="module-navigation">
+                    <a href="index.html" class="btn btn-secondary">⬅️ Voltar ao Início</a>
+                    <a href="modulo_02.html" class="btn btn-primary">Módulo 2 ➡️</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Python Training - Módulo 1: Fundamentos da Programação</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

@@ -99,11 +99,13 @@ Todo o conteúdo pode ser utilizado livremente para fins educacionais.
 A pasta `md/` contém documentação técnica detalhada em formato Markdown para desenvolvedores e implementadores:
 
 #### 📖 Narrativa e Conceitos
+
 - **[A História](md/a_historia.md)** - Narrativa completa do Reino OIDC em formato texto
 - **[Os Personagens](md/os_personagens.md)** - Descrição detalhada de todos os personagens e seus papéis técnicos
 - **[Conclusão](md/conclusao.md)** - Síntese final e próximos passos do projeto
 
 #### 🔧 Implementação e Validação
+
 - **[Roteiro Perfeito OIDC](md/roteiro_perfeito_oidc.md)** - Guia passo a passo para validação do caminho feliz
 - **[Checklist](md/checklist.md)** - Lista de verificação para implementação OIDC
 
@@ -170,11 +172,13 @@ npx serve .
 1. Edite ou revise o prompt desejado em `img/`.
 2. Use a sua ferramenta de geração (por exemplo, Stable Diffusion, Midjourney, DALL·E).
 3. Gere imagens em resolução mínima 1920x1080 (ideal 4K) e salve em `assets/images/` com nomes coerentes, por exemplo:
-  - `assets/images/imagem_parte_i.png`
-  - `assets/images/imagem_parte_ii.png`
-  - `assets/images/imagem_parte_iii.png`
-  - `assets/images/imagem_conclusao.png`
-4. Atualize o prompt em `img/` quando quiser novas variações visuais.
+
+- `assets/images/imagem_parte_i.png`
+- `assets/images/imagem_parte_ii.png`
+- `assets/images/imagem_parte_iii.png`
+- `assets/images/imagem_conclusao.png`
+
+4.Atualize o prompt em `img/` quando quiser novas variações visuais.
 
 > Dica rápida: mantenha versões das imagens se quiser voltar a uma variante específica (ex.: `imagem_parte_i_v1.png`).
 
@@ -222,6 +226,7 @@ npx serve .
 ### ✨ Grandes Atualizações 2025
 
 #### � Academia do Reino OIDC - NOVO Sistema de Aprendizagem!
+
 - **Sistema interativo de flashcards** com 60 perguntas organizadas em 3 níveis
 - **Caminho Iniciante** (20 perguntas): Fundamentos com Lady OAuth, Lord OIDC e Alex Client
 - **Caminho Aventureiro** (20 perguntas): Conceitos intermediários com PKCE e tokens
@@ -235,6 +240,7 @@ npx serve .
 - **Interface responsiva** com navegação intuitiva entre níveis
 
 #### 🎯 Caminho Feliz Interativo
+
 - **Tutorial passo a passo** do Authorization Code Flow ideal
 - **Interface accordion** com navegação intuitiva
 - **Explicações duplas** (leigos + técnicos) para cada etapa
@@ -243,6 +249,7 @@ npx serve .
 - **Dicas de segurança** integradas (PKCE, State, HTTPS)
 
 #### 📚 Glossário Ilustrado Dedicado
+
 - **Arquivo separado** (`glossario.html`) para melhor organização
 - **16+ termos técnicos** com explanações duplas (leigos + técnicos)
 - **Metáforas consistentes** usando todos os personagens do Reino
@@ -250,12 +257,14 @@ npx serve .
 - **Índice alfabético** para consulta rápida
 
 #### 🎨 Visual Educativo Aprimorado
+
 - **Quadros verdes estilo escola** para exemplos de código
 - **Cabeçalhos temáticos** com ícones para cada linguagem
 - **Copyright padronizado** em todas as páginas
 - **Estilos CSS organizados** para melhor manutenção
 
 #### 🔄 OAuth 2.1 - Conteúdo Especializado
+
 - **Seção dedicada** explicando diferenças do OAuth 2.0
 - **Guia de migração** com práticas recomendadas
 - **Foco em segurança** e simplificação do protocolo
@@ -297,6 +306,7 @@ Contribuições são muito bem-vindas! Você pode:
 ## 📋 Roadmap
 
 ### ✅ Concluído
+
 - [x] **Academia do Reino OIDC** - Sistema completo de aprendizagem interativo
 - [x] **60 perguntas flashcards** organizadas em 3 níveis de dificuldade
 - [x] **Sistema de progressão gamificado** com badges e certificações
@@ -310,15 +320,17 @@ Contribuições são muito bem-vindas! Você pode:
 - [x] **Copyright padronizado** em todas as páginas
 - [x] **Navegação integrada** com glossário em todo o site
 - [x] **Estrutura de assets organizada** (CSS e JS em pastas dedicadas)
- - [x] **Mapas técnicos (mapas.html)** adicionados com diagramas de arquitetura
- - [x] **Prompts de imagem** adicionados em `img/` e imagens finais colocadas em `assets/images/`
- - [x] **Menus uniformizados**: todas as páginas (história I/II/III, conclusão) têm o mesmo menu incluindo links para Glossário e Mapas
+- [x] **Mapas técnicos (mapas.html)** adicionados com diagramas de arquitetura
+- [x] **Prompts de imagem** adicionados em `img/` e imagens finais colocadas em `assets/images/`
+- [x] **Menus uniformizados**: todas as páginas (história I/II/III, conclusão) têm o mesmo menu incluindo links para Glossário e Mapas
 
 ### 🔄 Em Andamento
+
 - [ ] **Versão em inglês** completa do conteúdo
 - [ ] **Melhorias de acessibilidade** (WCAG compliance)
 
 ### 🚀 Próximas Funcionalidades
+
 - [ ] **Relatórios de progresso** detalhados por usuário
 - [ ] **Modo competitivo** entre usuários
 - [ ] **Novas categorias de perguntas** (JWT, SAML, Session Management)

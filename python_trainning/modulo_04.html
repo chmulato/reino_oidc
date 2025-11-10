@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 4: Inteligência Artificial e Automação - Python Training</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🐍 Python Training</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Módulos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="modulo_01.html">Módulo 1 - Fundamentos</a></li>
+                            <li><a class="dropdown-item" href="modulo_02.html">Módulo 2 - Jogos Básicos</a></li>
+                            <li><a class="dropdown-item" href="modulo_03.html">Módulo 3 - Projetos Interativos</a></li>
+                            <li><a class="dropdown-item active" href="modulo_04.html">Módulo 4 - IA e Automação</a></li>
+                            <li><a class="dropdown-item" href="modulo_05.html">Módulo 5 - Segurança Digital</a></li>
+                            <li><a class="dropdown-item" href="modulo_06.html">Módulo 6 - Finalização</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="mundo_do_conhecimento.html">Testes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="conclusao.html">Certificado</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="text-center mb-4">
+                    <span class="badge badge-modulo">Módulo 4</span>
+                    <span class="badge badge-duracao">6 horas</span>
+                    <span class="badge badge-nivel">Avançado</span>
+                </div>
+
+                <h1 class="text-center">Inteligência Artificial e Automação</h1>
+                <p class="lead text-center">Crie bots inteligentes e aprenda os fundamentos de IA aplicada a jogos</p>
+
+                <img src="assets/img/imagem_modulo_04.png" alt="IA e Automação" class="img-modulo">
+
+                <div id="progress-indicator" class="alert alert-info text-center">Progresso: 0/8 (0%)</div>
+
+                <div class="content-section">
+                    <h2>Objetivos do Módulo</h2>
+                    <p>Este é o módulo mais empolgante! Você vai dar vida a personagens e criar bots que pensam e tomam decisões sozinhos. Vamos explorar desde lógica condicional simples até redes neurais básicas.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h4>O que você vai aprender:</h4>
+                            <ul>
+                                <li>Conceitos de Inteligência Artificial</li>
+                                <li>Algoritmos de decisão</li>
+                                <li>Árvores de decisão</li>
+                                <li>Pathfinding (A*)</li>
+                                <li>Machine Learning básico</li>
+                                <li>Redes neurais simples</li>
+                                <li>TensorFlow/PyTorch introdução</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>O que você vai criar:</h4>
+                            <ul>
+                                <li>Bot com lógica condicional</li>
+                                <li>IA para jogo (adversário)</li>
+                                <li>Bot que aprende</li>
+                                <li>Mini jogo com IA</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>4.1 O que é Inteligência Artificial?</h2>
+                    
+                    <div class="bg-light p-3 rounded">
+                        <h5>Para Leigos:</h5>
+                        <p>Inteligência Artificial (IA) é quando fazemos programas que conseguem "pensar" e tomar decisões como se fossem inteligentes. Não é mágica - é matemática e lógica muito bem organizadas! Exemplos no dia a dia:</p>
+                        <ul>
+                            <li>Assistentes de voz (Siri, Alexa)</li>
+                            <li>Recomendações da Netflix</li>
+                            <li>Filtros de spam no email</li>
+                            <li>Inimigos em jogos</li>
+                        </ul>
+                    </div>
+
+                    <h3>Bot com Lógica Condicional</h3>
+                    <p>Vamos criar um bot simples que toma decisões baseadas em regras:</p>
+                    
+                    <pre><code>import random
+
+class BotJogo:
+    def __init__(self, nome):
+        self.nome = nome
+        self.vida = 100
+        self.energia = 100
+        self.posicao_x = 0
+        self.posicao_y = 0
+    
+    def analisar_situacao(self, inimigo_proximo, vida_baixa, energia_baixa):
+        """Bot decide o que fazer baseado na situação"""
+        
+        if vida_baixa:
+            return "buscar_cura"
+        elif energia_baixa:
+            return "descansar"
+        elif inimigo_proximo:
+            if self.vida > 50:
+                return "atacar"
+            else:
+                return "fugir"
+        else:
+            return "explorar"
+    
+    def executar_acao(self, acao):
+        print(f"{self.nome} decide: {acao}")
+        
+        if acao == "atacar":
+            dano = random.randint(10, 30)
+            self.energia -= 10
+            print(f"  Ataca causando {dano} de dano!")
+        
+        elif acao == "fugir":
+            self.energia -= 5
+            self.posicao_x += random.choice([-1, 1]) * 2
+            self.posicao_y += random.choice([-1, 1]) * 2
+            print(f"  Foge para ({self.posicao_x}, {self.posicao_y})")
+        
+        elif acao == "buscar_cura":
+            self.vida += 30
+            self.vida = min(100, self.vida)
+            print(f"  Busca cura. Vida agora: {self.vida}")
+        
+        elif acao == "descansar":
+            self.energia += 25
+            self.energia = min(100, self.energia)
+            print(f"  Descansa. Energia agora: {self.energia}")
+        
+        elif acao == "explorar":
+            self.posicao_x += random.choice([-1, 0, 1])
+            self.posicao_y += random.choice([-1, 0, 1])
+            self.energia -= 2
+            print(f"  Explora para ({self.posicao_x}, {self.posicao_y})")
+
+# Simulação
+bot = BotJogo("RoboWarrior")
+
+for turno in range(10):
+    print(f"\n--- Turno {turno + 1} ---")
+    print(f"Vida: {bot.vida} | Energia: {bot.energia}")
+    
+    # Simular condições
+    inimigo_proximo = random.choice([True, False])
+    vida_baixa = bot.vida < 40
+    energia_baixa = bot.energia < 30
+    
+    # Bot decide e age
+    decisao = bot.analisar_situacao(inimigo_proximo, vida_baixa, energia_baixa)
+    bot.executar_acao(decisao)</code></pre>
+
+                    <h3>IA para Jogo da Velha</h3>
+                    <p>Vamos criar um adversário inteligente para o jogo da velha:</p>
+                    
+                    <pre><code>import random
+
+def verificar_vitoria(tabuleiro, simbolo):
+    """Verifica se o símbolo venceu"""
+    # Linhas, colunas e diagonais
+    for i in range(3):
+        if all(tabuleiro[i][j] == simbolo for j in range(3)):
+            return True
+        if all(tabuleiro[j][i] == simbolo for j in range(3)):
+            return True
+    if all(tabuleiro[i][i] == simbolo for i in range(3)):
+        return True
+    if all(tabuleiro[i][2-i] == simbolo for i in range(3)):
+        return True
+    return False
+
+def ia_jogada(tabuleiro):
+    """IA faz a melhor jogada possível"""
+    
+    # 1. Tentar vencer
+    for i in range(3):
+        for j in range(3):
+            if tabuleiro[i][j] == ' ':
+                tabuleiro[i][j] = 'O'
+                if verificar_vitoria(tabuleiro, 'O'):
+                    return (i, j)
+                tabuleiro[i][j] = ' '
+    
+    # 2. Bloquear vitória do oponente
+    for i in range(3):
+        for j in range(3):
+            if tabuleiro[i][j] == ' ':
+                tabuleiro[i][j] = 'X'
+                if verificar_vitoria(tabuleiro, 'X'):
+                    tabuleiro[i][j] = 'O'
+                    return (i, j)
+                tabuleiro[i][j] = ' '
+    
+    # 3. Jogar no centro se disponível
+    if tabuleiro[1][1] == ' ':
+        return (1, 1)
+    
+    # 4. Jogar nos cantos
+    cantos = [(0,0), (0,2), (2,0), (2,2)]
+    cantos_livres = [(i,j) for i,j in cantos if tabuleiro[i][j] == ' ']
+    if cantos_livres:
+        return random.choice(cantos_livres)
+    
+    # 5. Jogar em qualquer lugar livre
+    for i in range(3):
+        for j in range(3):
+            if tabuleiro[i][j] == ' ':
+                return (i, j)
+
+# Jogo completo
+def jogar_velha():
+    tabuleiro = [[' ' for _ in range(3)] for _ in range(3)]
+    
+    def mostrar_tabuleiro():
+        print("\n")
+        for i, linha in enumerate(tabuleiro):
+            print(f" {linha[0]} | {linha[1]} | {linha[2]} ")
+            if i < 2:
+                print("---+---+---")
+    
+    while True:
+        mostrar_tabuleiro()
+        
+        # Jogada do humano
+        linha = int(input("Sua linha (0-2): "))
+        coluna = int(input("Sua coluna (0-2): "))
+        
+        if tabuleiro[linha][coluna] != ' ':
+            print("Posição ocupada!")
+            continue
+        
+        tabuleiro[linha][coluna] = 'X'
+        
+        if verificar_vitoria(tabuleiro, 'X'):
+            mostrar_tabuleiro()
+            print("Você venceu!")
+            break
+        
+        # Jogada da IA
+        ia_pos = ia_jogada(tabuleiro)
+        if ia_pos:
+            tabuleiro[ia_pos[0]][ia_pos[1]] = 'O'
+            print(f"IA joga em {ia_pos}")
+            
+            if verificar_vitoria(tabuleiro, 'O'):
+                mostrar_tabuleiro()
+                print("IA venceu!")
+                break
+        else:
+            mostrar_tabuleiro()
+            print("Empate!")
+            break
+
+jogar_velha()</code></pre>
+                </div>
+
+                <div class="content-section">
+                    <h2>4.2 Introdução a Machine Learning</h2>
+                    
+                    <div class="bg-light p-3 rounded">
+                        <h5>Para Técnicos:</h5>
+                        <p>Machine Learning é um subcampo da IA onde algoritmos aprendem padrões dos dados sem serem explicitamente programados. Principais tipos:</p>
+                        <ul>
+                            <li><strong>Supervisionado:</strong> Treino com dados rotulados (classificação, regressão)</li>
+                            <li><strong>Não supervisionado:</strong> Descoberta de padrões (clustering, redução dimensional)</li>
+                            <li><strong>Reinforcement:</strong> Aprendizado por tentativa e erro (jogos, robótica)</li>
+                        </ul>
+                    </div>
+
+                    <h3>Exemplo Simples: Classificador</h3>
+                    <p>Vamos criar um bot que aprende a classificar se um inimigo é perigoso ou não:</p>
+                    
+                    <pre><code>import random
+
+class BotAprendiz:
+    def __init__(self):
+        self.conhecimento = {}  # Padrões aprendidos
+        
+    def avaliar_inimigo(self, nivel, arma, armadura):
+        """Avaliar se inimigo é perigoso baseado em características"""
+        periculosidade = 0
+        
+        # Calcular pontos de perigo
+        periculosidade += nivel * 2
+        periculosidade += arma * 3
+        periculosidade -= armadura * 1.5
+        
+        return periculosidade > 15
+    
+    def aprender(self, caracteristicas, resultado_real):
+        """Registrar experiência"""
+        chave = str(caracteristicas)
+        if chave not in self.conhecimento:
+            self.conhecimento[chave] = []
+        self.conhecimento[chave].append(resultado_real)
+    
+    def consultar_experiencia(self, caracteristicas):
+        """Verificar experiências anteriores"""
+        chave = str(caracteristicas)
+        if chave in self.conhecimento:
+            experiencias = self.conhecimento[chave]
+            return sum(experiencias) / len(experiencias) > 0.5
+        return None
+
+# Simulação de aprendizado
+bot = BotAprendiz()
+
+print("=== FASE DE TREINAMENTO ===")
+for i in range(20):
+    # Gerar inimigo aleatório
+    nivel = random.randint(1, 10)
+    arma = random.randint(1, 10)
+    armadura = random.randint(1, 10)
+    
+    # Resultado real (simulado)
+    perigoso_real = (nivel + arma - armadura) > 12
+    
+    # Bot aprende
+    bot.aprender((nivel, arma, armadura), perigoso_real)
+    
+    print(f"Inimigo {i+1}: Nv{nivel} Arma{arma} Arm{armadura} - Perigoso: {perigoso_real}")
+
+print("\n=== FASE DE TESTE ===")
+for i in range(5):
+    nivel = random.randint(1, 10)
+    arma = random.randint(1, 10)
+    armadura = random.randint(1, 10)
+    
+    experiencia = bot.consultar_experiencia((nivel, arma, armadura))
+    previsao = bot.avaliar_inimigo(nivel, arma, armadura)
+    
+    print(f"\nInimigo: Nv{nivel} Arma{arma} Arm{armadura}")
+    print(f"  Previsão do bot: {'PERIGOSO' if previsao else 'SEGURO'}")
+    if experiencia is not None:
+        print(f"  Baseado em experiência: {'PERIGOSO' if experiencia else 'SEGURO'}")</code></pre>
+
+                    <div class="alert-warning-custom">
+                        <h4>🚀 Próximo Nível: TensorFlow e PyTorch</h4>
+                        <p>Para machine learning real, use frameworks profissionais:</p>
+                        <pre><code>pip install tensorflow
+# ou
+pip install torch</code></pre>
+                        <p>Explore tutoriais oficiais para criar redes neurais que reconhecem imagens, geram texto e muito mais!</p>
+                    </div>
+                </div>
+
+                <div class="checklist">
+                    <h4>📋 Checklist de Progresso do Módulo 4</h4>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-4-1">
+                        <label for="check-4-1">Conceitos básicos de IA compreendidos</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-4-2">
+                        <label for="check-4-2">Bot com lógica condicional criado</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-4-3">
+                        <label for="check-4-3">Algoritmo de tomada de decisão implementado</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-4-4">
+                        <label for="check-4-4">IA para jogo da velha criada</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-4-5">
+                        <label for="check-4-5">Conceitos de Machine Learning estudados</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-4-6">
+                        <label for="check-4-6">Bot que aprende com experiências implementado</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-4-7">
+                        <label for="check-4-7">TensorFlow ou PyTorch testado</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-4-8">
+                        <label for="check-4-8">Mini jogo com IA concluído</label>
+                    </div>
+                </div>
+
+                <div class="module-navigation">
+                    <a href="modulo_03.html" class="btn btn-secondary">⬅️ Módulo 3</a>
+                    <a href="modulo_05.html" class="btn btn-primary">Módulo 5 ➡️</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Python Training - Módulo 4: Inteligência Artificial e Automação</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

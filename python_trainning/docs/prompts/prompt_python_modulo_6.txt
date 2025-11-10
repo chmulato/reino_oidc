@@ -1,0 +1,46 @@
+Prompt para Imagem do Módulo 6: Finalização e Próximos Passos
+
+Estilo: Ilustração digital inspiradora e celebratória, com elementos de conquista e futuro
+Formato: Paisagem 16:9 (1920x1080px ou similar)
+Tema: Portfólio, Projetos Finais e Jornada Contínua de Aprendizado
+
+Descrição da cena:
+Ambiente inspirador mostrando a jornada completa do estudante, com portfólio de projetos e caminhos futuros. Um jovem desenvolvedor orgulhoso apresentando seus projetos em múltiplas telas e olhando para o horizonte de possibilidades.
+
+Elementos principais:
+- Galeria de projetos em formato de cards/tiles mostrando todos os módulos anteriores:
+  - Calculadora Python (Módulo 1)
+  - Jogo Pong/Snake (Módulo 2)
+  - Construção Minecraft (Módulo 3)
+  - Bot com IA (Módulo 4)
+  - Sistema de login seguro (Módulo 5)
+- Portfolio website mockup em tela grande
+- Repositório GitHub com commits e contribuições (gráfico verde de atividade)
+- Certificado de conclusão holográfico
+- Troféus e badges de conquistas flutuando
+- Roadmap visual apontando para o futuro com múltiplos caminhos:
+  - Unity (ícone)
+  - Godot (ícone)
+  - Web Development
+  - Mobile Apps
+  - Game Development Avançado
+  - Machine Learning
+- Linha do tempo mostrando a progressão do curso (início → fim)
+- Comunidade de desenvolvedores conectados (ícones de pessoas)
+- Livros e recursos de aprendizado empilhados
+- Setas apontando para "Próximos Desafios"
+
+Fundo e atmosfera:
+- Gradiente inspirador (nascer do sol, horizonte aberto)
+- Estrada ou caminho se estendendo para o futuro
+- Elementos de todos os módulos anteriores sutilmente integrados
+- Sensação de "isso é só o começo"
+
+Paleta de cores: Gradiente de sucesso (laranja dourado, amarelo esperança, azul futuro, roxo inspiração), cores vibrantes mas harmoniosas
+Iluminação: Luz de conquista (dourada, calorosa), brilho de realizações, claridade do futuro
+Atmosfera: Inspiradora, motivadora, celebratória, esperançosa, empoderamento, crescimento contínuo
+Elementos visuais: Interface de portfolio moderna, elementos de UI/UX, ícones de plataformas, badges de conquista, design clean e profissional
+
+Texto (opcional): "Módulo 6: Portfólio e Próximos Passos - Sua Jornada Continua!" em fonte inspiradora e moderna
+
+Inspiração visual: Páginas de portfolio de desenvolvedores, telas de conclusão de cursos gamificados (Duolingo, Codecademy), concept art de "next level", design motivacional de aplicativos de produtividade.

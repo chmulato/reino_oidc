@@ -1,0 +1,35 @@
+Prompt para Imagem do Módulo 4: Inteligência Artificial e Automação
+
+Estilo: Ilustração digital futurista e tecnológica, com elementos de IA e machine learning
+Formato: Paisagem 16:9 (1920x1080px ou similar)
+Tema: Inteligência Artificial em Jogos e Automação
+
+Descrição da cena:
+Ambiente futurista de laboratório de IA com elementos holográficos e interfaces avançadas. Um jovem desenvolvedor interagindo com múltiplas telas flutuantes mostrando redes neurais e comportamentos de IA.
+
+Elementos principais:
+- Tela central mostrando um mini jogo com bot IA jogando autonomamente
+- Visualização de rede neural (nós conectados, sinapses brilhantes) em 3D holográfico
+- Gráficos de treinamento de IA (curvas de aprendizado, métricas, accuracy aumentando)
+- Fluxograma de decisão algorítmica (árvore de decisão, if-then-else visual)
+- Personagem robótico/bot simpático tomando decisões (pensando, com ícones de lâmpada)
+- Código Python com imports de TensorFlow/PyTorch destacados
+- Dados fluindo como streams de partículas coloridas
+- Cérebro digital holográfico processando informações
+- Múltiplos agentes IA interagindo em um ambiente de jogo simples
+- Dashboard com métricas de performance do bot
+- Símbolos de automação: engrenagens, loops automáticos, processos otimizados
+
+Segundo plano:
+- Matrizes de números e equações matemáticas sutis
+- Grid tecnológico estilo matriz
+- Partículas de dados fluindo
+
+Paleta de cores: Azul elétrico, ciano tecnológico, roxo neural, verde dados, branco holográfico, preto profundo para contraste
+Iluminação: Brilhos holográficos, neon suave, luz de interfaces digitais, reflexos tecnológicos
+Atmosfera: Futurista, inteligente, high-tech, científica mas acessível, empolgante
+Elementos visuais: Interfaces transparentes tipo sci-fi, visualizações de dados, elementos de UI futurísticos, efeitos de glow
+
+Texto (opcional): "Módulo 4: Inteligência Artificial e Automação" em fonte futurista e tecnológica
+
+Inspiração visual: Interfaces de IA em filmes de ficção científica (Minority Report, Iron Man), visualizações de machine learning, dashboards de deep learning, concept art de laboratórios de IA.

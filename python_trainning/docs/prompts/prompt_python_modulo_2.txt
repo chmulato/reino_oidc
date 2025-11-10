@@ -1,0 +1,28 @@
+Prompt para Imagem do Módulo 2: Desenvolvimento de Jogos Básicos
+
+Estilo: Ilustração digital vibrante e dinâmica para jovens, estilo pixel art moderno misturado com elementos 3D
+Formato: Paisagem 16:9 (1920x1080px ou similar)
+Tema: Criação de Jogos 2D com Pygame
+
+Descrição da cena:
+Uma tela de computador gigante ao centro exibindo uma janela do Pygame ativa com um jogo em desenvolvimento. A tela mostra um jogo clássico (Pong ou Snake) em execução com elementos gráficos coloridos e animados. Um jovem desenvolvedor com headphones, concentrado e empolgado, digitando código em um teclado iluminado.
+
+Elementos flutuantes ao redor da tela:
+- Sprites de personagens de jogos 2D (quadrados, círculos, setas direcionais)
+- Grade de coordenadas (X, Y) com números e linhas guia
+- Controles de teclado (teclas WASD e setas) brilhando
+- Mouse com trail de movimento e cliques destacados
+- Sistema de pontuação com números aumentando (Score: 100, 200, 300)
+- Bolas quicando e colidindo com efeitos visuais
+- Pequenos snippets de código Pygame flutuando como hologramas
+- Barra de vida/energia estilo jogo
+- Logotipo do Pygame discreto no canto
+
+Paleta de cores: Neon (rosa, cibernético azul, verde elétrico, roxo vibrante), com fundo escuro estilo tela de jogo retro
+Iluminação: Brilho de tela de jogo, reflexos neon, efeitos de partículas luminosas
+Atmosfera: Energética, criativa, arcade moderno, nostalgia dos jogos clássicos com toque contemporâneo
+Elementos visuais: Pixel art estilizado, efeitos de glitch sutil, scanlines opcionais, interface de jogo
+
+Texto (opcional): "Módulo 2: Desenvolvimento de Jogos Básicos" em fonte pixel art modernizada
+
+Inspiração visual: Estética de arcade dos anos 80/90 reimaginada com design moderno, vaporwave sutil, interface de desenvolvimento de jogos indie.

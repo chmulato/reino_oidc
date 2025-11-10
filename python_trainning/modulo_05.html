@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 5: Segurança Digital e Autenticação - Python Training</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🐍 Python Training</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Módulos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="modulo_01.html">Módulo 1 - Fundamentos</a></li>
+                            <li><a class="dropdown-item" href="modulo_02.html">Módulo 2 - Jogos Básicos</a></li>
+                            <li><a class="dropdown-item" href="modulo_03.html">Módulo 3 - Projetos Interativos</a></li>
+                            <li><a class="dropdown-item" href="modulo_04.html">Módulo 4 - IA e Automação</a></li>
+                            <li><a class="dropdown-item active" href="modulo_05.html">Módulo 5 - Segurança Digital</a></li>
+                            <li><a class="dropdown-item" href="modulo_06.html">Módulo 6 - Finalização</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="mundo_do_conhecimento.html">Testes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="conclusao.html">Certificado</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="text-center mb-4">
+                    <span class="badge badge-modulo">Módulo 5</span>
+                    <span class="badge badge-duracao">6 horas</span>
+                    <span class="badge badge-nivel">Intermediário</span>
+                </div>
+
+                <h1 class="text-center">Segurança Digital e Autenticação</h1>
+                <p class="lead text-center">Entenda como funciona a segurança em aplicações e o protocolo OIDC</p>
+
+                <img src="assets/img/imagem_modulo_05.png" alt="Segurança Digital" class="img-modulo">
+
+                <div id="progress-indicator" class="alert alert-info text-center">Progresso: 0/7 (0%)</div>
+
+                <div class="content-section">
+                    <h2>Objetivos do Módulo</h2>
+                    <p>Neste módulo final teórico, você vai aprender como manter suas aplicações e jogos seguros, proteger dados dos usuários e implementar sistemas de login modernos usando padrões profissionais como OAuth 2.0 e OpenID Connect (OIDC).</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h4>O que você vai aprender:</h4>
+                            <ul>
+                                <li>Diferença entre autenticação e autorização</li>
+                                <li>Segurança em aplicações</li>
+                                <li>Protocolo OAuth 2.0</li>
+                                <li>OpenID Connect (OIDC)</li>
+                                <li>Tokens de acesso</li>
+                                <li>Fluxo de autenticação</li>
+                                <li>Boas práticas de segurança</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>O que você vai entender:</h4>
+                            <ul>
+                                <li>Como funciona "Login com Google"</li>
+                                <li>Por que não salvar senhas</li>
+                                <li>O que são tokens JWT</li>
+                                <li>Fluxos de autorização</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>5.1 Autenticação vs Autorização</h2>
+                    
+                    <div class="bg-light p-3 rounded">
+                        <h5>Para Leigos:</h5>
+                        <p>São conceitos diferentes mas que trabalham juntos:</p>
+                        <ul>
+                            <li><strong>Autenticação:</strong> Provar quem você é (como mostrar seu RG)</li>
+                            <li><strong>Autorização:</strong> O que você pode fazer (como ter permissão para entrar em certas áreas)</li>
+                        </ul>
+                        <p><strong>Exemplo do dia a dia:</strong> Quando você entra em um prédio, o segurança verifica sua identidade (autenticação), e depois seu crachá mostra em quais andares você pode entrar (autorização).</p>
+                    </div>
+
+                    <div class="bg-light p-3 rounded mt-3">
+                        <h5>Para Técnicos:</h5>
+                        <ul>
+                            <li><strong>Authentication (Autenticação):</strong> Processo de verificar a identidade do usuário (username + password, biometria, certificados, MFA)</li>
+                            <li><strong>Authorization (Autorização):</strong> Processo de verificar se o usuário autenticado tem permissão para acessar determinado recurso (RBAC, ABAC, claims)</li>
+                        </ul>
+                    </div>
+
+                    <h3>Por que Segurança é Importante?</h3>
+                    <ul>
+                        <li><strong>Proteção de dados pessoais:</strong> Nome, email, senhas, histórico</li>
+                        <li><strong>Prevenção de fraudes:</strong> Compras indevidas, roubo de contas</li>
+                        <li><strong>Conformidade legal:</strong> LGPD, GDPR exigem proteção de dados</li>
+                        <li><strong>Reputação:</strong> Vazamentos destroem a confiança dos usuários</li>
+                    </ul>
+
+                    <div class="alert-warning-custom">
+                        <h4>❌ Erros Comuns de Segurança</h4>
+                        <ul>
+                            <li>Salvar senhas em texto puro no banco de dados</li>
+                            <li>Não usar HTTPS</li>
+                            <li>Validar dados apenas no frontend</li>
+                            <li>Expor informações sensíveis em URLs</li>
+                            <li>Não implementar rate limiting</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>5.2 OAuth 2.0 e OpenID Connect (OIDC)</h2>
+                    
+                    <h3>O que é OAuth 2.0?</h3>
+                    <p>OAuth 2.0 é um protocolo de autorização que permite que aplicações acessem recursos em nome do usuário SEM conhecer sua senha.</p>
+
+                    <div class="bg-light p-3 rounded">
+                        <h5>Analogia:</h5>
+                        <p>Imagine que você vai viajar e deixa a chave do seu apartamento com um amigo para regar suas plantas. Você não deu a senha do cofre, apenas acesso temporário para uma tarefa específica. OAuth funciona assim: dá permissões temporárias e limitadas.</p>
+                    </div>
+
+                    <h3>O que é OIDC?</h3>
+                    <p>OpenID Connect (OIDC) é uma camada de autenticação construída sobre OAuth 2.0. Adiciona a capacidade de verificar a identidade do usuário e obter informações básicas de perfil.</p>
+
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">OAuth 2.0</div>
+                                <div class="card-body">
+                                    <p><strong>Foco:</strong> Autorização</p>
+                                    <p><strong>Uso:</strong> "Permite que este app acesse suas fotos"</p>
+                                    <p><strong>Retorna:</strong> Access Token</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">OIDC</div>
+                                <div class="card-body">
+                                    <p><strong>Foco:</strong> Autenticação + Autorização</p>
+                                    <p><strong>Uso:</strong> "Login com Google"</p>
+                                    <p><strong>Retorna:</strong> ID Token + Access Token</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Fluxo de Autenticação OIDC</h3>
+                    <p>Veja como funciona quando você clica em "Login com Google":</p>
+                    
+                    <pre><code>1. 👤 Usuário: Clica em "Login com Google" no seu app
+2. 🔄 App: Redireciona para Google
+3. 🔐 Google: Pede login (se necessário)
+4. ✅ Usuário: Aprova o acesso
+5. 🎫 Google: Devolve um código de autorização
+6. 🔄 App: Troca o código por tokens
+7. 🎉 App: Recebe ID Token (quem é o usuário) + Access Token (o que pode fazer)
+8. 👋 App: Usuário está logado!</code></pre>
+
+                    <h3>Tipos de Tokens</h3>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <h4>ID Token (JWT)</h4>
+                            <p>Contém informações sobre o usuário:</p>
+                            <ul>
+                                <li>Nome</li>
+                                <li>Email</li>
+                                <li>Foto de perfil</li>
+                                <li>ID único</li>
+                            </ul>
+                            <p><strong>Formato:</strong> JSON Web Token (JWT) - 3 partes separadas por pontos</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Access Token</h4>
+                            <p>Permite acessar recursos protegidos:</p>
+                            <ul>
+                                <li>APIs do Google</li>
+                                <li>Dados do usuário</li>
+                                <li>Serviços autorizados</li>
+                            </ul>
+                            <p><strong>Validade:</strong> Curta (minutos/horas)</p>
+                        </div>
+                    </div>
+
+                    <h3>Estrutura de um JWT</h3>
+                    <pre><code>eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkw...
+
+Dividido em 3 partes:
+1. HEADER (cabeçalho): tipo e algoritmo
+2. PAYLOAD (dados): informações do usuário
+3. SIGNATURE (assinatura): garante que não foi alterado</code></pre>
+
+                    <div class="bg-light p-3 rounded">
+                        <h5>Decodificando um JWT:</h5>
+                        <pre><code>import base64
+import json
+
+def decodificar_jwt(token):
+    partes = token.split('.')
+    
+    # Decodificar header e payload (não a assinatura)
+    header = json.loads(base64.b64decode(partes[0] + '=='))
+    payload = json.loads(base64.b64decode(partes[1] + '=='))
+    
+    return header, payload
+
+# Exemplo
+token_exemplo = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvYW8iLCJlbWFpbCI6ImpvYW9AZXhhbXBsZS5jb20ifQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+
+header, payload = decodificar_jwt(token_exemplo)
+print("Header:", header)
+print("Payload:", payload)</code></pre>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>5.3 Implementando Login Seguro</h2>
+                    
+                    <h3>Nunca Faça Isso!</h3>
+                    <div class="alert alert-danger">
+                        <pre><code># ❌ PÉSSIMA IDEIA!
+senha = input("Digite sua senha: ")
+if senha == "senha123":  # senha hardcoded
+    print("Login OK")
+
+# ❌ NUNCA salve assim no banco:
+database.save(username="joao", password="minhasenha123")</code></pre>
+                    </div>
+
+                    <h3>Faça Isso!</h3>
+                    <div class="alert alert-success">
+                        <pre><code>import hashlib
+import os
+
+def hash_senha(senha):
+    """Hashear senha com salt"""
+    salt = os.urandom(32)
+    hash = hashlib.pbkdf2_hmac('sha256', senha.encode('utf-8'), salt, 100000)
+    return salt + hash
+
+def verificar_senha(senha_digitada, hash_armazenado):
+    """Verificar se senha corresponde ao hash"""
+    salt = hash_armazenado[:32]
+    hash_armazenado = hash_armazenado[32:]
+    hash_novo = hashlib.pbkdf2_hmac('sha256', senha_digitada.encode('utf-8'), salt, 100000)
+    return hash_novo == hash_armazenado
+
+# Uso
+senha_usuario = "minhasenha123"
+hash_seguro = hash_senha(senha_usuario)
+# Salve hash_seguro no banco, não a senha!
+
+# Na verificação
+if verificar_senha("minhasenha123", hash_seguro):
+    print("Login OK!")</code></pre>
+                    </div>
+
+                    <h3>Boas Práticas de Segurança</h3>
+                    <ul>
+                        <li>✅ Use HTTPS sempre</li>
+                        <li>✅ Hash senhas com algoritmos fortes (bcrypt, Argon2)</li>
+                        <li>✅ Implemente rate limiting (limite tentativas de login)</li>
+                        <li>✅ Use OAuth/OIDC quando possível</li>
+                        <li>✅ Valide entradas no backend também</li>
+                        <li>✅ Não exponha erros detalhados para usuários</li>
+                        <li>✅ Mantenha bibliotecas atualizadas</li>
+                        <li>✅ Use tokens com expiração</li>
+                        <li>✅ Implemente 2FA (autenticação de dois fatores)</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Recursos para Aprender Mais</h2>
+                    <ul>
+                        <li><strong>OAuth 2.0:</strong> https://oauth.net/2/</li>
+                        <li><strong>OpenID Connect:</strong> https://openid.net/connect/</li>
+                        <li><strong>JWT:</strong> https://jwt.io/</li>
+                        <li><strong>OWASP (Segurança):</strong> https://owasp.org/</li>
+                    </ul>
+
+                    <div class="alert-info-custom">
+                        <h4>🎓 Para se aprofundar</h4>
+                        <p>Se você gostou deste módulo, explore o <strong>Reino OIDC</strong> - um guia completo e lúdico sobre OpenID Connect com personagens, história e exemplos práticos!</p>
+                        <p><a href="../index.html" class="btn btn-primary">Visitar Reino OIDC</a></p>
+                    </div>
+                </div>
+
+                <div class="checklist">
+                    <h4>📋 Checklist de Progresso do Módulo 5</h4>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-5-1">
+                        <label for="check-5-1">Diferença entre autenticação e autorização compreendida</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-5-2">
+                        <label for="check-5-2">Protocolo OAuth 2.0 estudado</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-5-3">
+                        <label for="check-5-3">Conceitos de OIDC aprendidos</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-5-4">
+                        <label for="check-5-4">Tipos de tokens compreendidos</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-5-5">
+                        <label for="check-5-5">Fluxo de autenticação mapeado</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-5-6">
+                        <label for="check-5-6">JWT decodificado e compreendido</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-5-7">
+                        <label for="check-5-7">Boas práticas de segurança aprendidas</label>
+                    </div>
+                </div>
+
+                <div class="module-navigation">
+                    <a href="modulo_04.html" class="btn btn-secondary">⬅️ Módulo 4</a>
+                    <a href="modulo_06.html" class="btn btn-primary">Módulo 6 ➡️</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Python Training - Módulo 5: Segurança Digital e Autenticação</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

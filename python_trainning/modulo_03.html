@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 3: Projetos Interativos - Python Training</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🐍 Python Training</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Módulos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="modulo_01.html">Módulo 1 - Fundamentos</a></li>
+                            <li><a class="dropdown-item" href="modulo_02.html">Módulo 2 - Jogos Básicos</a></li>
+                            <li><a class="dropdown-item active" href="modulo_03.html">Módulo 3 - Projetos Interativos</a></li>
+                            <li><a class="dropdown-item" href="modulo_04.html">Módulo 4 - IA e Automação</a></li>
+                            <li><a class="dropdown-item" href="modulo_05.html">Módulo 5 - Segurança Digital</a></li>
+                            <li><a class="dropdown-item" href="modulo_06.html">Módulo 6 - Finalização</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mundo_do_conhecimento.html">Testes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conclusao.html">Certificado</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="text-center mb-4">
+                    <span class="badge badge-modulo">Módulo 3</span>
+                    <span class="badge badge-duracao">8 horas</span>
+                    <span class="badge badge-nivel">Intermediário</span>
+                </div>
+
+                <h1 class="text-center">Projetos Interativos</h1>
+                <p class="lead text-center">Programe no Minecraft e crie animações incríveis com Python</p>
+
+                <img src="assets/img/imagem_modulo_03.png" alt="Projetos Interativos" class="img-modulo">
+
+                <div id="progress-indicator" class="alert alert-info text-center">
+                    Progresso: 0/8 (0%)
+                </div>
+
+                <div class="content-section">
+                    <h2>Objetivos do Módulo</h2>
+                    <p>Neste módulo, você vai expandir seus horizontes programando em um dos jogos mais populares do mundo - o Minecraft - e criando animações e gráficos com Python. Verá como o código pode controlar ambientes 3D e gerar conteúdo visual dinâmico.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h4>O que você vai aprender:</h4>
+                            <ul>
+                                <li>Minecraft Education Edition + Python</li>
+                                <li>API do Minecraft para Python</li>
+                                <li>Construção automatizada</li>
+                                <li>Manipulação de blocos</li>
+                                <li>Biblioteca Pillow (PIL)</li>
+                                <li>Criação de GIFs</li>
+                                <li>MoviePy para animações</li>
+                                <li>Efeitos visuais</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>O que você vai criar:</h4>
+                            <ul>
+                                <li>Estruturas automáticas no Minecraft</li>
+                                <li>Scripts de construção</li>
+                                <li>Animações em GIF</li>
+                                <li>Efeitos em imagens</li>
+                                <li>Personagens animados</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>3.1 Minecraft Education Edition com Python</h2>
+                    
+                    <h3>Introdução ao Minecraft Programming</h3>
+                    <p>O Minecraft Education Edition permite que você programe dentro do jogo usando Python. Você pode criar blocos, construir estruturas gigantes e até fazer minijogos - tudo com código!</p>
+
+                    <div class="alert-info-custom">
+                        <h4>🎮 Requisitos</h4>
+                        <ul>
+                            <li><strong>Minecraft Education Edition</strong> instalado (requer licença educacional)</li>
+                            <li><strong>Python IDLE</strong> ou editor de código</li>
+                            <li><strong>Biblioteca mcpi:</strong> <code>pip install mcpi</code></li>
+                        </ul>
+                        <p><strong>Alternativa gratuita:</strong> Use RaspberryJuice plugin com Minecraft Java Edition</p>
+                    </div>
+
+                    <h3>Conectando Python ao Minecraft</h3>
+                    
+                    <div class="bg-light p-3 rounded">
+                        <h5>Para Leigos:</h5>
+                        <p>Imagine que você tem um controle remoto mágico (Python) que pode comandar o mundo do Minecraft. Com alguns comandos simples, você pode fazer aparecer blocos, teleportar seu personagem ou construir castelos instantaneamente!</p>
+                        <pre><code>from mcpi.minecraft import Minecraft
+import mcpi.block as block
+
+# Conectar ao Minecraft
+mc = Minecraft.create()
+
+# Enviar mensagem no chat
+mc.postToChat("Python está conectado!")
+
+# Obter posição do jogador
+pos = mc.player.getPos()
+print(f"Você está em: {pos.x}, {pos.y}, {pos.z}")
+
+# Criar um bloco de diamante
+mc.setBlock(pos.x + 1, pos.y, pos.z, block.DIAMOND_BLOCK)
+</code></pre>
+                    </div>
+
+                    <div class="bg-light p-3 rounded mt-3">
+                        <h5>Para Técnicos:</h5>
+                        <p>A biblioteca mcpi estabelece conexão via socket TCP/IP com o servidor Minecraft, enviando comandos através do protocolo Minecraft PI. A API fornece métodos para manipulação de blocos, entidades, câmera e eventos do jogo.</p>
+                        <pre><code>from mcpi.minecraft import Minecraft
+from mcpi import block
+from mcpi.vec3 import Vec3
+import time
+
+class MinecraftBuilder:
+    def __init__(self):
+        self.mc = Minecraft.create()
+        self.player_pos = None
+    
+    def get_player_position(self):
+        """Retorna posição atual do jogador como Vec3"""
+        return self.mc.player.getPos()
+    
+    def build_cube(self, center, size, block_type):
+        """Constrói um cubo de blocos"""
+        x, y, z = int(center.x), int(center.y), int(center.z)
+        half = size // 2
+        
+        self.mc.setBlocks(
+            x - half, y, z - half,
+            x + half, y + size, z + half,
+            block_type
+        )
+    
+    def build_pyramid(self, base_pos, height, block_type):
+        """Constrói uma pirâmide"""
+        x, y, z = int(base_pos.x), int(base_pos.y), int(base_pos.z)
+        
+        for level in range(height):
+            size = height - level
+            self.mc.setBlocks(
+                x - size, y + level, z - size,
+                x + size, y + level, z + size,
+                block_type
+            )
+
+# Uso
+builder = MinecraftBuilder()
+pos = builder.get_player_position()
+builder.build_pyramid(Vec3(pos.x + 10, pos.y, pos.z), 10, block.GOLD_BLOCK)</code></pre>
+                    </div>
+
+                    <h3>Projeto: Construtor Automático</h3>
+                    <p>Vamos criar um script que constrói estruturas automaticamente no Minecraft:</p>
+                    
+                    <pre><code>from mcpi.minecraft import Minecraft
+from mcpi import block
+import time
+
+mc = Minecraft.create()
+
+def construir_casa(x, y, z):
+    """Constrói uma casa simples"""
+    # Paredes (pedra)
+    mc.setBlocks(x, y, z, x + 10, y + 5, z + 8, block.STONE)
+    
+    # Oco interior (ar)
+    mc.setBlocks(x + 1, y, z + 1, x + 9, y + 4, z + 7, block.AIR)
+    
+    # Porta
+    mc.setBlocks(x + 5, y, z, x + 6, y + 2, z, block.AIR)
+    
+    # Janelas
+    mc.setBlock(x, y + 2, z + 4, block.GLASS)
+    mc.setBlock(x + 10, y + 2, z + 4, block.GLASS)
+    
+    # Telhado (madeira)
+    for i in range(11):
+        altura_telhado = 5 - abs(5 - i) // 2
+        mc.setBlocks(
+            x + i, y + 5 + altura_telhado, z - 1,
+            x + i, y + 5 + altura_telhado, z + 9,
+            block.WOOD_PLANKS
+        )
+    
+    mc.postToChat("Casa construída!")
+
+def construir_torre(x, y, z, altura):
+    """Constrói uma torre"""
+    # Base da torre
+    mc.setBlocks(x, y, z, x + 5, y + altura, z + 5, block.STONE_BRICK)
+    
+    # Oco interior
+    mc.setBlocks(x + 1, y, z + 1, x + 4, y + altura - 1, z + 4, block.AIR)
+    
+    # Escada em espiral
+    for h in range(0, altura, 2):
+        if h % 4 == 0:
+            mc.setBlock(x + 2, y + h, z + 1, block.STAIRS_WOOD)
+        elif h % 4 == 2:
+            mc.setBlock(x + 4, y + h, z + 2, block.STAIRS_WOOD)
+    
+    # Topo com ameias
+    for i in range(6):
+        for j in range(6):
+            if (i + j) % 2 == 0 and (i == 0 or i == 5 or j == 0 or j == 5):
+                mc.setBlock(x + i, y + altura + 1, z + j, block.STONE_BRICK)
+    
+    mc.postToChat(f"Torre de {altura} blocos construída!")
+
+# Obter posição do jogador
+pos = mc.player.getPos()
+
+# Menu interativo
+mc.postToChat("Escolha: 1=Casa, 2=Torre")
+escolha = input("Digite 1 ou 2: ")
+
+if escolha == "1":
+    construir_casa(int(pos.x) + 5, int(pos.y), int(pos.z) + 5)
+elif escolha == "2":
+    altura = int(input("Altura da torre (5-50): "))
+    construir_torre(int(pos.x) + 5, int(pos.y), int(pos.z) + 5, altura)</code></pre>
+
+                    <div class="alert-success-custom">
+                        <h4>🏗️ Desafios Minecraft</h4>
+                        <ul>
+                            <li>Construa um castelo completo com muralhas</li>
+                            <li>Crie um labirinto gerado automaticamente</li>
+                            <li>Faça uma pista de corrida com obstáculos</li>
+                            <li>Construa uma cidade com várias casas</li>
+                            <li>Crie arte em pixel usando blocos coloridos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>3.2 Animação e Gráficos em Python</h2>
+                    
+                    <h3>Trabalhando com Imagens: Pillow</h3>
+                    <p>Pillow (PIL) é uma biblioteca poderosa para manipular imagens em Python.</p>
+
+                    <div class="alert-info-custom">
+                        <h4>📦 Instalação</h4>
+                        <pre><code>pip install Pillow</code></pre>
+                    </div>
+
+                    <h3>Manipulação Básica de Imagens</h3>
+                    <pre><code>from PIL import Image, ImageDraw, ImageFont, ImageFilter
+
+# Criar uma imagem nova
+largura, altura = 400, 300
+img = Image.new('RGB', (largura, altura), color='skyblue')
+
+# Desenhar formas
+draw = ImageDraw.Draw(img)
+
+# Círculo (sol)
+draw.ellipse([50, 50, 150, 150], fill='yellow', outline='orange', width=3)
+
+# Retângulo (casa)
+draw.rectangle([200, 150, 350, 250], fill='brown', outline='black', width=2)
+
+# Triângulo (telhado)
+draw.polygon([(200, 150), (275, 80), (350, 150)], fill='red', outline='darkred')
+
+# Texto
+try:
+    font = ImageFont.truetype("arial.ttf", 24)
+except:
+    font = ImageFont.load_default()
+draw.text((150, 270), "Minha Casa", fill='black', font=font)
+
+# Salvar
+img.save('minha_arte.png')
+img.show()
+print("Imagem criada!")</code></pre>
+
+                    <h3>Aplicando Filtros</h3>
+                    <pre><code>from PIL import Image, ImageFilter
+
+# Abrir imagem existente
+img = Image.open('foto.jpg')
+
+# Aplicar filtros
+img_blur = img.filter(ImageFilter.BLUR)
+img_sharpen = img.filter(ImageFilter.SHARPEN)
+img_edge = img.filter(ImageFilter.FIND_EDGES)
+img_contour = img.filter(ImageFilter.CONTOUR)
+
+# Salvar resultados
+img_blur.save('foto_blur.jpg')
+img_sharpen.save('foto_sharpen.jpg')
+img_edge.save('foto_edges.jpg')
+
+print("Filtros aplicados!")</code></pre>
+
+                    <h3>Criando GIFs Animados</h3>
+                    <p>Vamos criar uma animação simples de uma bola quicando:</p>
+                    
+                    <pre><code>from PIL import Image, ImageDraw
+
+def criar_frame_bola(posicao_y, tamanho=400):
+    """Cria um frame com a bola em uma posição Y"""
+    img = Image.new('RGB', (tamanho, tamanho), color='white')
+    draw = ImageDraw.Draw(img)
+    
+    # Desenhar bola
+    raio = 30
+    x_centro = tamanho // 2
+    draw.ellipse([
+        x_centro - raio, posicao_y - raio,
+        x_centro + raio, posicao_y + raio
+    ], fill='red', outline='darkred', width=2)
+    
+    # Desenhar chão
+    draw.line([(0, tamanho - 20), (tamanho, tamanho - 20)], fill='black', width=3)
+    
+    return img
+
+# Criar frames da animação
+frames = []
+tamanho = 400
+chao_y = tamanho - 50
+
+# Bola caindo
+for y in range(50, chao_y, 10):
+    frames.append(criar_frame_bola(y, tamanho))
+
+# Bola subindo
+for y in range(chao_y, 50, -10):
+    frames.append(criar_frame_bola(y, tamanho))
+
+# Salvar como GIF
+frames[0].save(
+    'bola_quicando.gif',
+    save_all=True,
+    append_images=frames[1:],
+    duration=50,  # 50ms por frame
+    loop=0  # Loop infinito
+)
+
+print("GIF animado criado: bola_quicando.gif")</code></pre>
+
+                    <h3>Animação de Personagem</h3>
+                    <pre><code>from PIL import Image, ImageDraw
+
+def desenhar_personagem(img, x, y, frame):
+    """Desenha um personagem simples que anda"""
+    draw = ImageDraw.Draw(img)
+    
+    # Cabeça
+    draw.ellipse([x - 15, y - 40, x + 15, y - 10], fill='peachpuff', outline='black')
+    
+    # Corpo
+    draw.rectangle([x - 10, y - 10, x + 10, y + 20], fill='blue', outline='black')
+    
+    # Braços (movimento)
+    angulo_braco = (frame % 20) - 10
+    draw.line([x - 10, y, x - 20, y + angulo_braco], fill='peachpuff', width=4)
+    draw.line([x + 10, y, x + 20, y - angulo_braco], fill='peachpuff', width=4)
+    
+    # Pernas (movimento)
+    perna_offset = (frame % 20) - 10
+    draw.line([x - 5, y + 20, x - 5 - perna_offset, y + 40], fill='blue', width=4)
+    draw.line([x + 5, y + 20, x + 5 + perna_offset, y + 40], fill='blue', width=4)
+
+# Criar animação de caminhada
+frames = []
+for i in range(40):
+    img = Image.new('RGB', (400, 200), color='lightgreen')
+    
+    # Personagem se movendo
+    x_pos = 50 + (i * 8)
+    desenhar_personagem(img, x_pos, 100, i)
+    
+    frames.append(img)
+
+# Salvar animação
+frames[0].save(
+    'personagem_andando.gif',
+    save_all=True,
+    append_images=frames[1:],
+    duration=100,
+    loop=0
+)
+
+print("Animação de personagem criada!")</code></pre>
+
+                    <div class="alert-warning-custom">
+                        <h4>💡 Dica Profissional</h4>
+                        <p>Para animações mais complexas e com vídeo, use a biblioteca <strong>MoviePy</strong>:</p>
+                        <pre><code>pip install moviepy</code></pre>
+                        <p>MoviePy permite editar vídeos, adicionar efeitos, texto, áudio e muito mais!</p>
+                    </div>
+                </div>
+
+                <div class="checklist">
+                    <h4>📋 Checklist de Progresso do Módulo 3</h4>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-3-1">
+                        <label for="check-3-1">Minecraft Education Edition configurado</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-3-2">
+                        <label for="check-3-2">Primeiro comando Python no Minecraft executado</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-3-3">
+                        <label for="check-3-3">Estruturas simples construídas programaticamente</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-3-4">
+                        <label for="check-3-4">Script de construção automatizada criado</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-3-5">
+                        <label for="check-3-5">Pillow/MoviePy instalado</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-3-6">
+                        <label for="check-3-6">Primeira imagem criada com código</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-3-7">
+                        <label for="check-3-7">GIF animado gerado</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-3-8">
+                        <label for="check-3-8">Animação de personagem de jogo criada</label>
+                    </div>
+                </div>
+
+                <div class="module-navigation">
+                    <a href="modulo_02.html" class="btn btn-secondary">⬅️ Módulo 2</a>
+                    <a href="modulo_04.html" class="btn btn-primary">Módulo 4 ➡️</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Python Training - Módulo 3: Projetos Interativos</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

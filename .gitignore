@@ -1,0 +1,80 @@
+# ===================================
+# Python Training - GitIgnore
+# ===================================
+
+# Arquivos de senha e segredos
+secrets.txt
+*.secret
+*.key
+.env
+.env.local
+
+# Scripts de teste com senha hardcoded
+python_trainning/testes/testar_senha.py
+
+# Certificados gerados (testes)
+python_trainning/testes/certificados/
+certificados/
+*.png
+!assets/**/*.png
+!img/**/*.png
+!python_trainning/assets/img/*.png
+
+# Arquivos Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Ambientes virtuais Python
+venv/
+ENV/
+env/
+.venv
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependências Node
+node_modules/
+package-lock.json
+yarn.lock
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Sistema Operacional
+Thumbs.db
+Desktop.ini
+.Spotlight-V100
+.Trashes

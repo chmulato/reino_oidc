@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Teste - Campo Data Mobile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            padding: 2rem;
+        }
+        .test-info {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Teste de Campo Data - Mobile</h1>
+        
+        <div class="test-info">
+            <h4>📱 Instruções de Teste</h4>
+            <ul>
+                <li>✅ Abra esta página no celular</li>
+                <li>✅ Toque no campo de data</li>
+                <li>✅ Verifique se o calendário nativo abre</li>
+                <li>✅ Selecione uma data facilmente</li>
+                <li>✅ Verifique se o campo não está muito pequeno</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h3>Formulário de Teste</h3>
+                
+                <div class="mb-3">
+                    <label for="student-name" class="form-label">Nome do Aluno *</label>
+                    <input type="text" class="form-control" id="student-name" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="completion-date" class="form-label">Data de Conclusão</label>
+                    <input 
+                        type="date" 
+                        class="form-control" 
+                        id="completion-date"
+                        inputmode="none"
+                        pattern="\d{4}-\d{2}-\d{2}"
+                    >
+                    <small class="form-text text-muted">Toque para selecionar a data</small>
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="testarData()">
+                    📅 Testar Data Selecionada
+                </button>
+
+                <div id="resultado" class="mt-3"></div>
+            </div>
+        </div>
+
+        <div class="alert alert-info mt-4">
+            <h5>✨ Melhorias Implementadas:</h5>
+            <ul>
+                <li>✅ <code>font-size: 16px</code> - Evita zoom automático no iOS</li>
+                <li>✅ <code>min-height: 44px</code> - Touch target recomendado</li>
+                <li>✅ <code>inputmode="none"</code> - Abre calendário nativo</li>
+                <li>✅ Ícone do calendário maior (28x28px)</li>
+                <li>✅ Padding otimizado para toque</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Definir data atual como padrão
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('completion-date').value = today;
+
+        function testarData() {
+            const nome = document.getElementById('student-name').value;
+            const data = document.getElementById('completion-date').value;
+            const resultado = document.getElementById('resultado');
+
+            if (!nome) {
+                resultado.innerHTML = '<div class="alert alert-warning">⚠️ Por favor, digite seu nome!</div>';
+                return;
+            }
+
+            if (!data) {
+                resultado.innerHTML = '<div class="alert alert-warning">⚠️ Por favor, selecione uma data!</div>';
+                return;
+            }
+
+            // Converter data para formato brasileiro
+            const [ano, mes, dia] = data.split('-');
+            const dataBR = `${dia}/${mes}/${ano}`;
+
+            resultado.innerHTML = `
+                <div class="alert alert-success">
+                    <h5>✅ Teste Bem-Sucedido!</h5>
+                    <p><strong>Nome:</strong> ${nome}</p>
+                    <p><strong>Data (formato ISO):</strong> ${data}</p>
+                    <p><strong>Data (formato BR):</strong> ${dataBR}</p>
+                </div>
+            `;
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
