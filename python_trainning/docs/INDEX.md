@@ -1,242 +1,196 @@
-# 📚 Documentação do Python Training
+# 📚 Documentação - Python Training
 
-**Curso Completo de Programação Python**
+Bem-vindo à documentação do projeto **Python Training**! Este é um sistema educacional interativo para ensinar Python através de flashcards e exercícios práticos.
 
-**Christian Vladimir Uhdre Mulato**  
-CNPJ: 23.969.028/0001-37  
-Razão Social: 23.969.028 CHRISTIAN VLADIMIR UHDRE MULATO  
-Marca: Cara Core Informática  
-Website: <https://www.caracore.com.br>
+## 🎯 Visão Geral do Projeto
 
----
+O **Python Training** é uma aplicação web educacional que oferece:
+- 📋 Flashcards interativos com 30 perguntas sobre Python
+- 🎲 Randomização automática das perguntas  
+- 📱 Interface responsiva (desktop e mobile)
+- 🧠 Dois níveis de resposta: iniciante e técnico
+- 🎮 Navegação por teclado e touch
 
-## 📋 Índice da Documentação
+## 📁 Estrutura do Projeto
 
-Esta pasta contém toda a documentação oficial do **Python Training**, incluindo aspectos legais, técnicos e informativos.
+```
+c:\dev\workspace_oidc\
+├── 🐍 server.py                       # Servidor de desenvolvimento
+├── 🖥️ run_server.bat                  # Script Windows para iniciar
+├── 📂 python_trainning/               # Aplicação principal
+│   ├── 🏠 index.html                  # Página inicial
+│   ├── 🧠 mundo_do_conhecimento.html  # Flashcards interativos
+│   ├── 📂 assets/                     # Recursos estáticos
+│   │   ├── 🎨 css/                    # Estilos
+│   │   │   ├── style.css              # Estilos gerais
+│   │   │   └── flashcards.css         # Estilos específicos
+│   │   ├── ⚙️ js/                     # JavaScript
+│   │   │   └── flashcards.js          # Lógica dos flashcards
+│   │   └── 📊 json/                   # Dados
+│   │       └── flashcards.json        # Perguntas e respostas
+│   └── 📖 docs/                       # Documentação
+│       ├── INDEX.md                   # Este arquivo
+│       └── README_SERVER.md           # Documentação do servidor
+```
 
----
+## 🚀 Como Começar
 
-## 🔒 Documentação Legal
+### 1️⃣ Pré-requisitos
+- Python 3.x instalado
+- Navegador web moderno
+- Editor de código (recomendado: VS Code)
 
-### 1. [LICENSE.md](LICENSE.md) - **Licença Proprietária** ⭐ LEIA PRIMEIRO
+### 2️⃣ Executar o Servidor
+```bash
+# Opção 1: Linha de comando
+cd c:\dev\workspace_oidc
+python server.py
 
-- **Propriedade:** Christian Vladimir Uhdre Mulato (CNPJ: 23.969.028/0001-37)
-- **Status:** Material proprietário (NÃO open source)
-- Termos de uso obrigatórios
-- Permissões e restrições
-- Direitos autorais e copyright
-- Consequências de violações
+# Opção 2: Windows (duplo clique)
+run_server.bat
+```
 
-### 2. [PRIVACY.md](PRIVACY.md) - **Política de Privacidade**
+### 3️⃣ Acessar a Aplicação
+- 🏠 **Página Principal**: http://localhost:8000
+- 🧠 **Flashcards**: http://localhost:8000/mundo_do_conhecimento.html
 
-- Conformidade com LGPD (Lei 13.709/2018)
-- Dados coletados e finalidades
-- Seus direitos como titular de dados
-- Segurança e armazenamento
-- Contato do DPO (Encarregado de Dados)
-- Como exercer seus direitos
+## 📋 Funcionalidades
 
-### 3. [LEGAL.md](LEGAL.md) - **Sumário Legal Completo**
+### 🧠 Mundo do Conhecimento (Flashcards)
+- **30 perguntas** cobrindo 6 módulos de Python
+- **Randomização** automática a cada carregamento
+- **Dois níveis** de resposta (iniciante/técnico)
+- **Navegação** por botões, teclado ou touch
+- **Interface responsiva** para mobile e desktop
 
-- Visão geral de todos os aspectos legais
-- Diferença entre Python Training e Reino OIDC
-- Contatos para questões legais
-- Proteção legal e conformidade
-- Tabela comparativa de licenças
+### 🎮 Controles Disponíveis
+- **Mouse/Touch**: Clique no card para virar
+- **Teclado**: 
+  - `←` `→` Navegar entre cards
+  - `Espaço` Virar card atual
+- **Botões**: Anterior/Próximo
+- **Swipe**: Deslize no mobile
 
----
+### 📊 Módulos Cobertos
+1. **Módulo 1** - Fundamentos (variáveis, loops, input)
+2. **Módulo 2** - Jogos com Pygame (coordenadas, colisões, FPS)
+3. **Módulo 3** - Projetos Interativos (Minecraft, Pillow)
+4. **Módulo 4** - IA e Automação (ML, bots, algoritmos)
+5. **Módulo 5** - Segurança Digital (OAuth, OIDC, JWT)
+6. **Módulo 6** - Desenvolvimento (Git, portfolios, code review)
+
+## 🔧 Arquivos Principais
+
+### 🏠 HTML
+- **[index.html](../index.html)**: Página inicial com navegação
+- **[mundo_do_conhecimento.html](../mundo_do_conhecimento.html)**: Interface dos flashcards
+
+### 🎨 CSS  
+- **[style.css](../assets/css/style.css)**: Estilos gerais da aplicação
+- **[flashcards.css](../assets/css/flashcards.css)**: Estilos específicos dos cards
+
+### ⚙️ JavaScript
+- **[flashcards.js](../assets/js/flashcards.js)**: Lógica completa dos flashcards
+
+### 📊 Dados
+- **[flashcards.json](../assets/json/flashcards.json)**: Base de dados com as 30 questões
+
+## 🛠️ Desenvolvimento
+
+### Adicionar Nova Pergunta
+1. Edite `assets/json/flashcards.json`
+2. Adicione objeto com formato:
+```json
+{
+  "id": 31,
+  "module": "Módulo X",
+  "question": "Sua pergunta aqui?",
+  "answer_beginner": "Resposta para iniciantes",
+  "answer_technical": "Resposta técnica detalhada"
+}
+```
+
+### Modificar Estilos
+- **Cores dos cards**: Edite gradientes em `flashcards.css`
+- **Responsividade**: Ajuste media queries
+- **Animações**: Modifique transitions e transforms
+
+### Personalizar JavaScript
+- **Randomização**: Função `shuffleArray()`
+- **Navegação**: Event listeners em `setupEventListeners()`
+- **Criação de cards**: Método `createFlashcardElement()`
 
 ## 📖 Documentação Técnica
 
-### 4. [CREDITS.md](CREDITS.md) - **Créditos e Atribuições**
+### 🖥️ Servidor de Desenvolvimento
+- **[Guia do Servidor](README_SERVER.md)** - Configuração e troubleshooting
 
-- Propriedade intelectual
-- Bibliotecas de terceiros utilizadas
-- Recursos e referências educacionais
-- Avisos de marcas registradas
-- Agradecimentos à comunidade
+### 🏗️ Arquitetura
+- **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
+- **Backend**: Python HTTP Server (desenvolvimento)
+- **Dados**: JSON estático
+- **Estilo**: Bootstrap 5 + CSS customizado
 
-### 5. [STRUCTURE.md](STRUCTURE.md) - **Estrutura do Projeto**
+### 🔧 APIs Utilizadas
+- **Fetch API**: Carregamento do JSON
+- **Touch Events**: Interação mobile
+- **Keyboard Events**: Navegação por teclado
+- **CSS Transforms**: Animação 3D dos cards
 
-- Arquitetura de arquivos e pastas
-- Organização dos módulos
-- Assets (CSS, JavaScript, imagens)
-- Scripts de teste e geração de certificados
+## 🎯 Casos de Uso
 
-### 6. [CONTRIBUTING.md](CONTRIBUTING.md) - **Guia de Contribuição**
+### 👨‍🎓 Para Estudantes
+1. Acesse os flashcards para revisar conceitos
+2. Use modo aleatório para testar conhecimento
+3. Compare respostas iniciante vs. técnica
+4. Pratique navegação por teclado
 
-- Como reportar bugs (alunos autorizados)
-- Sugestões de melhorias
-- Política de feedback
-- Canais de comunicação
+### 👨‍🏫 Para Professores  
+1. Use como ferramenta de revisão em aula
+2. Projete na tela para discussões em grupo
+3. Personalize perguntas editando o JSON
+4. Acompanhe progresso dos alunos
 
----
+### 👨‍💻 Para Desenvolvedores
+1. Estude o código como exemplo de projeto
+2. Fork e customize para outros temas
+3. Contribua com novas funcionalidades
+4. Use como base para projetos similares
 
-## 🎓 Documentação do Curso
+## 🔍 Troubleshooting
 
-### 7. [COURSE_OVERVIEW.md](COURSE_OVERVIEW.md) - **Visão Geral do Curso**
+### ❌ Problemas Comuns
 
-- Descrição detalhada dos 6 módulos
-- Objetivos de aprendizagem
-- Pré-requisitos
-- Carga horária (40 horas)
-- Certificação
+**Flashcards não carregam**
+- Verifique se o servidor está rodando
+- Confirme se `flashcards.json` existe
+- Veja console do navegador para erros
 
-### 8. [MODULES.md](MODULES.md) - **Detalhamento dos Módulos**
+**Servidor não inicia**  
+- Confirme que está na pasta correta
+- Verifique se Python está instalado
+- Tente uma porta diferente
 
-- Módulo 1: Fundamentos da Programação
-- Módulo 2: Desenvolvimento de Jogos Básicos
-- Módulo 3: Projetos Interativos
-- Módulo 4: Inteligência Artificial e Automação
-- Módulo 5: Segurança Digital e Autenticação
-- Módulo 6: Finalização e Próximos Passos
+**Layout quebrado no mobile**
+- Limpe cache do navegador
+- Verifique se CSS foi carregado
+- Teste em modo incógnito
 
-### 9. [FAQ.md](FAQ.md) - **Perguntas Frequentes**
+### 🔗 Links Úteis
+- [Python.org](https://www.python.org/) - Download do Python
+- [MDN Web Docs](https://developer.mozilla.org/) - Referência web
+- [Bootstrap](https://getbootstrap.com/) - Framework CSS
 
-- Dúvidas sobre acesso
-- Questões técnicas
-- Dúvidas sobre certificado
-- Suporte e contato
+## 📞 Suporte
 
----
-
-## 🛠️ Documentação Técnica de Desenvolvimento
-
-### 10. [TECHNOLOGIES.md](TECHNOLOGIES.md) - **Tecnologias Utilizadas**
-
-- Frontend: HTML5, CSS3, Bootstrap 5.3.3
-- JavaScript: Vanilla JS, localStorage
-- Python: Pygame, Pillow, mcpi
-- Fontes: Google Fonts (Nunito, Comic Neue, Patrick Hand)
-- Ferramentas de desenvolvimento
-
-### 11. [SETUP.md](SETUP.md) - **Configuração e Instalação**
-
-- Requisitos do sistema
-- Instalação de dependências Python
-- Configuração do ambiente local
-- Troubleshooting comum
+Para dúvidas e problemas:
+1. Consulte este INDEX.md
+2. Verifique [README_SERVER.md](README_SERVER.md)
+3. Examine logs do servidor
+4. Inspione console do navegador
 
 ---
 
-## 📞 Informações de Contato
-
-### Geral
-
-- **Website:** [www.caracore.com.br]
-- **Email:** [suporte@caracore.com.br]
-
-### Questões Legais e Licenciamento
-
-- **Email:** [suporte@caracore.com.br]
-- **CNPJ:** [23.969.028/0001-37]
-
-### Privacidade e LGPD
-
-- **DPO (Encarregado de Dados):** [suporte@caracore.com.br]
-- **Privacidade:** [suporte@caracore.com.br]
-
-### Suporte Técnico
-
-- **Email:** [suporte@caracore.com.br]
-
----
-
-## ⚖️ Resumo Legal Rápido
-
-### ✅ O Que Você PODE Fazer
-
-- Estudar o material como aluno matriculado
-- Executar os códigos de exemplo
-- Criar projetos pessoais baseados nos conceitos
-- Compartilhar seu certificado após conclusão
-- Incluir projetos do curso em seu portfólio pessoal
-
-### ❌ O Que Você NÃO PODE Fazer
-
-- Copiar ou distribuir o material
-- Usar comercialmente sem autorização
-- Criar cursos derivados
-- Remover avisos de copyright
-- Compartilhar credenciais de acesso
-- Republicar conteúdo online
-
----
-
-## 🔍 Diferença: Python Training vs Reino OIDC
-
-**IMPORTANTE:** São dois projetos SEPARADOS com licenças DIFERENTES.
-
-| Aspecto | Python Training | Reino OIDC |
-|---------|----------------|------------|
-| **Propriedade** | Christian Vladimir Uhdre Mulato | chmulato |
-| **CNPJ** | 23.969.028/0001-37 | - |
-| **Licença** | Proprietária | Open Source |
-| **Acesso** | Alunos matriculados | Público |
-| **Repositório** | Privado | github.com/chmulato/reino_oidc |
-| **Uso Comercial** | Proibido sem autorização | Conforme licença OSS |
-| **Redistribuição** | Proibida | Permitida (conf. licença) |
-
-O Python Training **menciona** o Reino OIDC no Módulo 5 apenas como material educacional complementar sobre OpenID Connect.
-
----
-
-## 📅 Última Atualização
-
-**Data:** 10 de novembro de 2025
-
----
-
-## 🎯 Navegação Rápida
-
-### Para Novos Alunos
-
-1. Leia [LICENSE.md](LICENSE.md) - Termos de uso
-2. Leia [PRIVACY.md](PRIVACY.md) - Privacidade
-3. Veja [COURSE_OVERVIEW.md](COURSE_OVERVIEW.md) - Sobre o curso
-4. Leia [FAQ.md](FAQ.md) - Dúvidas comuns
-
-### Para Questões Legais
-
-1. [LICENSE.md](LICENSE.md) - Licença completa
-2. [LEGAL.md](LEGAL.md) - Sumário legal
-3. [PRIVACY.md](PRIVACY.md) - LGPD
-
-### Para Informações Técnicas
-
-1. [TECHNOLOGIES.md](TECHNOLOGIES.md) - Stack técnico
-2. [STRUCTURE.md](STRUCTURE.md) - Arquitetura
-3. [CREDITS.md](CREDITS.md) - Bibliotecas usadas
-
----
-
-## ✍️ Declaração
-
-Ao usar o **Python Training**, você concorda com todos os termos descritos na documentação legal, especialmente:
-
-- [LICENSE.md](LICENSE.md) - Licença proprietária
-- [PRIVACY.md](PRIVACY.md) - Política de privacidade
-
-Se não concordar, não utilize o curso e solicite cancelamento.
-
----
-
-## 🛡️ Conformidade
-
-Este curso está em conformidade com:
-
-- ✅ LGPD (Lei 13.709/2018) - Proteção de Dados
-- ✅ Lei de Direitos Autorais (Lei 9.610/98)
-- ✅ Marco Civil da Internet (Lei 12.965/2014)
-- ✅ Código de Defesa do Consumidor (Lei 8.078/90)
-
----
-
-© 2025 **Christian Vladimir Uhdre Mulato** (CNPJ: 23.969.028/0001-37)  
-Todos os direitos reservados.
-
-**Python Training** é marca registrada.
-
----
-
-*Desenvolvido com 💙 para formar a próxima geração de desenvolvedores Python!*
+**📝 Última atualização**: Janeiro 2025  
+**🔖 Versão**: 1.0  
+**👤 Autor**: Python Training Team

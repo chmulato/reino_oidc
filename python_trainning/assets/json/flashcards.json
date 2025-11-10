@@ -1,0 +1,214 @@
+{
+  "flashcards": [
+    {
+      "id": 1,
+      "module": "Módulo 1",
+      "question": "O que é uma variável?",
+      "answer_beginner": "É como uma caixinha onde você guarda uma informação com um nome. Exemplo: idade = 15",
+      "answer_technical": "Referência a um espaço de memória que armazena dados dinamicamente tipados em Python."
+    },
+    {
+      "id": 2,
+      "module": "Módulo 1",
+      "question": "Qual a diferença entre = e ==?",
+      "answer_beginner": "= é para guardar (atribuir). == é para comparar (verificar se são iguais).",
+      "answer_technical": "= é operador de atribuição. == é operador de comparação que retorna boolean."
+    },
+    {
+      "id": 3,
+      "module": "Módulo 1",
+      "question": "Para que serve o loop \"for\"?",
+      "answer_beginner": "Para repetir uma ação várias vezes. Exemplo: imprimir números de 1 a 10.",
+      "answer_technical": "Estrutura de iteração que percorre sequências (listas, ranges) executando um bloco de código."
+    },
+    {
+      "id": 4,
+      "module": "Módulo 1",
+      "question": "O que faz a função input()?",
+      "answer_beginner": "Pede para o usuário digitar algo. Exemplo: nome = input(\"Digite seu nome:\")",
+      "answer_technical": "Função built-in que lê entrada do stdin e retorna string."
+    },
+    {
+      "id": 5,
+      "module": "Módulo 1",
+      "question": "Qual a diferença entre lista e tupla?",
+      "answer_beginner": "Lista [] pode ser modificada. Tupla () não pode ser alterada depois de criada.",
+      "answer_technical": "Lista é mutável (métodos append, remove). Tupla é imutável (hashable, menor overhead)."
+    },
+    {
+      "id": 6,
+      "module": "Módulo 2",
+      "question": "O que é Pygame?",
+      "answer_beginner": "Uma biblioteca Python para criar jogos 2D com gráficos, sons e controles.",
+      "answer_technical": "Biblioteca wrapper de SDL para game development com event loop, sprite system e rendering 2D."
+    },
+    {
+      "id": 7,
+      "module": "Módulo 2",
+      "question": "Como funciona o sistema de coordenadas no Pygame?",
+      "answer_beginner": "(0,0) fica no canto superior esquerdo. X aumenta para direita, Y aumenta para baixo.",
+      "answer_technical": "Sistema cartesiano com origem no top-left, eixo Y invertido em relação à matemática convencional."
+    },
+    {
+      "id": 8,
+      "module": "Módulo 2",
+      "question": "O que é detecção de colisão?",
+      "answer_beginner": "Verificar se dois objetos (bola e raquete) estão se tocando no jogo.",
+      "answer_technical": "Algoritmo que verifica interseção de bounding boxes usando pygame.Rect.colliderect()."
+    },
+    {
+      "id": 9,
+      "module": "Módulo 2",
+      "question": "O que é FPS (frames por segundo)?",
+      "answer_beginner": "Quantas vezes por segundo a tela é redesenhada. 60 FPS = jogo fluido.",
+      "answer_technical": "Taxa de atualização do game loop controlada por clock.tick() para gameplay consistente."
+    },
+    {
+      "id": 10,
+      "module": "Módulo 2",
+      "question": "Como capturar teclas pressionadas?",
+      "answer_beginner": "Usando pygame.key.get_pressed() para ver quais teclas estão sendo pressionadas.",
+      "answer_technical": "Event polling com pygame.event.get() ou state checking com pygame.key.get_pressed()."
+    },
+    {
+      "id": 11,
+      "module": "Módulo 3",
+      "question": "O que é o Minecraft Education Edition API?",
+      "answer_beginner": "Uma forma de controlar o Minecraft com código Python para construir automaticamente.",
+      "answer_technical": "API (mcpi) que permite manipular o mundo Minecraft via comandos programáticos setBlock/setBlocks."
+    },
+    {
+      "id": 12,
+      "module": "Módulo 3",
+      "question": "O que é a biblioteca Pillow?",
+      "answer_beginner": "Uma ferramenta Python para criar, editar e salvar imagens (PNG, GIF, etc).",
+      "answer_technical": "Fork do PIL (Python Imaging Library) com suporte a múltiplos formatos e operações de imagem."
+    },
+    {
+      "id": 13,
+      "module": "Módulo 3",
+      "question": "Como criar um GIF animado?",
+      "answer_beginner": "Criar várias imagens (frames) e juntar com Pillow salvando com save_all=True.",
+      "answer_technical": "Usar PIL.Image.save() com parâmetros append_images, save_all, duration e loop."
+    },
+    {
+      "id": 14,
+      "module": "Módulo 3",
+      "question": "O que são coordenadas no Minecraft?",
+      "answer_beginner": "Números (x, y, z) que indicam a posição de um bloco no mundo: x=horizontal, y=altura, z=profundidade.",
+      "answer_technical": "Sistema de coordenadas 3D cartesiano com Y sendo altitude, X/Z formando plano horizontal."
+    },
+    {
+      "id": 15,
+      "module": "Módulo 3",
+      "question": "Como desenhar um círculo com Pillow?",
+      "answer_beginner": "Usar ImageDraw.ellipse() com coordenadas do retângulo que envolve o círculo.",
+      "answer_technical": "draw.ellipse([(x1,y1), (x2,y2)], fill=color) onde x2-x1 == y2-y1 para círculo perfeito."
+    },
+    {
+      "id": 16,
+      "module": "Módulo 4",
+      "question": "O que é Inteligência Artificial?",
+      "answer_beginner": "Programas que parecem \"pensar\" e tomar decisões sozinhos, como um bot que joga.",
+      "answer_technical": "Algoritmos que simulam processos cognitivos: aprendizado, raciocínio, percepção e tomada de decisão."
+    },
+    {
+      "id": 17,
+      "module": "Módulo 4",
+      "question": "O que é uma árvore de decisão?",
+      "answer_beginner": "Como um fluxograma de perguntas: \"Se X, faça Y, senão, faça Z\".",
+      "answer_technical": "Estrutura hierárquica de condições if-else para classificação/decisão baseada em features."
+    },
+    {
+      "id": 18,
+      "module": "Módulo 4",
+      "question": "O que é Machine Learning?",
+      "answer_beginner": "Ensinar o computador a aprender com exemplos, como um bot que melhora jogando.",
+      "answer_technical": "Subcampo da IA que usa algoritmos para identificar padrões em dados e fazer predições."
+    },
+    {
+      "id": 19,
+      "module": "Módulo 4",
+      "question": "Como funciona um bot de jogo da velha?",
+      "answer_beginner": "Verifica estratégias: 1) pode ganhar? 2) precisa bloquear? 3) onde é melhor jogar?",
+      "answer_technical": "Algoritmo heurístico com prioridades: vitória → bloqueio → centro → cantos → laterais."
+    },
+    {
+      "id": 20,
+      "module": "Módulo 4",
+      "question": "O que é um dicionário de conhecimento?",
+      "answer_beginner": "Uma memória onde o bot salva o que aprendeu: \"situação X → ação Y funcionou\".",
+      "answer_technical": "Estrutura de dados (dict) mapeando states para actions com reforço de decisões bem-sucedidas."
+    },
+    {
+      "id": 21,
+      "module": "Módulo 5",
+      "question": "Qual a diferença entre autenticação e autorização?",
+      "answer_beginner": "Autenticação = provar quem você é (RG). Autorização = o que você pode fazer (permissões).",
+      "answer_technical": "Authentication verifica identidade (username/password). Authorization verifica acesso (RBAC/claims)."
+    },
+    {
+      "id": 22,
+      "module": "Módulo 5",
+      "question": "O que é OAuth 2.0?",
+      "answer_beginner": "Sistema que permite apps acessarem suas coisas SEM saber sua senha (como \"Login com Google\").",
+      "answer_technical": "Protocolo de autorização delegada usando access tokens com escopos limitados."
+    },
+    {
+      "id": 23,
+      "module": "Módulo 5",
+      "question": "O que é OIDC?",
+      "answer_beginner": "OAuth + identificação. Além de permitir acesso, também diz quem você é.",
+      "answer_technical": "OpenID Connect = camada de autenticação sobre OAuth 2.0 retornando ID Token (JWT)."
+    },
+    {
+      "id": 24,
+      "module": "Módulo 5",
+      "question": "O que é um JWT?",
+      "answer_beginner": "Um \"pacote\" com suas informações (nome, email) que é protegido contra alterações.",
+      "answer_technical": "JSON Web Token: 3 partes base64 (header.payload.signature) assinadas criptograficamente."
+    },
+    {
+      "id": 25,
+      "module": "Módulo 5",
+      "question": "Por que não salvar senhas em texto puro?",
+      "answer_beginner": "Se hackers roubarem o banco de dados, verão todas as senhas. Use hash!",
+      "answer_technical": "Breach expõe credenciais. Use hashing (bcrypt/Argon2) com salt para proteção unidirecional."
+    },
+    {
+      "id": 26,
+      "module": "Módulo 6",
+      "question": "O que é um portfólio de desenvolvedor?",
+      "answer_beginner": "Uma coleção dos seus melhores projetos para mostrar o que você sabe fazer.",
+      "answer_technical": "Repositório público (GitHub) demonstrando skills através de projetos documentados com README."
+    },
+    {
+      "id": 27,
+      "module": "Módulo 6",
+      "question": "O que é Git?",
+      "answer_beginner": "Sistema que salva versões do seu código, como um \"CTRL+Z super poderoso\".",
+      "answer_technical": "Sistema de controle de versão distribuído para rastrear mudanças em código-fonte."
+    },
+    {
+      "id": 28,
+      "module": "Módulo 6",
+      "question": "O que é code review?",
+      "answer_beginner": "Revisar seu código antes de publicar: nomes claros, sem duplicação, bem organizado.",
+      "answer_technical": "Processo de peer review para garantir qualidade, legibilidade e adherência a padrões."
+    },
+    {
+      "id": 29,
+      "module": "Módulo 6",
+      "question": "O que é um README.md?",
+      "answer_beginner": "Arquivo com instruções: o que é o projeto, como instalar, como usar.",
+      "answer_technical": "Documentação em Markdown descrevendo projeto, setup, uso, dependências e contribuição."
+    },
+    {
+      "id": 30,
+      "module": "Geral",
+      "question": "Qual a melhor forma de continuar aprendendo Python?",
+      "answer_beginner": "Pratique! Crie projetos pessoais, participe de hackathons, contribua com open source, faça cursos online, entre em comunidades (Discord, Reddit), e nunca pare de experimentar coisas novas!",
+      "answer_technical": "Pratique! Crie projetos pessoais, participe de hackathons, contribua com open source, faça cursos online, entre em comunidades (Discord, Reddit), e nunca pare de experimentar coisas novas!"
+    }
+  ]
+}
