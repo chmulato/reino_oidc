@@ -345,7 +345,21 @@ Contribuições são muito bem-vindas! Você pode:
 
 ## 📜 Licença
 
-Este projeto está sob a **Licença MIT**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está licenciado sob a **MIT License** - uma das licenças open source mais permissivas.
+
+### 🎯 O que isso significa?
+
+- ✅ **Uso livre** para fins educacionais, comerciais e pessoais
+- ✅ **Modificação permitida** - adapte para suas necessidades
+- ✅ **Distribuição livre** - compartilhe suas versões
+- ✅ **Sem royalties** - use sem custos adicionais
+
+### 📋 Arquivos de licenciamento
+
+- [LICENSE](LICENSE) - Texto completo da licença MIT
+- [LICENSING.md](LICENSING.md) - Guia detalhado de uso e permissões
+
+**Para educadores:** Este material foi criado especificamente para uso educacional. Sintam-se livres para usar em aulas, cursos e treinamentos!
 
 ---
 
