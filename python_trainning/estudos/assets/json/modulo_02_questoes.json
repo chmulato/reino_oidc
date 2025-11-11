@@ -1,0 +1,97 @@
+{
+  "modulo": "02",
+  "titulo": "Desenvolvimento de Jogos Básicos",
+  "descricao": "Revisão dos conceitos de Pygame e desenvolvimento de jogos 2D",
+  "questoes": [
+    {
+      "id": 1,
+      "pergunta": "O que é o Pygame?",
+      "resposta": "Pygame é uma biblioteca Python para desenvolvimento de jogos 2D. Fornece funcionalidades para gráficos, sons, eventos de teclado/mouse e física básica, facilitando a criação de jogos sem precisar programar tudo do zero.",
+      "categoria": "Pygame Básico"
+    },
+    {
+      "id": 2,
+      "pergunta": "Como funciona o sistema de coordenadas em Pygame?",
+      "resposta": "Em Pygame, o ponto (0,0) fica no canto superior esquerdo da tela. O eixo X aumenta para a direita e o eixo Y aumenta para baixo. Isso é diferente da matemática tradicional onde Y cresce para cima.",
+      "categoria": "Coordenadas"
+    },
+    {
+      "id": 3,
+      "pergunta": "O que é um game loop (loop principal do jogo)?",
+      "resposta": "O game loop é o ciclo principal que se repete continuamente enquanto o jogo está rodando. Em cada iteração, ele: 1) processa eventos (teclado/mouse), 2) atualiza o estado do jogo (posições, pontos), 3) desenha tudo na tela. É o coração de qualquer jogo.",
+      "categoria": "Arquitetura de Jogos"
+    },
+    {
+      "id": 4,
+      "pergunta": "Como criar uma janela básica em Pygame?",
+      "resposta": "Use pygame.init() para inicializar, pygame.display.set_mode((largura, altura)) para criar a janela, e pygame.display.set_caption() para definir o título. A janela deve ser atualizada com pygame.display.flip() ou pygame.display.update().",
+      "categoria": "Janela de Jogo"
+    },
+    {
+      "id": 5,
+      "pergunta": "O que são eventos em Pygame?",
+      "resposta": "Eventos são ações do usuário ou do sistema, como pressionar teclas, mover o mouse ou fechar a janela. Usamos pygame.event.get() para capturá-los e pygame.QUIT, pygame.KEYDOWN, pygame.MOUSEBUTTONDOWN para identificá-los.",
+      "categoria": "Eventos"
+    },
+    {
+      "id": 6,
+      "pergunta": "Como detectar colisões entre objetos em Pygame?",
+      "resposta": "Use pygame.Rect para criar retângulos em volta dos objetos e o método colliderect() para verificar se eles se sobrepõem. Exemplo: if jogador_rect.colliderect(inimigo_rect): indica colisão entre jogador e inimigo.",
+      "categoria": "Detecção de Colisões"
+    },
+    {
+      "id": 7,
+      "pergunta": "O que é FPS (Frames Per Second) e por que é importante?",
+      "resposta": "FPS são os quadros por segundo que o jogo desenha na tela. Controlar o FPS (geralmente 60) com pygame.time.Clock() garante que o jogo rode na mesma velocidade em computadores diferentes, evitando que fique muito rápido ou lento.",
+      "categoria": "Performance"
+    },
+    {
+      "id": 8,
+      "pergunta": "Como desenhar formas básicas em Pygame?",
+      "resposta": "Use pygame.draw com funções como: rect() para retângulos, circle() para círculos, line() para linhas, polygon() para polígonos. Todas recebem a superfície, cor e coordenadas. Exemplo: pygame.draw.circle(tela, COR, (x, y), raio).",
+      "categoria": "Desenho"
+    },
+    {
+      "id": 9,
+      "pergunta": "O que é uma Surface (superfície) em Pygame?",
+      "resposta": "Surface é uma área retangular onde você pode desenhar coisas. A tela principal é uma Surface, mas você pode criar outras para sprites, imagens e textos. Use blit() para copiar uma Surface em outra.",
+      "categoria": "Surfaces"
+    },
+    {
+      "id": 10,
+      "pergunta": "Como capturar teclas pressionadas em Pygame?",
+      "resposta": "Use pygame.key.get_pressed() para obter o estado de todas as teclas, ou capture eventos KEYDOWN/KEYUP no loop de eventos. Constantes como pygame.K_LEFT, pygame.K_SPACE identificam teclas específicas.",
+      "categoria": "Controles"
+    },
+    {
+      "id": 11,
+      "pergunta": "O que é um sprite em desenvolvimento de jogos?",
+      "resposta": "Sprite é um objeto 2D com imagem que representa personagens, inimigos, itens, etc. Em Pygame, a classe pygame.sprite.Sprite facilita gerenciar grupos de sprites, detectar colisões e atualizar múltiplos objetos de uma vez.",
+      "categoria": "Sprites"
+    },
+    {
+      "id": 12,
+      "pergunta": "Como implementar um sistema de pontuação?",
+      "resposta": "Crie uma variável para armazenar os pontos (pontos = 0), incremente quando necessário (pontos += 10), e renderize na tela usando pygame.font.Font.render(). Atualize a cada frame dentro do game loop.",
+      "categoria": "Sistema de Pontos"
+    },
+    {
+      "id": 13,
+      "pergunta": "Qual a diferença entre pygame.display.flip() e update()?",
+      "resposta": "flip() atualiza a tela inteira de uma vez, é mais simples. update() pode atualizar apenas partes específicas passando retângulos, sendo mais eficiente para jogos complexos. Para iniciantes, flip() é suficiente.",
+      "categoria": "Atualização de Tela"
+    },
+    {
+      "id": 14,
+      "pergunta": "Como fazer um objeto se mover suavemente na tela?",
+      "resposta": "Crie variáveis para posição (x, y) e velocidade (vel_x, vel_y). A cada frame, atualize a posição: x += vel_x. Use o FPS controlado pelo Clock para garantir movimento consistente independente do hardware.",
+      "categoria": "Movimento"
+    },
+    {
+      "id": 15,
+      "pergunta": "Quais são os passos básicos para criar um jogo Pong?",
+      "resposta": "1) Criar janela e game loop, 2) Desenhar raquetes (retângulos) e bola (círculo), 3) Capturar teclas para mover raquetes, 4) Mover bola automaticamente, 5) Detectar colisões com bordas e raquetes, 6) Inverter direção na colisão, 7) Sistema de pontos quando bola sai.",
+      "categoria": "Projeto Pong"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "modulo": 6,
+  "titulo": "Finalização e Próximos Passos",
+  "questoes": [
+    {
+      "id": 1,
+      "categoria": "Portfólio Básico",
+      "pergunta": "Quais são os elementos essenciais que um portfólio de programador iniciante deve conter?",
+      "resposta": "1) Biografia profissional breve com suas habilidades. 2) Lista de projetos concluídos com descrições claras. 3) Links para código fonte (GitHub). 4) Capturas de tela ou demos dos projetos. 5) Informações de contato. 6) Tecnologias dominadas. Um bom portfólio mostra o que você sabe fazer na prática!"
+    },
+    {
+      "id": 2,
+      "categoria": "Code Review",
+      "pergunta": "O que é code review e por que ele é importante no desenvolvimento de software?",
+      "resposta": "Code review é a revisão de código feita por outros programadores antes de integrar mudanças. Importância: encontra bugs antes da produção, garante qualidade e padrões do código, compartilha conhecimento entre a equipe, melhora habilidades de programação, e promove discussão sobre soluções. É uma prática essencial em desenvolvimento profissional."
+    },
+    {
+      "id": 3,
+      "categoria": "Feedback Construtivo",
+      "pergunta": "Como dar e receber feedback construtivo durante code review?",
+      "resposta": "DAR: seja específico e objetivo, foque no código (não na pessoa), sugira melhorias concretas, reconheça pontos positivos. RECEBER: não leve para o pessoal, faça perguntas para entender, agradeça o tempo do revisor, aplique melhorias sugeridas. Lembre-se: o objetivo é melhorar o código e aprender juntos!"
+    },
+    {
+      "id": 4,
+      "categoria": "Comunidades de Programação",
+      "pergunta": "Quais são as principais comunidades e plataformas online para programadores Python?",
+      "resposta": "1) Stack Overflow: perguntas e respostas técnicas. 2) GitHub: código aberto e colaboração. 3) Reddit (r/Python, r/learnpython): discussões e recursos. 4) Discord/Slack: comunidades em tempo real. 5) Python Brasil: comunidade nacional. 6) Dev.to: artigos e tutoriais. 7) PyLadies: comunidade para mulheres. Participar de comunidades acelera muito o aprendizado!"
+    },
+    {
+      "id": 5,
+      "categoria": "GitHub e Controle de Versão",
+      "pergunta": "Por que usar GitHub no seu portfólio e quais boas práticas seguir?",
+      "resposta": "GitHub mostra seu código, evolução e atividade para recrutadores. Boas práticas: 1) README detalhado em cada projeto. 2) Commits frequentes com mensagens claras. 3) Código limpo e comentado. 4) .gitignore apropriado. 5) Licença open source quando aplicável. 6) Pin dos melhores projetos no perfil. GitHub é seu currículo vivo!"
+    },
+    {
+      "id": 6,
+      "categoria": "Documentação de Projetos",
+      "pergunta": "O que deve conter um README.md completo de um projeto?",
+      "resposta": "1) Título e descrição breve do projeto. 2) Screenshot ou GIF de demonstração. 3) Tecnologias utilizadas. 4) Como instalar e executar (passo a passo). 5) Como usar (exemplos). 6) Funcionalidades principais. 7) Contribuições (se aceita). 8) Licença. 9) Contato/créditos. Um bom README vende seu projeto!"
+    },
+    {
+      "id": 7,
+      "categoria": "Unity e C#",
+      "pergunta": "O que é Unity e por que é uma escolha popular para desenvolvimento de jogos?",
+      "resposta": "Unity é um motor de jogos profissional multiplataforma que usa C#. Popular porque: 1) Suporta 2D e 3D. 2) Publica para PC, mobile, console, web. 3) Asset Store com recursos prontos. 4) Grande comunidade e tutoriais. 5) Versão gratuita robusta. 6) Usado em jogos indie e AAA. 7) Editor visual poderoso. É o motor mais usado no mundo!"
+    },
+    {
+      "id": 8,
+      "categoria": "Godot Engine",
+      "pergunta": "Quais são as vantagens do Godot Engine, especialmente para desenvolvedores Python?",
+      "resposta": "1) 100% open source e gratuito. 2) GDScript é muito similar a Python (fácil transição). 3) Leve e rápido (menos de 50MB). 4) Suporta 2D e 3D nativamente. 5) Editor intuitivo com node system. 6) Exporta para múltiplas plataformas. 7) Sem royalties ou taxas. 8) Comunidade crescente. Ideal para quem vem de Python!"
+    },
+    {
+      "id": 9,
+      "categoria": "Roadmap de Aprendizado",
+      "pergunta": "Qual é um roadmap progressivo recomendado para evoluir após Python básico?",
+      "resposta": "1) Dominar Python: estruturas de dados, OOP, async. 2) Escolher especialização: web (Django/Flask), data science (pandas/numpy), games (Pygame/Godot). 3) Aprender Git/GitHub profundamente. 4) Banco de dados (SQL/NoSQL). 5) APIs e integração. 6) Testes automatizados. 7) Deploy e DevOps básico. 8) Framework avançado na especialização. Sempre construindo projetos práticos!"
+    },
+    {
+      "id": 10,
+      "categoria": "Cursos e Recursos",
+      "pergunta": "Quais plataformas oferecem cursos de qualidade para continuar aprendendo programação?",
+      "resposta": "GRATUITOS: 1) FreeCodeCamp. 2) YouTube (Curso em Vídeo, Code with Mosh). 3) Python.org oficial. 4) Real Python. PAGOS: 1) Udemy (promoções frequentes). 2) Coursera (certificados). 3) Pluralsight. 4) LinkedIn Learning. 5) Alura (PT-BR). INTERATIVOS: 1) Codecademy. 2) LeetCode (algoritmos). 3) HackerRank. Mix gratuito + pago maximiza aprendizado!"
+    },
+    {
+      "id": 11,
+      "categoria": "Livros Recomendados",
+      "pergunta": "Quais livros são essenciais para programadores Python em diferentes níveis?",
+      "resposta": "INICIANTE: 'Python Crash Course' (Eric Matthes), 'Automate the Boring Stuff' (Al Sweigart). INTERMEDIÁRIO: 'Fluent Python' (Luciano Ramalho), 'Effective Python' (Brett Slatkin). PROJETOS: 'Python Playground' (Mahesh Venkitachalam), 'Invent Your Own Games' (Al Sweigart). AVANÇADO: 'Python Cookbook', 'High Performance Python'. Livros consolidam fundamentos que tutoriais pulam!"
+    },
+    {
+      "id": 12,
+      "categoria": "Prática Contínua",
+      "pergunta": "Como manter a prática de programação regular e continuar evoluindo?",
+      "resposta": "1) Code diariamente, mesmo que 30min. 2) Desafios: LeetCode, HackerRank, Advent of Code. 3) Projetos pessoais: resolva problemas reais seus. 4) Contribua com open source no GitHub. 5) Participe de Game Jams (Ludum Dare, Global Game Jam). 6) Ensine: blog, YouTube, mentoria. 7) Refatore código antigo. Consistência > intensidade esporádica!"
+    },
+    {
+      "id": 13,
+      "categoria": "Networking e Empregabilidade",
+      "pergunta": "Como construir networking efetivo na área de programação e jogos?",
+      "resposta": "1) Participe de meetups locais (Python Brasil, Game Dev meetups). 2) Eventos: Campus Party, Brasil Game Show, hackathons. 3) LinkedIn ativo: compartilhe projetos e aprendizados. 4) Contribua em projetos open source. 5) Discord de comunidades. 6) Twitter tech: siga desenvolvedores e compartilhe progresso. 7) Mentoria: peça e ofereça. Networking abre portas que currículo sozinho não abre!"
+    },
+    {
+      "id": 14,
+      "categoria": "Especialização vs Generalização",
+      "pergunta": "É melhor especializar-se em uma área ou ser generalista? Como decidir?",
+      "resposta": "INÍCIO: seja T-shaped - tenha conhecimento amplo (generalista) mas profundidade em uma área (especialista). Comece explorando várias áreas, depois especialize onde há mais interesse/oportunidade. ESPECIALIZAÇÃO: mais demanda, salários maiores, expertise reconhecida. GENERALIZAÇÃO: mais flexibilidade, visão sistêmica, melhor para startups. Ideal: especialista que entende outras áreas!"
+    },
+    {
+      "id": 15,
+      "categoria": "Mentalidade de Crescimento",
+      "pergunta": "Qual mentalidade é essencial para ter sucesso contínuo em programação?",
+      "resposta": "1) GROWTH MINDSET: erros são aprendizado, não fracasso. 2) Curiosidade constante: sempre pergunte 'como isso funciona?'. 3) Conforto com desconforto: abraçar não saber. 4) Aprendizado vitalício: tecnologia sempre muda. 5) Compartilhar conhecimento: ensinar solidifica aprendizado. 6) Celebrar pequenas vitórias. 7) Comparar-se com você de ontem, não com outros. Programação é jornada, não destino!"
+    }
+  ]
+}

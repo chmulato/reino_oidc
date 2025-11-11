@@ -1,0 +1,97 @@
+{
+  "modulo": "03",
+  "titulo": "Projetos Interativos",
+  "descricao": "Revisão dos conceitos de Minecraft com Python e criação de animações",
+  "questoes": [
+    {
+      "id": 1,
+      "pergunta": "O que é o Minecraft Education Edition?",
+      "resposta": "É uma versão educacional do Minecraft que permite usar Python para programar e automatizar ações dentro do jogo. Ideal para aprender programação de forma visual e interativa, construindo estruturas e modificando o mundo através de código.",
+      "categoria": "Minecraft Básico"
+    },
+    {
+      "id": 2,
+      "pergunta": "Como conectar Python ao Minecraft Education Edition?",
+      "resposta": "Use a biblioteca mcpi (Minecraft Pi edition) ou a API do Minecraft Education Edition. Após instalar com 'pip install mcpi', importe no código: from mcpi.minecraft import Minecraft e crie uma conexão: mc = Minecraft.create().",
+      "categoria": "Configuração"
+    },
+    {
+      "id": 3,
+      "pergunta": "O que são coordenadas no Minecraft e como funcionam?",
+      "resposta": "O Minecraft usa coordenadas (x, y, z) para localizar posições no mundo. X = leste/oeste, Y = altura (vertical), Z = norte/sul. Você pode ver suas coordenadas pressionando F3. Python usa esses valores para posicionar blocos.",
+      "categoria": "Sistema de Coordenadas"
+    },
+    {
+      "id": 4,
+      "pergunta": "Como colocar um bloco no Minecraft usando Python?",
+      "resposta": "Use o método setBlock() com coordenadas e tipo de bloco: mc.setBlock(x, y, z, block_type). Exemplo: mc.setBlock(0, 10, 0, 1) coloca um bloco de pedra (ID 1) na posição 0,10,0.",
+      "categoria": "Manipulação de Blocos"
+    },
+    {
+      "id": 5,
+      "pergunta": "Como criar estruturas automatizadas no Minecraft com loops?",
+      "resposta": "Use loops for para repetir comandos setBlock(). Exemplo: criar uma parede com for x in range(10): mc.setBlock(x, 0, 0, 1). Loops aninhados permitem criar estruturas 3D complexas como casas ou pirâmides.",
+      "categoria": "Automação"
+    },
+    {
+      "id": 6,
+      "pergunta": "O que é a função setBlocks() e como ela difere de setBlock()?",
+      "resposta": "setBlocks() preenche uma área retangular inteira entre duas coordenadas: mc.setBlocks(x1, y1, z1, x2, y2, z2, block_type). É mais rápido que usar setBlock() múltiplas vezes em um loop para áreas grandes.",
+      "categoria": "Construção Eficiente"
+    },
+    {
+      "id": 7,
+      "pergunta": "Como detectar a posição do jogador no Minecraft?",
+      "resposta": "Use mc.player.getTilePos() para obter as coordenadas do jogador como objeto Vec3 com x, y, z. Útil para construir estruturas relativas à posição atual ou teleportar o jogador com setPos().",
+      "categoria": "Interação com Jogador"
+    },
+    {
+      "id": 8,
+      "pergunta": "O que é a biblioteca Pillow (PIL) em Python?",
+      "resposta": "Pillow é uma biblioteca para manipulação de imagens em Python. Permite abrir, editar, criar, salvar imagens, aplicar filtros, redimensionar, rotacionar, desenhar formas e textos. Instalação: pip install Pillow.",
+      "categoria": "Pillow Básico"
+    },
+    {
+      "id": 9,
+      "pergunta": "Como criar uma imagem simples com Pillow?",
+      "resposta": "Use Image.new() para criar: from PIL import Image; img = Image.new('RGB', (largura, altura), color='cor'). Use ImageDraw para desenhar formas e texto. Salve com img.save('nome.png').",
+      "categoria": "Criação de Imagens"
+    },
+    {
+      "id": 10,
+      "pergunta": "O que é um GIF animado e como criar com Python?",
+      "resposta": "GIF é um formato de imagem que suporta animação (múltiplos frames). Com Pillow, crie várias imagens e salve como GIF: images[0].save('animation.gif', save_all=True, append_images=images[1:], duration=100, loop=0).",
+      "categoria": "Animação GIF"
+    },
+    {
+      "id": 11,
+      "pergunta": "O que é a biblioteca MoviePy?",
+      "resposta": "MoviePy é uma biblioteca Python para edição de vídeos. Permite criar, cortar, concatenar vídeos, adicionar efeitos, textos, áudio e gerar animações. Mais poderosa que Pillow para animações complexas. Instalação: pip install moviepy.",
+      "categoria": "MoviePy Básico"
+    },
+    {
+      "id": 12,
+      "pergunta": "Como criar uma animação simples com MoviePy?",
+      "resposta": "Defina uma função que retorna frames: def make_frame(t): return array. Use VideoClip: from moviepy.editor import VideoClip; clip = VideoClip(make_frame, duration=5). Exporte com clip.write_videofile() ou write_gif().",
+      "categoria": "Animação com MoviePy"
+    },
+    {
+      "id": 13,
+      "pergunta": "Como animar um personagem de jogo frame a frame?",
+      "resposta": "Crie múltiplas imagens do personagem em poses diferentes (sprite sheets). Use Pillow ou MoviePy para alternar entre frames em sequência temporal, criando ilusão de movimento. Controle a velocidade ajustando o delay/duration entre frames.",
+      "categoria": "Animação de Personagens"
+    },
+    {
+      "id": 14,
+      "pergunta": "Qual a diferença entre Pillow e MoviePy para animações?",
+      "resposta": "Pillow é mais simples, ideal para GIFs básicos e manipulação de imagens estáticas. MoviePy é mais poderoso, suporta vídeos, áudio, efeitos complexos e animações profissionais, mas tem curva de aprendizado maior.",
+      "categoria": "Comparação de Ferramentas"
+    },
+    {
+      "id": 15,
+      "pergunta": "Como aplicar efeitos visuais básicos em animações?",
+      "resposta": "Use filtros de Pillow (blur, sharpen, brightness, contrast) ou efeitos de MoviePy (fade in/out, resize, rotate, crop). Aplique transformações frame a frame: altere cores, adicione texto, desenhe formas, combine imagens com transparência.",
+      "categoria": "Efeitos Visuais"
+    }
+  ]
+}

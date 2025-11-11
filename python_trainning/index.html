@@ -95,59 +95,94 @@
 
                 <div class="content-section mb-5">
                     <h2>Os 6 Módulos do Curso</h2>
-                    <div class="list-group mt-4">
-                        <a href="modulo_01.html" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Módulo 1: Fundamentos da Programação</h5>
-                                <span class="badge badge-duracao">8 horas</span>
+                    
+                    <!-- Circuit Horseshoe Navigation -->
+                    <div class="circuit-container mb-5">
+                        <svg class="circuit-svg" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Circuit Path (C-shape horseshoe) -->
+                            <path d="M 150 50 Q 50 50 50 300 Q 50 550 150 550 L 650 550 Q 750 550 750 300 Q 750 50 650 50" 
+                                  class="circuit-path" 
+                                  fill="none" 
+                                  stroke="#28a745" 
+                                  stroke-width="3" 
+                                  stroke-dasharray="5,5">
+                                <animate attributeName="stroke-dashoffset" from="0" to="10" dur="1s" repeatCount="indefinite"/>
+                            </path>
+                            
+                            <!-- Connection Lines -->
+                            <line x1="150" y1="50" x2="200" y2="50" class="circuit-connector" stroke="#28a745" stroke-width="2"/>
+                            <line x1="50" y1="150" x2="100" y2="150" class="circuit-connector" stroke="#28a745" stroke-width="2"/>
+                            <line x1="50" y1="450" x2="100" y2="450" class="circuit-connector" stroke="#28a745" stroke-width="2"/>
+                            <line x1="150" y1="550" x2="200" y2="550" class="circuit-connector" stroke="#28a745" stroke-width="2"/>
+                            <line x1="650" y1="550" x2="600" y2="550" class="circuit-connector" stroke="#28a745" stroke-width="2"/>
+                            <line x1="650" y1="50" x2="600" y2="50" class="circuit-connector" stroke="#28a745" stroke-width="2"/>
+                        </svg>
+                        
+                        <!-- Module Nodes -->
+                        <a href="modulo_01.html" class="circuit-node" data-module="1">
+                            <div class="node-circle">
+                                <span class="node-number">01</span>
                             </div>
-                            <p class="mb-1">Aprenda os conceitos básicos de programação e dê seus primeiros passos com Python.</p>
-                            <small>Variáveis, tipos de dados, estruturas de controle, loops e sua primeira calculadora.</small>
+                            <div class="node-content">
+                                <h5>Fundamentos da Programação</h5>
+                                <span class="badge badge-duracao">8 horas</span>
+                                <p class="node-description">Variáveis, tipos de dados, estruturas de controle e loops.</p>
+                            </div>
                         </a>
 
-                        <a href="modulo_02.html" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Módulo 2: Desenvolvimento de Jogos Básicos</h5>
-                                <span class="badge badge-duracao">8 horas</span>
+                        <a href="modulo_02.html" class="circuit-node" data-module="2">
+                            <div class="node-circle">
+                                <span class="node-number">02</span>
                             </div>
-                            <p class="mb-1">Entre no mundo dos jogos 2D com Pygame e crie seu primeiro jogo completo.</p>
-                            <small>Pygame, eventos, colisões, pontuação e jogos como Pong ou Snake.</small>
+                            <div class="node-content">
+                                <h5>Desenvolvimento de Jogos Básicos</h5>
+                                <span class="badge badge-duracao">8 horas</span>
+                                <p class="node-description">Pygame, eventos, colisões e seu primeiro jogo 2D.</p>
+                            </div>
                         </a>
 
-                        <a href="modulo_03.html" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Módulo 3: Projetos Interativos</h5>
-                                <span class="badge badge-duracao">8 horas</span>
+                        <a href="modulo_03.html" class="circuit-node" data-module="3">
+                            <div class="node-circle">
+                                <span class="node-number">03</span>
                             </div>
-                            <p class="mb-1">Programe no Minecraft e crie animações incríveis com Python.</p>
-                            <small>Minecraft Education Edition, construção automatizada, animações e GIFs.</small>
+                            <div class="node-content">
+                                <h5>Projetos Interativos</h5>
+                                <span class="badge badge-duracao">8 horas</span>
+                                <p class="node-description">Minecraft Education, construção automatizada e animações.</p>
+                            </div>
                         </a>
 
-                        <a href="modulo_04.html" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Módulo 4: Inteligência Artificial e Automação</h5>
+                        <a href="modulo_04.html" class="circuit-node" data-module="4">
+                            <div class="node-circle">
+                                <span class="node-number">04</span>
+                            </div>
+                            <div class="node-content">
+                                <h5>Inteligência Artificial e Automação</h5>
                                 <span class="badge badge-duracao">6 horas</span>
+                                <p class="node-description">IA, algoritmos de decisão, TensorFlow e bots automatizados.</p>
                             </div>
-                            <p class="mb-1">Crie bots inteligentes e aprenda os fundamentos de IA aplicada a jogos.</p>
-                            <small>Lógica de IA, algoritmos de decisão, TensorFlow, PyTorch e bots automatizados.</small>
                         </a>
 
-                        <a href="modulo_05.html" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Módulo 5: Segurança Digital e Autenticação</h5>
+                        <a href="modulo_05.html" class="circuit-node" data-module="5">
+                            <div class="node-circle">
+                                <span class="node-number">05</span>
+                            </div>
+                            <div class="node-content">
+                                <h5>Segurança Digital e Autenticação</h5>
                                 <span class="badge badge-duracao">6 horas</span>
+                                <p class="node-description">OAuth 2.0, OIDC, tokens e login seguro.</p>
                             </div>
-                            <p class="mb-1">Entenda como funciona a segurança em aplicações e o protocolo OIDC.</p>
-                            <small>Autenticação, autorização, OAuth 2.0, OIDC, tokens e login seguro.</small>
                         </a>
 
-                        <a href="modulo_06.html" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Módulo 6: Finalização e Próximos Passos</h5>
+                        <a href="modulo_06.html" class="circuit-node" data-module="6">
+                            <div class="node-circle">
+                                <span class="node-number">06</span>
+                            </div>
+                            <div class="node-content">
+                                <h5>Finalização e Próximos Passos</h5>
                                 <span class="badge badge-duracao">4 horas</span>
+                                <p class="node-description">Portfólio, code review e roadmap profissional.</p>
                             </div>
-                            <p class="mb-1">Apresente seus projetos, crie seu portfólio e planeje sua jornada futura.</p>
-                            <small>Portfólio, code review, comunidades de programação e roadmap profissional.</small>
                         </a>
                     </div>
                 </div>

@@ -781,3 +781,200 @@ input[type="date"] {
         margin-bottom: 0.5rem;
     }
 }
+
+/* ===================================
+   Circuit Horseshoe Navigation
+   =================================== */
+
+.circuit-container {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+
+.circuit-svg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.circuit-path {
+    filter: drop-shadow(0 0 5px rgba(40, 167, 69, 0.5));
+}
+
+.circuit-connector {
+    opacity: 0.8;
+}
+
+.circuit-node {
+    position: absolute;
+    z-index: 10;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.circuit-node[data-module="1"] { top: 8%; left: 18%; }
+.circuit-node[data-module="2"] { top: 25%; left: 8%; }
+.circuit-node[data-module="3"] { top: 75%; left: 8%; }
+.circuit-node[data-module="4"] { top: 92%; left: 18%; }
+.circuit-node[data-module="5"] { top: 92%; left: 68%; }
+.circuit-node[data-module="6"] { top: 8%; left: 68%; }
+
+.node-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #28a745, #20c997);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+    border: 3px solid #fff;
+    position: relative;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.node-circle::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(40, 167, 69, 0.3);
+    animation: pulse 2s infinite;
+    z-index: -1;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+.node-number {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+}
+
+.node-content {
+    background: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.circuit-node:hover .node-content {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.circuit-node:hover .node-circle {
+    transform: scale(1.1);
+    box-shadow: 0 6px 25px rgba(40, 167, 69, 0.6);
+}
+
+.node-content h5 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.node-content .badge-duracao {
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.node-description {
+    margin: 0.5rem 0 0 0;
+    font-size: 0.9rem;
+    color: #6c757d;
+    line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .circuit-container {
+        min-height: 900px;
+        padding: 1rem;
+    }
+    
+    .circuit-svg {
+        display: none;
+    }
+    
+    .circuit-node {
+        position: static;
+        margin-bottom: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .circuit-node[data-module="1"],
+    .circuit-node[data-module="2"],
+    .circuit-node[data-module="3"],
+    .circuit-node[data-module="4"],
+    .circuit-node[data-module="5"],
+    .circuit-node[data-module="6"] {
+        position: static;
+    }
+    
+    .node-content {
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: auto;
+        max-width: 100%;
+    }
+    
+    .node-circle {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .node-number {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .circuit-container {
+        min-height: 700px;
+    }
+    
+    .node-content {
+        max-width: 250px;
+        font-size: 0.9rem;
+    }
+    
+    .node-content h5 {
+        font-size: 1rem;
+    }
+}
